@@ -1,0 +1,108 @@
+###### tags: graphviz art
+
+# Qu'est-ce qui fait la valeur d'une œuvre d'art ?
+
+
+```graphviz
+digraph G {
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Qu'est-ce qui
+fait la valeur d'une
+œuvre d'art ?"]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Première
+hypothèse"]
+b2[label="Deuxième
+hypothèse"]
+b3[label="Troisième
+hypothèse"]
+}[headport=n]
+
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="C’est la beauté
+de l’œuvre qui en
+fait la valeur",xlabel=<<FONT color="darkgreen">I</FONT>>]
+b2->c2
+c2[label="C'est le génie de
+l'artiste que
+nous admirons
+dans une œuvre",xlabel=<<FONT color="darkgreen">II</FONT>>]
+b3->c3
+c3[label="La valeur d’une
+œuvre se situe dans
+l’expérience à
+laquelle elle
+nous conduit",xlabel=<<FONT color="darkgreen">III</FONT>>]
+
+{rank=same;b1->b2->b3[style=invis,minlen=6]}
+{rank=same;c1->c2->c3[style=invis,minlen=6]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+e1[label="=  point de vue de
+l'œuvre et de ses
+qualités intrinsèques"]
+e2[label="=  point de vue
+de l'artiste et de
+la création"]
+e3[label="=  point de vue du
+spectateur et de la
+réception de l'œuvre"]
+
+c1->e1[minlen=1;style=invis]
+c2->e2[minlen=1;style=invis]
+c3->e3[minlen=1;style=invis]
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
+
+
+
+```
