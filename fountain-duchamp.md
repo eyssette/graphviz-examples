@@ -1,0 +1,100 @@
+# Analyse d'une œuvre de Marcel Duchamp : _Fountain_
+
+```graphviz
+digraph G {
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18.5]
+// a1[label=""]
+a1[label=<<i>Fountain</i><br/>
+de Duchamp>]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Une œuvre qui
+incarne l'idée d'un
+renversement"]    
+b2[label="Une œuvre qui
+cherche à renverser
+l'art lui-même"]
+}[headport=w]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey502]
+// c1[label=""]
+b1->{c1,c2,c3,c4}[headport=w]
+c1[label="… par sa disposition : l'urinoir est renversé"]
+c2[label="… par son titre : une fontaine, qui fait jaillir un
+liquide clair et pur, est l'inverse d'un urinoir "]
+c3[label="… par le simple fait d'exposer un tel objet et
+de le signer : cet acte renverse le statut de cet
+objet (il n'est plus un objet commun et utile, il
+devient une œuvre à contempler)"]
+c4[label="… par des jeux de mots : le prénom de l'artiste
+“Richard” évoque la richesse, tandis que
+“R.Mutt” évoque Armut qui signifie
+la pauvreté en allemand"]
+
+
+b2->{c5, c6}[headport=w]
+c5[label="… par les propriétés de l'urinoir lui-même, qui s'opposent à
+tout ce qu'on attend d'ordinaire d'une œuvre d'art :
+c'est un objet pauvre, sans qualités, sans expression, sans
+originalité, seulement fonctionnel, sans signification,
+qui ne suscite aucune émotion si ce n'est de dégoût,
+et n'est pas le fruit de la créativité d'un artiste génial"]
+c6[label="… par des jeux de mots : “R.Mutt” peut évoquer
+“art mute” qui désigne le fait que l'art change et échappe
+aux tentatives de le définir ; “R.Mutt”, si on le renverse
+donne “Mutter”, qui signifie la mère en allemand, or la
+forme de l'urinoir peut évoquer un renversement de
+la représentation traditionnelle de la Vierge à l'Enfant"]
+
+
+{rank=same;b1->b2[style=invis;minlen=15]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
+
+
+```
