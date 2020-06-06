@@ -1,3 +1,5 @@
+###### tags: `graphviz` `art`
+
 # Analyse d'une œuvre de Marcel Duchamp : _Fountain_
 
 ```graphviz
