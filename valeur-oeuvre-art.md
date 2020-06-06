@@ -1,4 +1,4 @@
-###### tags: graphviz art
+###### tags: `graphviz` `art`
 
 # Qu'est-ce qui fait la valeur d'une œuvre d'art ?
 
