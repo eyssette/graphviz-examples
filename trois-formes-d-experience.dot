@@ -1,5 +1,6 @@
 digraph G {
 // Template : diagram
+// Usage : cours sur l'art
 //rankdir=LR
 splines=true
 //splines=curved
