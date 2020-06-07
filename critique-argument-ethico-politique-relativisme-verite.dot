@@ -1,0 +1,182 @@
+digraph G {
+// Template : argument
+// Usage : cours sur la vérité, cours sur le relativisme de la vérité
+//@ratio=0.75
+layers="argument:objections:remarques:remarques+objections:all"
+//layerselect="argument"
+//layerselect="remarques"
+//layerselect="objections"
+layerselect="remarques+objections"
+//bgcolor=grey90
+//pad=0.3
+style=filled
+edge[minlen=6;xlabel="par
+conséquent … ";fontcolor=grey40;fontsize=10]
+splines=curved
+//splines=spline // (si les flèches passent sous une bulle)
+ranksep=0.1
+
+
+// Objections
+// Si on veut mettre "objection" sur les flèches :
+// edge[labelfontcolor=red;labelfontsize=10;headlabel="objection    \n "] 
+node[shape=rect;style="rounded";layer="objections,remarques+objections";color=red2;fillcolor=white;fontcolor=black;penwidth=0.8;margin=0.15]
+edge[layer="objections,remarques+objections";xlabel="
+objection ! ";minlen=5]
+// Si on veut faire une objection à un lien entre prémisses, il faut utiliser un "point" intermédiaire
+// point[shape=point;width=0]
+// ->point[arrowhead=none]
+// {rank=same;o1->}
+// {rank=same;->o1[dir=back]}
+// o1[label=""]
+
+0[style=invis;shape=plaintext;label=""]
+
+o1[label="On peut croire que la vérité existe
+et reconnaître la possibilité de
+l'erreur et la nécessité d'une
+forme d'humilité intellectuelle"]
+
+o2[label="L'appel à la tolérance n'a pas de
+sens dans les cas où on a une
+preuve de la vérité (est-ce être
+intolérant de penser qu'il y a
+des vérités mathématiques ?)"]
+
+o3[label="On peut croire que la vérité
+existe et ne pas mépriser les
+personnes qui ont des croyances
+que l'on estime fausses"]
+
+o4[label="Le relativisme de la vérité est
+parfois considéré comme un moyen de
+lutter contre les discours des dominants,
+qui prétendent représenter la vérité,
+mais ne faut-il pas plutôt lutter contre
+la domination avec les outils du savoir ?"]
+
+o5[label="C'est plutôt la croyance que la vérité
+existe qui incite à la discussion pour la
+rechercher, tandis que l'indifférence à la
+vérité conduit chacun à rester dans sa
+propre opinion sans véritable dialogue"]
+
+// Lien objection->prémisse
+node[shape=rect;style="rounded,filled";fillcolor=white;layer="argument,remarques,objections,remarques+objections";margin=0.15;color=black;fontcolor=black;penwidth=1]
+edge[color=red3;minlen=6;xlabel="
+objection !";penwidth=0.8]
+
+o1->p1[dir=back]
+
+0->o2[style=invis;]
+
+{rank=same;o2->p1[style=invis;minlen=10]}
+
+o2->p2[dir=back]
+{rank=same;o3->p2[dir=back]}
+o2->o3[style=invis]
+
+d[style=invis;shape=plaintext;label=""]
+d->o4[style=invis;minlen=0]
+{rank=same;o4;p1}
+o4->p3[minlen=1;dir=back]
+
+{rank=same;o5->p3[headport=e;tailport=w]}
+
+
+
+
+// Justification des objections
+node[style="rounded,filled";fillcolor=white;layer="objections,remarques+objections";fontcolor=darkgreen;color=darkgreen;penwidth=0.4;margin=0.1]
+edge[color=darkgreen;xlabel="par
+conséquent …";penwidth=0.65]
+// j1[label=""]
+
+
+
+// Remarques
+node[layer="remarques,remarques+objections";color=blue4;shape=box;style=filled;margin=0.1;fontcolor=blue4;penwidth=0.3]
+edge[layer="remarques,remarques+objections";color=blue4;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+
+
+// Lien remarque->prémisse
+node[shape=rect;style="rounded,filled";fillcolor=white;layer="remarques,objections,remarques+objections";margin=0.15;color=black;fontcolor=black;penwidth=1]
+
+
+
+subgraph cluster_0 {
+newrank=true
+margin=25
+bgcolor=grey90
+style=rounded
+color=grey50
+node[fontcolor=black;color=black;penwidth=1;layer="argument,remarques,objections,remarques+objections"];
+edge[color=black;xlabel="par
+conséquent …";fontcolor=grey40;minlen=6;style="";arrowhead="";penwidth=1layer="argument,remarques,objections,remarques+objections"]
+
+
+// ===============================================================================
+// CODES POUR LES PREMISSES LIÉES (il suffit de supprimer un // ci-dessous et de copier le code correspondant pour lier 2 prémisses regroupées sous un "{}")
+//PL1[width=3.5;label="";shape=underline;fillcolor=grey88;height=0;margin=0;color=black]
+// ->PL1[style="invis";minlen=1]
+//PL2[width=4;label="";shape="underline" ; fillcolor=grey88 ; height=0 ; margin=0;color=black]
+// ->PL2[style="invis";minlen=1]
+// PL3[width=5;label="";shape="underline" ; fillcolor=grey88 ; height=0 ; margin=0]
+// ->PL3[style="invis";minlen=1]
+// PL4[width=5;label="";shape=underline;fillcolor=grey88;height=0;margin=0]
+// ->PL4[style="invis";minlen=1]
+
+
+// MISE EN PAGE 
+// Aller à la ligne tous les 3-4-5 mots dans les bulles, ou bien mettre "\n"
+// ["constraint=false"]  : à tester à côté d'une flèche si problème avec le rendu
+// {rank=same;}   : pour forcer l'affichage sur une même ligne de deux bulles
+// dir=back  : pour placer une flèche dans l'autre sens (et forcer l'affichage des bulles dans un ordre particulier)
+// On peut utiliser des bulles invisibles pour forcer les bulles à se placer comme on le souhaite :
+// VIDE1[style=invis]
+//vide1[style=invis;width=0;shape=plaintext;label=" "]
+//VIDE2[style=invis]
+//VIDE3[style=invis]
+// penser également à "headport=n" pour une flèche mal positionnée
+// numéroter les prémisses: ;xlabel=<<FONT POINT-SIZE="9">1</FONT>>
+// Conséquences de la conclusion : c1[label="Conséquence"style="filled";fillcolor=grey28;fontcolor=white;shape=ellipse;margin=0.05;fontsize=14]
+// ===============================================================================
+
+// Argument
+node[shape=rect;style="rounded,filled";fillcolor=white;layer="argument,remarques,objections,remarques+objections";margin=0.15]
+// p1[label=""]
+
+p1[label="Croire que la vérité existe, c’est
+vouloir avoir raison et prétendre
+que les autres ont tort"]
+
+p1->{rank=same
+p2[label="Croire que la vérité existe, c'est
+ne pas faire preuve de tolérance
+envers les autres croyances"]
+p3[label="Croire que la vérité existe,
+c'est chercher à dominer et
+à empêcher la discussion
+"]
+}->C
+
+
+
+
+// Remarques
+node[layer="remarques,remarques+objections";color=blue;shape=box;style=filled;margin=0.05]
+edge[layer="remarques,remarques+objections";color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+
+
+// Conclusion
+C[label="Croire que la vérité existe
+est moralement critiquable";fillcolor=black;fontcolor=white;color=black;shape=ellipse;fontsize=18]
+}
+
+
+}
+}
+
+
