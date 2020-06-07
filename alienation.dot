@@ -1,0 +1,120 @@
+digraph G {
+// Template : diagram
+// Usage : cours sur la technique, cours sur la politique, cours sur le travail
+//rankdir=LR
+splines=curves
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+
+a1[label="Qu'est-ce que
+l'aliénation ?"]
+
+c1[label="L'aliénation
+dans la philosophie
+sociale critique"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+
+a1->b1
+b1[label="Première
+approche"]
+
+b1->b2
+b2[label="L'aliénation
+au sens
+juridique"]
+
+b2->c1
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style="filled";fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+
+{rank=same;b1->d1}
+{rank=same;b2->d2}
+d1[label="Aliénation vient du latin
+“alius” qui signifie “autre”"]
+d1a[label="L'aliénation signifie
+un “devenir autre”"]
+d1->d1a
+d1a->d2[style=invis;minlen=4]
+
+d2[label="Ce qui devient autre,
+c'est le statut juridique de
+ce qui est aliéné : ce qui
+est aliéné ne m'appartient
+plus, je ne le possède plus"]
+
+{rank=same;c1->d3}
+d3[label="On s'intéresse aux changements
+sociaux qui conduisent l'être humain à
+devenir autre et qui ont pour conséquence
+une forme de dépossession de soi"]
+
+d3->d4
+d4[label="Il y a dépossession de soi quand :
+(1) un être humain possède
+d'ordinaire une certaine capacité,
+(2) qui est perdue, ou dont l'exercice
+est rendu plus difficile, à cause
+d'un certain changement social"]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+
+
+// c1[label=""]
+
+
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+
+// d1[label=""]
+
+
+
+// ETIQUETTES EN ROUGE
+node[shape="plaintext";fontcolor=firebrick3;fillcolor=grey98]
+
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// ->e1[minlen=1;style="invis"]
+
+
+// Remarques
+node[layer="remarques,remarques+objections";color=blue;shape=box;style="filled";fillcolor=white;fontcolor=black;margin=0.07;fontsize=15]
+edge[layer="remarques,remarques+objections";color=blue;arrowhead="none";xlabel="";style="dashed"]
+// r1[label=""]
+
+r1[label="Exemples :
+“un alien”
+“un aliéné”"]
+{rank=same;d1->r1}
+
+
+r3[label="Exemples :
+“aliéner un bien”
+“droits inaliénables”"]
+{rank=same;d2->r3}
+
+
+}
+
+
