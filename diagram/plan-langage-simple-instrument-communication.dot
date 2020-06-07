@@ -1,0 +1,215 @@
+digraph G {
+// Template : diagram
+// Usage : Plan - sujet sur le langage
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Le langage est-il
+un simple moyen de
+communication ?"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->b1[headport=n;label=<non <br/>(<S>simple</S>)>;fontcolor=grey35]
+a1->b2[headport=n;label=<non <br/>(<S>moyen</S>)>;fontcolor=grey35]
+a1->b3[headport=n;label=<non <br/>(<S>communication</S> )>;fontcolor=grey35]
+b1[label="Non, car la complexité du
+langage le distingue des autres
+moyens de communication"]    
+b2[label="Non, car on ne ne peut pas
+réduire le langage au statut de
+simple moyen que je contrôle"]
+b3[label="Non, car le langage ne se
+réduit pas à communiquer des
+pensées déjà formées"]
+
+{rank=same;b1->b2[style=invis;minlen=3]}
+{rank=same;b2->b3[style=invis;minlen=4]}
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="… parce que la comparaison
+avec les systèmes de communication
+des animaux permet de mettre en
+évidence plusieurs spécificités
+du langage humain"]
+
+b2->c4
+c4[label="… parce que
+le langage peut
+constituer un obstacle
+à la communication"]
+
+b2->c2
+c2[label="… parce que le
+langage que j’utilise
+communique des
+informations malgré moi"]
+
+b3->c3
+c3[label=<… parce que, nous pouvons<br/>
+faire l'hypothèse que le langage<br/>
+joue un rôle dans la formation<br/>
+même de nos pensées
+<FONT POINT-SIZE="14" COLOR="grey15"><br/><br/>(= thèse du déterminisme<br/> linguistique)</FONT>>]
+
+{rank=same;c2->c3[style=invis;minlen=4]}
+
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style="filled,rounded";fillcolor=grey78;shape=box;margin=0.15]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50;fontsize=15]
+// d1[label=""]
+
+
+c1->{d1,d2,d3}
+d1[label="Du point de vue du
+support matériel de la
+communication, le
+langage humain repose
+sur des symboles dont
+le sens ne peut être
+compris que par un
+processus complexe
+d'interprétation"]
+d2[label="Du point de vue formel,
+la communication,
+dans le cas du langage
+humain, repose sur des
+signes structurés, qui
+rendent possible une
+communication riche"]
+d3[label="Du point de vue de
+la finalité, le langage
+humain ne se réduit pas
+à un ensemble de
+signaux destinés à
+produire une réaction"]
+
+
+c4->d7
+d7[label="Les mots semblent
+souvent vagues
+et insuffisants
+pour exprimer le
+sens de ce que
+nous voulons dire"]
+
+
+
+
+c2->d4
+d4[label="La langue et la parole
+sont des marqueurs
+d’identification et
+de différenciation
+culturelles
+et sociales"]
+
+c3->{d5,d6}
+d5[label="L'hypothèse
+d'un déterminisme
+linguistique fort
+est certes réfutée
+pour les langues
+naturelles"]
+d6[label="Mais cela ne
+remet pas en cause
+l'importance du
+langage et le
+pouvoir des mots"]
+
+{rank=same;d3->d7[style=invis;minlen=3]}
+{rank=same;d4->d5[style=invis;minlen=3]}
+{rank=same;d5->d6[style=invis;minlen=1]}
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98;fontsize=16]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+d1->e1[minlen=1;style=invis]
+e1[label=<<b>Peirce</b>   : la distinction<br/>
+indice / icône / symbole<br/>
+<br/>
+La distinction entre le<br/>
+modèle du code et le<br/>
+modèle de l'inférence>]
+
+d2->e2[minlen=1;style=invis]
+e2[label=<La distinction : phonèmes /<br/>
+morphèmes / syntaxe<br/>
+<br/>
+<b>Searle</b>   : le principe<br/>
+d'exprimabilité>]
+
+d3->e3[minlen=1;style=invis]
+e3[label=<<b>Benveniste</b>   :<br/>
+la distinction<br/>
+signal / symbole<br/><br/><br/>
+<b>Wittgenstein</b>   :<br/>
+la multiplicité des<br/>
+jeux de langage<br/>>]
+
+d4->e4[minlen=1;style=invis]
+e4[label=<<b>Saussure</b>   :<br/>
+La distinction<br/>
+langage / langue /<br/>
+parole<br/><br/>
+Les enjeux politiques<br/>
+de la langue>]
+
+d5->e5[minlen=1;style=invis]
+e5[label=<La critique<br/>
+de l'hypothèse<br/>
+<b>Sapir-Whorf</b>>]
+
+d6->e6[minlen=1;style=invis]
+e6[label=<<b>Hegel :</b><br/>
+C'est dans les mots<br/>
+que nous pensons<br/><br/>
+<b>Orwell :</b><br/>
+La novlangue<br/>>]
+
+d7->e7[minlen=1;style=invis]
+e7[label=<<b>Bergson :</b><br/>
+Le langage comme<br/>
+système d'étiquettes<br/>
+abstraites et générales<br/>>]
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
