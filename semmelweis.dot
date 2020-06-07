@@ -1,0 +1,123 @@
+digraph G {
+// Template : conjectures and refutations
+// Usage : cours sur la science, cours sur l'épistémologie, cours sur théorie et expérience
+// Référence : Semmelweis
+
+splines=polyline
+ranksep=0.5
+
+//node[shape=circle,style=filled, fillcolor=white,penwidth=0.3]
+node[shape=box,style="filled,rounded", fillcolor=white,penwidth=1.1,fontsize=18,margin=0.2]
+
+subgraph cluster_0 {
+style="filled"
+color=grey40
+penwidth=0.5
+fillcolor=grey96
+margin=30
+
+
+node[color=green4,xlabel=<<font point-size="15">💬</font>>]
+a1[label="Hypothèse 1 : Ce sont des facteurs
+environnementaux, dans la ville de Vienne, qui
+sont la cause de la mortalité dans le service 1"]
+a2[label="Hypothèse 2 : le surpeuplement est la
+cause de la mortalité dans le service 1"]
+a3[label="Hypothèse 3 : des différences d'alimentation ou de
+soins sont la cause de la mortalité dans le service 1"]
+a4[label="Hypothèse 4 : les étudiants dans le service 1 causent des
+lésions importantes qui sont la cause de la mortalité"]
+a5[label="Hypothèse 5 : dans le service 1, il y a un prêtre qui passe
+dans les salles avec un servant qui agite une clochette.
+Cette vision effrayante est cause de la mortalité dans le service 1"]
+a6[label="Hypothèse 6 : dans le service 1, les patientes
+accouchent sur le dos, tandis que dans le service 2,
+les patientes accouchent sur le côté. Cette différence
+de position est la cause de la différence de mortalité"]
+a7[label="Hypothèse 7 : dans le service 1, les étudiants ont auparavant
+examiné des cadavres et ont encore les mains qui gardent
+l'odeur des cadavres, même après avoir les avoir lavés à
+l'eau. Ce contact des étudiants avec les cadavres est la
+cause de la différence de mortalité entre les deux services"]
+a8[label="Confirmations : 
+Le contact avec les cadavres doit conduire à la mortalité
+dans d'autres cas hors accouchement, ce qui a été le cas
+avec le Dr. Kolletschka qui est mort après une autopsieau
+cours de laquelle il s'était entaillé le doigt avec un scalpel
++
+L'absence de contact avec des cadavres doit conduire à une
+baisse de mortalité, ce qui est le cas dans le service 2,
+et pour les femmes qui n'accouchent pas à l'hôpital
++
+Un lavage plus important des mains des étudiants
+après contact avec les cadavres doit conduire à une
+baisse de la mortalité, ce qui a bien été observé"]
+
+node[color=red3,xlabel="⚡"]
+o1[label="Les deux services devraient être touchés
+de la même manière, ce qui n'est pas le cas
++
+On devrait observer un même taux de
+mortalité pour les femmes qui accouchent
+en ville, ce qui n'est pas le cas"]
+o2[label="Il y a une différence dans le nombre de
+patients traités. Mais le surpeuplement
+concerne le service 2 et non le service 1"]
+o3[label="Il n'y pas de différence significative dans les
+régimes alimentaires ou les types de soins"]
+o4[label="L'accouchement en lui-même est déjà cause de
+lésions importantes qui ne sont pas causes de mortalité
++
+Il n'y a pas de différence significative dans la
+manière d'accoucher entre le service 1 et le service 2
++
+Si on réduit les examens médicaux, il devrait y avoir
+moins de lésions causées et donc moins de mortalité,
+mais ce n'est pas ce que l'on observe"]
+o5[label="Si le prêtre ne passe plus dans les salles, et si l'on
+supprime la clochette, alors on devrait observer
+une baisse de mortalité, mais ce n'est pas le cas"]
+o6[label="Si on demande aux patientes d'accoucher sur
+le côté dans le service 1, on devrait observer une
+baisse de la mortalité, mais ce n'est pas le cas"]
+
+edge[penwidth=0.8,arrowsize=0.6]
+
+edge[color=red3,headport=w,style=invis]
+a1->o1
+a2->o2
+a3->o3
+a4->o4
+a5->o5
+a6->o6
+
+edge[color=green4,headport=e]
+o1->a2[minlen=2]
+o2->a3[minlen=2]
+o3->a4[minlen=2]
+o4->a5[minlen=2]
+o5->a6[minlen=2]
+o6->a7[minlen=2]
+a7->a8[minlen=2,tailport=s,headport=n]
+
+edge[color=red3,constraint=false,style=vis,headport=n,xlabel=<<font point-size="10" color="red3">objection !</font>>]
+a1->o1
+a2->o2
+a3->o3
+a4->o4
+a5->o5
+a6->o6
+
+edge[color=green4,constraint=false,style=vis,headport=n,xlabel=<<font point-size="11" color="green4">réponse</font>>]
+o1->a2[style=invis]
+o2->a3[style=invis]
+o3->a4[style=invis]
+o4->a5[style=invis]
+o5->a6[style=invis]
+o6->a7[style=invis]
+a7->a8[tailport=s,headport=n,xlabel=""]
+
+
+
+}
+}
