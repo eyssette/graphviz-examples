@@ -1,6 +1,7 @@
 digraph G {
 // Template : diagram
 // Usage : cours sur la technique
+// Référence : Simondon
 //rankdir=LR
 splines=curves
 bgcolor=grey98
