@@ -1,0 +1,163 @@
+digraph G {
+node[style="rounded,filled";shape=box;fillcolor=white;penwidth=0.4;margin=0.15]
+compound=true;
+rankdir=LR
+edge[minlen=2]
+labelloc="t";
+labeljust="c"
+label=<<br/><br/>
+<b>Sylvie Allouche, « De la science-fiction en philosophie et réciproquement :            <br/>
+à partir des expériences de pensée sur l'identité personnelle de Locke »             </b>
+<br/><br/>
+<br/>>;
+
+
+subgraph cluster{
+label=""
+style="filled,rounded";
+margin=18
+fillcolor=snow3;
+color=snow3;
+
+subgraph cluster_2 {
+color=snow3;
+f[label="Conclusion : pas de frontière
+imperméable, mais des caractéristiques
+différentes entre deux types de discours";penwidth=0.8]
+}
+
+
+
+
+
+
+
+subgraph cluster_1 {
+margin=30
+style="filled,rounded";
+fillcolor=snow2;
+c[label="Première comparaison :
+Locke vs. Hamilton"]
+d[label="Deuxième comparaison :
+Shoemaker vs. Hamilton"]
+e[label="Troisième comparaison :
+Locke vs. Stevenson"]
+{rank=same;e->d->c[dir=back;minlen=4;penwidth=0.4]}
+e->f[constraint=false;minlen=4;penwidth=0.4]
+}
+
+
+
+subgraph cluster_0 {
+margin=20
+style="filled,rounded";
+fillcolor=snow2;
+a[label="Il y a quelque chose de
+philosophique dans les récits
+de science-fiction, et parfois de
+la science-fiction en philosophie"]
+b[label="Quelle comparaison peut-on
+faire entre la littérature
+et la philosophie ?"]
+{rank=same;b->a[dir=back;minlen=4;penwidth=0.4]}
+b->c[constraint=false;minlen=4;penwidth=0.4]
+}
+}
+
+
+
+node[penwidth=0.3;fontsize=12;color=snow4;fontcolor=grey5];
+a1[label="De la philosophie dans la
+science-fiction : référence
+à Gilbert Hottois, Isabelle
+Stengers, Guy Lardreau"]
+a2[label="De la science-fiction en
+philosophie : référence à
+Shoemaker, Wiggins, Parfit"]
+
+b1[label="La ressemblance
+est-elle superficielle ?"]
+b2[label="Faut-il remettre en
+question la distinction
+entre littérature et
+philosophie ?"]
+
+c1[label=<John Locke : la fable du prince et du savetier<br/>
+Edmond Hamilton : <i>Les Rois des étoiles</i>>]
+c2[label="Une symétrie d'intrigue, mais des différences"]
+c3[label="Différence de longueur (10 lignes vs. 300 pages)"]
+c4[label=<Dans le romain : de multiples effets de réel qui<br/>
+visent à rendre vraisemblable le scénario imaginé<br/>
+<font point-size="5"><br/></font>
+<font point-size="10">(Nomination des personnages, effets de répétition et de dilution<br/>
+pour s'imprégner de l'hypothèse proposée, expression<br/>
+d'affects, scènes dialoguées, personnages secondaires)</font>>]
+c5[label=<En philosophie : une focalisation différente<br/>
+<font point-size="5"><br/></font>
+<font point-size="10">Formulation explicite d'une thèse et de questions<br/>
+Séparation nette entre la présentation du scénario et<br/>
+l'interprétation de ce scénario pour en tirer un argument</font>>]
+
+
+
+
+d1[label=<Shoemaker : l'expérience de pensée de<br/>
+la transplantation d'un cerveau dans<br/>
+<i>Self-Knowledge and Self-Identity</i><br/>
+Hamilton : idem (<i>Les Rois des étoiles</i>)>]
+d2[label="Toujours une différence de longueur,
+mais S. propose une véritable petite
+histoire avec des effets de réel
+(nomination, expression d'affects,
+saynète), et des éléments de vraisemblance"]
+d3[label="Cependant le discours
+philosophique conserve
+ses spécificités"]
+d4[label=<Il y a parfois introduction en<br/>
+philosophie de courts discours avec<br/>
+des caractéristiques littéraires, et<br/>
+certaines fictions littéraires introduisent<br/>
+du discours philosophique dans le roman<br/>
+(Ex. : Greg Egan, <i>La cité des permutants</i>)>]
+
+e1[label=<John Locke : l'homme du jour et l'homme de la nuit<br/>
+Stevenson : <i>The Strange Case of Dr Jekyll and Mr Hyde</i>>]
+e2[label="Rapprochement suggéré par Etienne Balibar,
+mais des différences : dans la nouvelle de Stevenson,
+il n'y a pas rupture de la conscience et de la mémoire,
+il s'agit de deux personnes dans un même esprit"]
+e3[label="Dans le roman de Stevenson, il y a un véritable
+questionnement philosophique, sur la conscience
+et la responsabilité, qui anime le récit"]
+
+f1[label=<L'expérience de pensée en philosophie :<br/>
+<font point-size="5"><br/></font>
+<font point-size="10">
+– Examen plus superficiel et plus orienté du scénario<br/>
+– Souci d'explicitation des thèses et des arguments<br/>
+– Séparation entre le moment imaginatif et le<br/>
+moment argumentatif, et rationalité privilégiée</font>>]
+f2[label=<Le récit de science-fiction :<br/>
+<font point-size="5"><br/></font>
+<font point-size="10">
+– Développement et approndissement<br/>
+du scénario et de ses conséquences<br/>
+– Thèses généralement implicites, ou<br/>
+formulées sous forme de questions ouvertes<br/>
+– Abondance des effets de réel et de vraisemblance</font>>]
+
+edge[penwidth=0.5;arrowhead=none;color=snow4]
+a->{{rank=same;a1->a2[style=invis;minlen=1]}}
+{{rank=same;b1->b2[style=invis;minlen=1]}}->b[dir=back;arrowtail=none]
+c->{{rank=same;c1->c2->c3->c4->c5[style=invis;minlen=1]}}
+{{rank=same;d1->d2->d3->d4[style=invis;minlen=1]}}->d[dir=back;arrowtail=none]
+e->{{rank=same;e1->e2->e3[style=invis;minlen=1]}}
+{{rank=same;f1->f2[style=invis;minlen=1]}}->f[dir=back;arrowtail=none]
+edge[color=red;penwidth=0.2;arrowhead=empty;constraint=false]
+
+}
+
+
+
+
+
