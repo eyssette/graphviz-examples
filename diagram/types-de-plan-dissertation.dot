@@ -1,0 +1,114 @@
+digraph G {
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+node[style="rounded,filled"]
+
+// NIVEAU 1
+node[fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Types
+de plan"]
+
+
+
+
+// NIVEAU 2
+node[fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="En trois
+parties"]    
+b2[label="En deux
+parties"]
+}[headport=w;minlen=1]
+
+{rank=same;b1->b2[minlen=21;style=invis]}
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->{c1,c2,c3,c6,c7}[headport=w]
+c1[label="Procès"]
+c2[label="Procès +
+2e couche"]
+c3[label="Procès +
+petit malin"]
+
+b2->{c4, c5}[headport=w]
+c4[label="Procès"]
+c5[label="Petit
+malin"]
+
+
+c6[label="2e couche"]
+c7[label="Petit malin"]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+c1->{d1,d2,d3}[arrowhead=none;minlen=2]
+c2->{d4,d5}[arrowhead=none;minlen=2]
+c3->d6[arrowhead=none;minlen=2]
+c4->d7[arrowhead=none;minlen=2]
+c5->d8[arrowhead=none;minlen=2]
+c6->d9[arrowhead=none;minlen=2]
+c7->d10[arrowhead=none;minlen=2]
+d1[label=< <font color="darkgreen">R1</font> → <font color="red"><s>R1</s></font><font color="darkgreen">  R2</font> → <font color="red"><s>R2</s></font> <font color="darkgreen">R3</font> >]
+d2[label=< <font color="darkgreen">R1</font> → <font color="red"><s>R1</s></font><font color="darkgreen">  R2</font> → <font color="red"><s>R2</s></font> <font color="darkgreen">R1<sup>+</sup></font> >]
+d3[label=< <font color="darkgreen">R1</font> → <font color="red"><s>R1</s></font>  → <font color="darkgreen"> R2</font> >]
+
+
+
+d4[label=< <font color="darkgreen">R1</font> → <font color="red"><s>R1</s></font><font color="darkgreen">  R2</font> → <font color="darkgreen">R2<sup>+</sup></font> >]
+d5[label=< <font color="darkgreen">R1</font> → <font color="darkgreen">R1<sup>+</sup></font> → <font color="red"><s>R1</s> <s>R1</s><sup>+</sup></font><font color="darkgreen">  R2</font> >]
+
+d6[label=< <font color="blue2"><sub>s1</sub>[ </font><font color="darkgreen">R1</font> → <font color="red"><s>R1</s></font><font color="darkgreen">  R2</font><font color="blue2"> ]</font> → <font color="blue2"><sub>s2</sub>[ </font><font color="darkgreen">R3</font><font color="blue2">  ]</font> >]
+
+d7[label=< <font color="darkgreen">R1</font> → <font color="red"><s>R1</s></font><font color="darkgreen">  R2</font> >]
+
+d8[label=< <font color="blue2"><sub>s1</sub>[ </font><font color="darkgreen">R1</font> <font color="blue2"> ]</font> → <font color="blue2"><sub>s2</sub>[ </font><font color="darkgreen">R2</font><font color="blue2">  ]</font> >]
+
+d9[label=< <font color="darkgreen">R1</font> → <font color="darkgreen">R1<sup>+</sup></font> → <font color="darkgreen">R1<sup>++</sup></font> >]
+
+d10[label=< <font color="blue2"><sub>s1</sub>[ </font><font color="darkgreen">R1</font> <font color="blue2"> ]</font> → <font color="blue2"><sub>s2</sub>[ </font><font color="darkgreen">R2</font><font color="blue2">  ]</font> → <font color="blue2"><sub>s3</sub>[ </font><font color="darkgreen">R3</font><font color="blue2">  ]</font> >]
+
+{rank=same;c1->c2[minlen=7;style=invis]}
+{rank=same;c2->c3[minlen=4;style=invis]}
+{rank=same;c3->c6[minlen=4;style=invis]}
+{rank=same;c6->c7[minlen=1;style=invis]}
+{rank=same;c7->c4[minlen=5;style=invis]}
+{rank=same;c4->c5[minlen=2;style=invis]}
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
