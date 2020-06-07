@@ -11,21 +11,20 @@ Accéder directement aux images au format svg : https://github.com/eyssette/grap
 
 ## Schémas type “carte mentale”
 
-https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+diagram
+https://github.com/eyssette/graphviz-examples/tree/master/diagram
 
 ## Schémas en arbre d'un raisonnement
 
-https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+argument
+https://github.com/eyssette/graphviz-examples/tree/master/argument
 
 ## Synthèse des idées d'un article
 
-https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+summary
+https://github.com/eyssette/graphviz-examples/tree/master/summary
 
 ## Succession de conjectures et de réfutations
 
-https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+conjectures
-
+https://github.com/eyssette/graphviz-examples/tree/master/conjectures-and-refutations
 
 ## Débats
 
-https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+debating
+https://github.com/eyssette/graphviz-examples/tree/master/debating
