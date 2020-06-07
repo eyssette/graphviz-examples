@@ -1,0 +1,172 @@
+digraph G {
+// Template : argument
+// Usage : cours sur la morale, critique du relativisme moral culturel
+
+bgcolor=white
+pad=0.3
+//ratio=0.75
+layers="argument:objections:remarques:remarques+objections:all"
+//layerselect="argument"
+//layerselect="remarques"
+//layerselect="objections"
+layerselect="remarques+objections"
+//bgcolor=grey90
+//pad=0.3
+style=filled
+edge[minlen=6;xlabel="par
+conséquent … ";fontcolor=grey40;fontsize=10]
+splines=curved
+//splines=spline // (si les flèches passent sous une bulle)
+ranksep=0.1
+
+// Objections
+// Si on veut mettre "objection" sur les flèches :
+// edge[labelfontcolor=red;labelfontsize=10;headlabel="objection    \n "] 
+node[shape=rect;style="rounded";layer="objections,remarques+objections";color=red2;fillcolor=white;fontcolor=black;penwidth=1;margin=0.15]
+edge[layer="objections,remarques+objections";xlabel="
+objection ! ";minlen=5]
+// Si on veut faire une objection à un lien entre prémisses, il faut utiliser un "point" intermédiaire
+// point[shape=point;width=0]
+// ->point[arrowhead=none]
+// {rank=same;o1->}
+// {rank=same;->o1[dir=back]}
+// o1[label=""]
+
+0[style=invis;shape=plaintext;label=""]
+
+
+
+
+// Lien objection->prémisse
+node[shape=rect;style="rounded,filled";fillcolor=white;layer="argument,remarques,objections,remarques+objections";margin=0.15;color=black;fontcolor=black;penwidth=1]
+edge[color=red3;minlen=6;xlabel="
+objection !";penwidth=0.8]
+// o1->p1[dir=back]
+
+
+{rank=same;C->o1[tailport=e;headport=w]}
+
+0->o2[style=invis]
+{rank=same;o2->p1[dir=back]}
+
+{rank=same;p1->o3}
+
+
+o1[label="La diversité des
+croyances n'implique
+pas l'absence de vérité";color=red2]
+
+
+o2[label="La diversité
+des croyances
+morales n'est pas
+si importante";color=red2]
+
+o3[label="Le relativisme culturel
+peut conduire à une
+conception stéréotypée,
+trop homogène et trop
+figée d'une culture";color=red2]
+
+
+
+// Justification des objections
+node[style="rounded,filled";fillcolor=white;layer="objections,remarques+objections";fontcolor=black;color=green4;penwidth=1;margin=0.1]
+edge[color=green4;xlabel="par
+conséquent …";penwidth=0.8]
+// j1[label=""]
+
+
+
+j1[label="Beaucoup de désaccords
+moraux sont en fait
+des désaccords
+non fondamentaux"]
+j1->o2
+
+j2[label="Il y a beaucoup de
+croyances morales
+qui sont partagées"]
+j2->o2[tailport=s]
+
+
+
+// Remarques
+node[layer="remarques,remarques+objections";color=blue4;shape=box;style=filled;margin=0.1;fontcolor=black;penwidth=0.8;fontsize=11]
+edge[layer="remarques,remarques+objections";color=blue4;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+
+r1[label="Déf. : « Désaccord moral
+non fondamental »
+= désaccord qui a sa source
+dans un désaccord sur
+des croyances non morales"]
+
+// Lien remarque->prémisse
+node[shape=rect;style="rounded,filled";fillcolor=white;layer="argument,remarques,objections,remarques+objections";margin=0.15;color=black;fontcolor=black;penwidth=1]
+r1->j1[minlen=3]
+
+
+subgraph cluster_0 {
+newrank=true
+margin=25
+bgcolor=grey90
+style=rounded
+color=grey50
+node[fontcolor=black;color=black;penwidth=1;layer="argument,remarques,objections,remarques+objections"];
+edge[color=black;xlabel="par
+conséquent …";fontcolor=grey40;minlen=6;style="";arrowhead="";penwidth=1;layer="argument,remarques,objections,remarques+objections"]
+
+// ===============================================================================
+// CODES POUR LES PREMISSES LIÉES (il suffit de supprimer un // ci-dessous et de copier le code correspondant pour lier 2 prémisses regroupées sous un "{}")
+//PL1[width=3.5;label="";shape=underline;fillcolor=grey88;height=0;margin=0;color=black]
+// ->PL1[style="invis";minlen=1]
+//PL2[width=4;label="";shape="underline" ; fillcolor=grey88 ; height=0 ; margin=0;color=black]
+// ->PL2[style="invis";minlen=1]
+// PL3[width=5;label="";shape="underline" ; fillcolor=grey88 ; height=0 ; margin=0]
+// ->PL3[style="invis";minlen=1]
+// PL4[width=5;label="";shape=underline;fillcolor=grey88;height=0;margin=0]
+// ->PL4[style="invis";minlen=1]
+
+
+// MISE EN PAGE 
+// Aller à la ligne tous les 3-4-5 mots dans les bulles, ou bien mettre "\n"
+// ["constraint=false"]  : à tester à côté d'une flèche si problème avec le rendu
+// {rank=same;}   : pour forcer l'affichage sur une même ligne de deux bulles
+// dir=back  : pour placer une flèche dans l'autre sens (et forcer l'affichage des bulles dans un ordre particulier)
+// On peut utiliser des bulles invisibles pour forcer les bulles à se placer comme on le souhaite :
+// VIDE1[style=invis]
+//vide1[style=invis;width=0;shape=plaintext;label=" "]
+//VIDE2[style=invis]
+//VIDE3[style=invis]
+// penser également à "headport=n" pour une flèche mal positionnée
+// numéroter les prémisses: ;xlabel=<<FONT POINT-SIZE="9">1</FONT>>
+// Conséquences de la conclusion : c1[label="Conséquence"style="filled";fillcolor=grey28;fontcolor=white;shape=ellipse;margin=0.05;fontsize=14]
+// ===============================================================================
+
+// Argument
+node[shape=rect;style="rounded,filled";fillcolor=white;layer="argument,remarques,objections,remarques+objections";margin=0.15]
+// p1[label=""]
+
+p1[label="Les croyances morales
+sont différentes selon la
+culture des individus"]
+
+p1->C
+
+
+// Remarques
+node[layer="remarques,remarques+objections";color=blue;shape=box;style=filled;margin=0.05]
+edge[layer="remarques,remarques+objections";color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+
+
+// Conclusion
+C[label="Il n'y a pas de
+vérité en morale";fillcolor=black;fontcolor=white;color=black;shape=ellipse;fontsize=18]
+}
+
+}
+}
+
+
