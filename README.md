@@ -9,9 +9,16 @@ Voici des exemples de schémas que j'ai créés avec ces modèles.
 
 ## Schémas type “carte mentale”
 
+https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+diagram
 
 ## Schémas en arbre d'un raisonnement
 
+https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+argument
+
 ## Synthèse des idées d'un article
 
+https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+summary
+
 ## Succession de conjectures et de réfutations
+
+https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+conjectures
