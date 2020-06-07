@@ -1,4 +1,6 @@
 digraph G {
+// Template : summary
+// Usage : cours sur l'identité personnelle, cours sur la philosophie de l'esprit, perso
 node[style="rounded,filled";shape=box;fillcolor=white;penwidth=0.4;margin=0.15]
 compound=true;
 rankdir=LR
@@ -156,8 +158,3 @@ e->{{rank=same;e1->e2->e3[style=invis;minlen=1]}}
 edge[color=red;penwidth=0.2;arrowhead=empty;constraint=false]
 
 }
-
-
-
-
-
