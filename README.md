@@ -22,3 +22,8 @@ https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+summary
 ## Succession de conjectures et de réfutations
 
 https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+conjectures
+
+
+## Débats
+
+https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+debating
