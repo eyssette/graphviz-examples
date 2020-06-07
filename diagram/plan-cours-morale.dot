@@ -1,0 +1,188 @@
+digraph G {
+// Template : diagram
+// Usage : plan du cours sur la morale
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=2]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Comment peut-on savoir
+ce qui est bien et
+ce qui est mal ?"]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16;margin=0.1]
+// b1[label=""]
+a1->b1[headport=n]
+a1->b2[headport=n]
+b1[label="On ne peut
+pas savoir";xlabel=<<FONT color="darkgreen">I</FONT>>]    
+b2[label="On peut
+savoir"]
+
+
+{rank=same;b1->vide1->b2[style=invis;minlen=12]}
+
+
+
+vide1[style=invis]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1[minlen=3]
+c1[label="… parce qu'il n'y a pas de connaissance
+morale, mais seulement des croyances
+morales, relatives à chaque culture"]
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style="filled,rounded";fillcolor=grey78;shape=box;margin=0.15]
+// [arrowhead=none]
+// bc1[label=""]
+
+b2->{
+bc1[label=<… grâce à certains sentiments<br/>
+<FONT POINT-SIZE="14" COLOR="grey15"><br/>(= une morale de la sensibilité)</FONT>>;xlabel=<<FONT color="darkgreen">II</FONT>>]
+bc2[label=<… grâce à l'usage de notre raison<br />
+<FONT POINT-SIZE="14" COLOR="grey15"><br/>(= une morale de la raison)</FONT>>]
+}
+
+{rank=same;c1->bc1[style=invis;minlen=6]}
+
+bc2->{bcc1,bcc2}
+bcc1[label=<… en réfléchissant aux<br/>
+conséquences de nos choix<br/>
+<FONT POINT-SIZE="14" COLOR="grey15"><br/>(= une morale des conséquences)</FONT>>;xlabel=<<FONT color="darkgreen">III </FONT>>]
+bcc2[label=<… en réfléchissant aux<br/>
+principes de nos choix<br/>
+<FONT POINT-SIZE="14" COLOR="grey15"><br/>(= une morale des principes)</FONT>>;xlabel=<<FONT color="darkgreen">IV </FONT>>]
+
+
+{rank=same;bc1->bc2[style=invis;minlen=10]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+bc1->c2
+c2[label="… parce que l'empathie
+permet de saisir ce qui est
+mal et ce qui est bien"]
+
+{rank=same;c2->bcc1[style=invis]}
+
+bcc1->c3[minlen=3]
+c3[label="… parce qu'on peut évaluer le bien et le mal
+d'après un calcul des conséquences,
+global et le plus objectif possible"]
+
+
+bcc2->c4
+c4[label="… parce que le devoir moral
+consiste à respecter des
+grands principes moraux"]
+
+{rank=same;bcc1->bcc2[style=invis;minlen=3]}
+
+{rank=same;c2->bcc1[style=invis;minlen=5]}
+
+{rank=same;c3->c4[style=invis;minlen=3]}
+
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+c1->e1[minlen=1;style=invis]
+e1[label=< <B>Le relativisme culturel</B><BR /><BR />Montaigne sur la barbarie<BR />Lévi-Strauss et l'ethnocentrisme>]
+
+
+c2->e2[minlen=1;style=invis]
+e2[label=< <B>Rousseau</B><BR /><BR />La pitié>]
+
+
+c3->e3[minlen=1;style=invis]
+e3[label=< <B>Bentham</B><BR /><BR />L'utilitarisme>]
+
+c4->e4[minlen=1;style=invis]
+e4[label=< <B>Kant</B><BR /><BR />Une morale de l'autonomie (≠ de l'autorité)<br />L'impératif catégorique, le test <br/>d'universalisation et la dignité>]
+
+// Remarques
+node[color=grey40;shape=box;style="filled";margin=0.07;fontcolor=black;fontsize=15;fillcolor=grey94;penwidth=0.4]
+edge[color=grey40;arrowhead="none";xlabel="";penwidth=0.4]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+e1->r1[minlen=1]
+e1->r2[minlen=1]
+r1[label=<<i>Pertinence :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ le dévoilement<br/>
+des femmes à<br/>
+Alger en 1958>]
+r2[label=<<i>Limites :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ les hyènes<br/>
+du Malawi<br/>
+▻ l'excision>]
+
+e2->r3[minlen=2]
+e2->r4[minlen=2]
+r3[label=<<i>Pertinence :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ le film<i>Moi,<br/>
+Daniel Blake</i><br/>
+▻ les génocides<br/>>]
+r4[label=<<i>Limites :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ Le cas<br/>
+du cochon<br/>
+Esther>]
+
+e3->r5[minlen=1]
+e3->r6[minlen=1]
+r5[label=<<i>Pertinence :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ les politiques de réduction<br/>
+des risques liés aux drogues<br/>
+▻ l'homoparentalité<br/>
+▻ la viande industrielle<br/>>]
+r6[label=<<i>Limites :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ le film<br/>
+<i>Mesure d'urgence</i><br/>
+▻ le film<i>I, robot</i>>]
+
+e4->r7[minlen=1]
+e4->r8[minlen=1]
+r7[label=<<i>Pertinence :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ le film<i>Le Loup<br/>
+de Wall-Street</i><br/>
+▻ le film<i>Elephant Man</i>>]
+r8[label=<<i>Limites :</i><br/>
+<FONT point-size="8"><br/></FONT>
+▻ Péguy : « Le kantisme a les mains<br/>
+pures, mais il n'a pas de mains »<br/>
+▻ l'affaire du lancer de nain>]
+
+}
