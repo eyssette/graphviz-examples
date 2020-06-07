@@ -1,0 +1,116 @@
+digraph G {
+// Template : diagram
+// Usage : méthode pour la construction d'un paragraphe de dissertation, modèle ARES
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=darkgreen;fontcolor=white; fontsize=16]
+// b1[label=""]
+b1[label="A"]
+b2[label="R"]
+b3[label="E"]
+b4[label="S"]
+
+b1->b2->b3->b4[arrowhead=vee]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=darkgreen;fontsize=12]
+// c1[label=""]
+edge[color=darkgreen]
+{rank=same;b1->c1[arrowhead=none;minlen=3]}
+c1[label="On formule par soi-même
+l'argument, à partir de
+l'analyse des notions "]
+{rank=same;b2->c2[arrowhead=none;minlen=3]}
+c2[label="On analyse une référence
+théorique à un auteur
+(pas plus d'une référence)"]
+{rank=same;b3->c3[arrowhead=none;minlen=3]}
+c3[label="On analyse un exemple
+concret et précis (pas plus
+d'un exemple précis)"]
+{rank=same;b4->c4[arrowhead=none;minlen=2]}
+c4[label="On fait explicitement le lien
+avec le sujet (en reprenant les
+termes de la question posée)"]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50;fontsize=9]
+// d1[label=""]
+{rank=same;c1->d1[arrowhead=none;minlen=2]}
+{rank=same;c2->d2[arrowhead=none;minlen=2]}
+{rank=same;c3->d3[arrowhead=none;minlen=3]}
+
+
+d1[label="Attention, on ne passe pas trop
+vite à la suite : on prend le temps
+de construire son raisonnement
+étape par étape, en expliquant 
+bien le sens de chaque étape"]
+
+d2[label="– Si on n'a pas de référence,
+on développe davantage
+l'argument et l'exemple
+– On montre bien l'intérêt de
+la référence pour le sujet"]
+d3[label="– Si on n'a pas d'exemple,
+on développe davantage
+l'argument et la référence
+– Un exemple inventé est
+acceptable, mais il vaut
+mieux un exemple issu de
+votre culture, et encore
+mieux un exemple classique
+– On montre bien l'intérêt
+de l'exemple pour le sujet"]
+
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98;fontsize=16]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+{rank=same;e1->b1[minlen=1;style=invis;weight=10]}
+e1[label="Argument"]
+{rank=same;e2->b2[minlen=1;style=invis;weight=10]}
+e2[label="Référence"]
+{rank=same;e3->b3[minlen=1;style=invis;weight=10]}
+e3[label="Exemple"]
+{rank=same;e4->b4[minlen=1;style=invis;weight=10]}
+e4[label="Synthèse"]
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
+
