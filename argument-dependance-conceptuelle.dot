@@ -1,4 +1,6 @@
 digraph G {
+// Template : argument
+// Usage : cours sur la vérité, cours sur le relativisme de la vérité
 //ratio=0.75
 layers="argument:objections:remarques:remarques+objections:all"
 //layerselect="argument"
