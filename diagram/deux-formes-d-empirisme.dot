@@ -1,0 +1,123 @@
+digraph G {
+// Template : diagram
+// Usage : cours sur l'épistémologie
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey97
+pad=0.4
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+ratio=0.75
+
+// NIVEAU 1
+node[style="filled"; fillcolor=12 ; fontcolor=white]
+// a1[label=""]
+
+a1[label="Une théorie scientifique
+est un ensemble de
+lois générales"]
+
+// NIVEAU 2
+node[style="filled, rounded";fillcolor=red4;fontcolor=white]
+// b1[label=""]
+
+a1->b1[headport=n]
+b1[label="Pour découvrir une
+loi générale, il faut
+partir de l'expérience"]
+
+a1->b2[headport=n]
+b2[label="Pour justifier une
+loi générale, il faut
+partir de l'expérience"]
+
+{rank=same;b1->b2[style=invis]}
+
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+//
+b1->c1
+c1[label="À partir de l'accumulation d'observations
+de faits particuliers, on essaie de dégager une
+régularité en trouvant une formule générale
+qui permet de rendre compte des données"]
+
+b2->c2
+c2[label="À partir d'un grand nombre de
+situations variées dans lesquelles
+la loi est confirmée, on peut en tirer,
+par induction, que la loi est justifiée"]
+
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+c1->d1
+d1[label="L'expérience est
+première d'un point de vue
+chronologique, dans le temps"]
+
+c2->d2
+d2[label="L'expérience est première d'un point
+de vue logique, dans le raisonnement
+qui cherche à justifier une théorie"]
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey97]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+b1->e1[minlen=1;style=invis]
+e1[label="= empirisme de
+la découverte"]
+
+b2->e2[minlen=1;style=invis]
+e2[label="= empirisme de
+la justification"]
+
+d1->e3[minlen=1;style=invis]
+e3[label="L'expérience est l'origine
+de nos connaissances"]
+
+d2->e4[minlen=1;style=invis]
+e4[label="L'expérience est le fondement
+de nos connaissances"]
+
+// Remarques
+node[color=black;shape=box;style=filled;margin=0.1;fontcolor=black;fontsize=10]
+edge[color=black;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+r1[label="La science ne consiste pas en une
+simple compilation de faits :
+il s'agit de rechercher des
+lois générales pour expliquer
+et pour prédire des faits"]
+{rank=same;a1->r1}
+
+}
+
+
+
+
+
