@@ -1,4 +1,5 @@
 digraph G {
+// Template : diagram
 //rankdir=LR
 splines=true
 //splines=curved
