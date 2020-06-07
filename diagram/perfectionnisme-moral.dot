@@ -1,0 +1,98 @@
+digraph G {
+// Template : diagram
+// Usage : cours sur le bonheur et le désir
+// Référence : perfectionnisme moral
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Le perfectionnisme
+moral"]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->b1[headport=n]
+
+b1[label="La vie bonne est
+une vie accomplie :
+il s'agit de chercher
+à se perfectionner"]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="La vie accomplie
+repose sur l'exercice et
+le développement de
+ses facultés"]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+c1->d1
+d1[label="L'exercice et le développement
+de ses facultés nous expose davantage
+à la souffrance, mais permet aussi de
+parvenir à des plaisirs supérieurs"]
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+{rank=same;b1->r1}
+{rank=same;c1->r2}
+{rank=same;d1->r3}
+
+r1[label="Le perfectionnisme ancien visait un idéal
+universel d'excellence, mais dans le
+perfectionnisme moderne, c'est le
+développement de son individualité
+qui est valorisé (il n'y a pas une
+seule norme possible de l'excellence)"]
+r2[label="L'accomplissement peut prendre
+plusieurs formes, selon les facultés qui
+seront développées : l'usage du corps, les
+émotions, l'imagination, l'intelligence,
+la communication sociale …"]
+r3[label="La vie heureuse ne se réduit pas à
+une somme de plaisirs. Ce qui compte, ce
+n'est pas la quantité, mais la qualité des
+plaisirs, et nous ne désirons pas seulement
+une vie pleine de satisfactions, nous voulons
+une vie profonde, riche et pleine de sens."]
+
+
+}
+
