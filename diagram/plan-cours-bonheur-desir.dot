@@ -1,0 +1,156 @@
+digraph G {
+// Template : diagram
+// Usage : plan du cours sur le bonheur et le désir
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Le bonheur n'est-il
+qu'un idéal ?"]
+
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->b1[headport=n;label="oui";fontcolor=grey50]
+a1->b2[headport=n;label="non";fontcolor=grey50]
+b1[label="Le bonheur semble
+être impossible";xlabel=<<FONT color="darkgreen">I</FONT>>]    
+b2[label="Le bonheur n'est
+pas impossible"]
+
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="… parce qu'on
+ne sait pas
+vraiment ce
+qu'on recherche"]
+b1->c2
+c2[label="… parce que la
+nature même du
+désir nous empêche
+de parvenir au bonheur"]
+b1->c3
+c3[label="… parce que nous
+ne pouvons rien
+face au tragique
+de l'existence"]
+
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style="filled,rounded";fillcolor=grey78;shape=box;margin=0.15]
+// [arrowhead=none]
+// bc1[label=""]
+
+b2->{
+bc1[label="On peut parvenir au
+bonheur grâce aux
+sagesses antiques";xlabel=<<FONT color="darkgreen">II</FONT>>]
+bc2[label="On peut parvenir au
+bonheur, mais ce
+n'est pas grâce aux
+sagesses antiques";xlabel=<<FONT color="darkgreen">III</FONT>>]
+}
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+bc1->{c4,c5,c6}
+c4[label="… parce que le
+bonheur ne peut certes
+pas faire l'objet d'une
+science, mais il peut
+faire l'objet d'un
+certain art de vivre"]
+c5[label="… parce que seuls
+certains désirs
+sont insatiables
+et que nous pouvons
+maîtriser nos désirs"]
+c6[label="… parce que nous
+pouvons affronter
+le tragique de
+l'existence et
+accepter la réalité"]
+
+bc2->{c7,c8}
+c7[label="… parce que le simple
+plaisir d'exister ne
+suffit pas : nous
+sommes en quête
+d'une vie accomplie
+et pleine de sens"]
+c8[label="… parce qu'il ne
+faut pas seulement
+accepter la réalité :
+il s'agit de s'inscrire
+pleinement dans
+le réel"]
+
+
+
+{rank=same;c3->bc1[style=invis;minlen=4]}
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+e1[label=< <B>Kant</B><BR /><BR />Le bonheur comme<BR />idéal de l'imagination >]
+c1->e1[minlen=1;style=invis]
+
+c2->e2[minlen=1;style=invis]
+e2[label=< <B>Platon</B><BR /><BR />Le désir comme manque<BR />et la pléonexie >]
+
+c3->e3[minlen=1;style=invis]
+e3[label=< <B>Pascal</B><BR /><BR />La misère de l'être humain<BR />et le divertissement >]
+
+c4->e4[minlen=1;style=invis]
+e4[label="La notion de
+sagesse dans
+l'Antiquité"]
+
+c5->e5[minlen=1;style=invis]
+e5[label=< <B>Épicure</B><BR /><BR />Le simple<br/> plaisir <BR />d'exister>]
+
+c6->e6[minlen=1;style=invis]
+e6[label=< <B>Le stoïcisme</B><BR /><BR />Être comme<br/>un roc face<br/>aux vagues>]
+
+
+c7->e7[minlen=1;style=invis]
+e7[label=< <B>Mill</B><BR /><BR />Le perfectionnisme<br/>moral >]
+
+c8->e8[minlen=1;style=invis]
+e8[label=<Le désir <br/>comme force<br/><i>vs.</i>  le désir<br/>comme manque<br/>
+<br/><b>Spinoza :</b><br/>le conatus>]
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
