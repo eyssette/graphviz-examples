@@ -1,0 +1,109 @@
+digraph G {
+// Template : diagram
+// Référence : « Responding to Morally Flawed Historical Philosophers and Philosophies »
+// https://1000wordphilosophy.com/2018/07/17/responding-to-morally-flawed-historical-philosophers-and-philosophies/
+
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a0[label="Certains auteurs ont tenu
+des propos, ou ont eu des
+attitudes moralement
+condamnables …"]
+a0->a1
+a1[label="… Que faut-il
+faire ?"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Différents
+aspects du
+problème"]    
+b2[label="Quelques
+réponses
+possibles"]
+}[headport=w]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->{c1,c2,c3, c4, c5}
+c1[label="Faut-il séparer l'auteur et l'œuvre ?
+Les défauts moraux d'un auteur
+condamnent-ils toute son œuvre ?"]
+c2[label=<La focalisation sur 
+les défauts moraux de<br/>
+l'auteur, conduit-elle 
+à une simple attaque
+<i>ad <br/>hominem</i>, sans 
+discussion des idées 
+elles-mêmes ?>]
+c3[label="Les affirmations moralement condamnables
+relèvent-elle des idées mineures de l'auteur
+et non des axes majeurs de sa pensée ?"]
+c4[label="Les propos ou attitudes moralement condamnables
+sont-ils fondés sur des croyances fausses que
+l'auteur aurait pu réviser s'il avait eu accès
+aux connaissances que nous avons ?"]
+c5[label="Peut-on pardonner les fautes passées ? D'autres
+aspects de l'œuvre d'un auteur peuvent-il rattraper
+ses propos ou attitudes moralement condamnables ?"]
+
+b2->{c6, c7, c8, c9}
+c6[label="Se focaliser sur ce qui est intéressant dans
+l'œuvre et oublier l'existence des propos
+ou attitudes moralement condamnables"]
+c7[label="Boycotter et excommunier
+l'auteur et son œuvre"]
+c8[label="Juger l'auteur d'après
+la morale de l'époque"]
+c9[label="Montrer que l'œuvre ne peut être condamnée
+en raison des défauts moraux de l'auteur, dans la
+mesure où l'œuvre elle-même peut être mobilisée
+pour critiquer et pour dépasser ces défauts"]
+
+{rank=same;c5->c6[minlen=4;style=invis]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
+
