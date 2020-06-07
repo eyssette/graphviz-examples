@@ -1,0 +1,130 @@
+digraph G {
+// Template : diagram
+// Usage : cours d'introduction à la philosophie
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Introduction à
+la philosophie"]
+
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Penser,
+réfléchir"]
+b2[label="Trois
+démarches
+essentielles"]    
+b3[label="Une exigence
+de contenu"]
+}[headport=n]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="Cf. les moqueries
+classiques"]
+
+b2->{c2,c3,c4}
+c2[label="Conceptualiser"]
+c3[label="Problématiser"]
+c4[label="Argumenter"]
+
+b3->c5
+c5[label="Mobiliser ses
+connaissances"]
+
+{rank=same;c1->c2[style=invis]}
+{rank=same;c4->c5[style=invis]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+c2->d1
+d1[label="Qu'est-ce que
+cela veut dire ?"]
+c3->d2
+d2[label="Est-ce vraiment
+si simple ?"]
+c4->d3
+d3[label="Comment peut-on
+défendre cette idée ?"]
+
+c5->d4
+d4[label=<Références théoriques<br/>
+<font point-size="12">+<br/></font>
+Exemples concrets>]
+
+
+{rank=same;d3->d4[style=invis]}
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+c1->e1[minlen=1;style=invis]
+
+e1[label=<L'histoire de Thalès ;<br/>
+<i>Les Nuées</i> d'Aristophane>]
+
+d1->e2[minlen=1;style=invis]
+e2[label="Regarder ses
+propres lunettes"]
+
+d2->e3[minlen=1;style=invis]
+e3[label=<<b>Socrate</b><br/>
+<br/>
+Être comme un<br/>
+taon qui pique un<br/>
+cheval un peu mou>]
+
+d3->e4[minlen=1;style=invis]
+e4[label=<<b>Épictète</b><br/>
+<br/>
+Placer les idées<br/>
+sur la balance>]
+
+d4->e5[minlen=1;style=invis]
+e5[label=<<b>Kant</b><br/>
+Penser par soi-même<br/>
+≠ penser tout seul<br/>
+<br/>
+<b>Épictète</b><br/>
+Digérer et non<br/>
+pas vomir ce<br/>
+qu'on a appris>]
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
