@@ -1,0 +1,348 @@
+digraph G {
+// Template : summaru
+// Usage : cours sur la justice sociale, cours sur la philosophie politique, perso
+
+node[style="rounded,filled",shape=box,fillcolor=white,penwidth=0.4,margin=0.15];
+compound=true;
+rankdir=LR
+edge[minlen=2]
+labelloc="t";
+labeljust="c"
+label=<<br/><br/>
+<b>Nancy Fraser,  <i>  Qu'est-ce que la justice sociale ?</i><br/></b>
+<font point-size="5"><br/></font>Chapitre 2 : Penser la justice sociale : questions<br/>de théorie morale et de théorie de la société
+
+
+<br/><br/>
+<br/>>;
+
+
+subgraph cluster{
+label=""
+style="filled,rounded";
+margin=18
+fillcolor=snow3;
+color=snow3;
+
+
+
+
+subgraph cluster_0 {
+margin=20
+style="filled,rounded";
+fillcolor=snow2;
+a[label="Il y a deux paradigmes de la justice :
+la redistribution et la reconnaissance"]
+//{rank=same;b->a[dir=back;minlen=4;penwidth=0.4]}
+//a->b[constraint=false;minlen=4;penwidth=0.4]
+}
+
+
+
+
+subgraph cluster_1 {
+margin=30
+style="filled,rounded";
+fillcolor=snow2;
+b[label="Ces deux paradigmes
+sont souvent mal compris"]
+c[label="Ces deux paradigmes partent de
+conceptions différentes de l'injustice"]
+d[label="Les remèdes proposés sont
+également différents"]
+e[label="Les représentations des groupes
+victimes de l’injustice divergent"]
+f[label="Les différences entre les groupes
+n'ont pas la même signification"]
+{rank=same;f->e->d->c->b[dir=back,minlen=4,enwidth=0.4]}
+a->b[constraint=false,minlen=4,penwidth=0.4]
+}
+
+subgraph cluster_2 {
+margin=30
+style="filled,rounded";
+fillcolor=snow2;
+g[label="Redistribution et reconnaissance sont
+souvent posées comme des alternatives
+qui s’excluent mutuellement"]
+h[label="Il s’agit néanmoins
+d’une fausse opposition"]
+i[label="Il faut développer une approche qui
+intègre les deux dimensions de la justice."]
+{rank=same;i->h->g[dir=back,minlen=4,penwidth=0.4]}
+g->f[constraint=false,minlen=4,penwidth=0.4,dir=back]
+}
+
+subgraph cluster_3 {
+margin=30
+style="filled,rounded";
+fillcolor=snow2;
+j[label="Du point de vue de la théorie morale,
+l'importance de la reconnaissance ne dépend pas
+d'une conception particulière du bien :
+c'est une question de justice"]
+k[label="Mettre l’accent sur la problématique de
+la justice présente plusieurs avantages"]
+l[label="Les théories standards de la justice distributive
+ne rendent pas compte du problème de justice
+que pose le déni de reconnaissance"]
+m[label="Il faut proposer un nouveau cadre théorique
+et la notion de parité de participation
+doit en constituer le pivot normatif"]
+n[label="Cette conception bidimensionnelle de la
+justice englobe à la fois la redistribution et
+la reconnaissance sans réduire l’une à l’autre
+et sans tomber dans les travers de ces approches"]
+{rank=same;n->m->l->k->j[dir=back,minlen=4,penwidth=0.4]}
+j->i[constraint=false,minlen=4,penwidth=0.4,dir=back]
+}
+
+subgraph cluster_4 {
+margin=30
+style="filled,rounded";
+fillcolor=snow2;
+o[label="Du point de vue d'une théorie de la société,
+il est important d'historiciser la distinction entre
+distribution inique et déni de reconnaissance"]
+p[label="La société capitaliste rend possible un
+découplage partiel de la distribution
+économique et des structures de prestige"]
+q[label="Ni le culturalisme ni l’économisme
+ne sont adéquats pour comprendre
+la société capitaliste actuelle"]
+r[label="Il faut saisir à la fois la dimension
+économique et la dimension culturelle
+de la société contemporaine"]
+s[label="Pratiquement toutes les revendications
+de redistribution ont des effets en
+termes de reconnaissance"]
+t[label="Inversement, pratiquement toutes les 
+revendications de reconnaissance ont des effets
+sur la redistribution des ressources matérielles"]
+{rank=same;t->s->r->q->p->o[dir=back,minlen=4,penwidth=0.4]}
+o->n[constraint=false,minlen=4,penwidth=0.4,dir=back]
+}
+
+
+
+subgraph cluster_5 {
+color=snow3;
+conclusion[label="Conclusion : une approche qui unit redistribution
+et reconnaissance est nécessaire afin de comprendre
+et lutter contre les injustices contemporaines",penwidth=0.8]
+conclusion->t[dir=back,constraint=false,minlen=4,penwidth=0.4]
+}
+
+
+}
+
+
+
+node[penwidth=0.3,fontsize=12,color=snow4,fontcolor=grey5];
+a1[label="Le défi est de combiner le meilleur
+de la politique de redistribution et le
+meilleur de la politique de reconnaissance"]
+//a2[label=""]
+//a3[label=""]
+
+b1[label="Une politique de redistribution
+ne se réduit pas à une
+politique de classe"]
+b2[label="Une politique de reconnaissance
+ne se réduit pas à une politique
+de l'identité, qui se rapporterait à
+la sexualité, au genre ou à la race"]
+//b3[label=<Titre<br/>
+//<font point-size="5"><br/></font>
+//<font point-size="10">précision</font>>]
+
+c1[label="Le paradigme de la redistribution
+met l'accent sur les injustices socio-
+économiques, qu'il considère comme
+le produit de l'économie politique"]
+c2[label="Le paradigme de la reconnaissance cible
+les injustices qu'il considère comme
+culturelles, et comme le produit de
+modèles sociaux de représentation"]
+
+d1[label="Pour le paradigme de la redistribution,
+c'est une restructuration économique
+(redistribution des revenus, réorganisation
+de la division du travail, …)"]
+d2[label="Pour le paradigme de la reconnaissance,
+c'est le changement symbolique ou culturel
+(revalorisation des identités méprisées, 
+valorisation de la diversité culturelle, …)"]
+
+e1[label="Pour le paradigme de la redistribution,
+il s'agit de classes sociales, ou
+de groupes équivalents, définis
+d'abord en termes économiques"]
+e2[label="Pour le paradigme de la reconnaissance,
+les victimes d'injustice sont définies en
+fonction de l'estime, de l'honneur, du
+prestige moindre par rapport aux
+autres groupes de la société"]
+
+f1[label="Pour le paradigme de la redistribution,
+les différences sont des différenciations
+injustes qui devraient être abolies"]
+f2[label="Pour le paradigme de la reconnaissance,
+les différences sont des variations culturelles
+qui devraient être célébrées, ou des oppositions
+hiérarchiques construites discursivement
+qui devraient être déconstruites"]
+
+g1[label="Pour certains défenseurs de la redistribution
+le paradigme de la reconnaissance
+constitue une diversion contre-productive
+vis-à-vis des problèmes véritables,
+qui sont de nature économique"]
+g2[label="Pour certains défenseurs de la reconnaissance,
+le paradigme de la redistribution, dans la
+mesure où il est est aveugle à la différence,
+peut renforcer l’injustice en universalisant
+faussement les normes du groupe dominant"]
+
+h1[label="Tous les axes d’oppression dans la vie réelle
+sont mixtes : ils impliquent une distribution
+inique et un déni de reconnaissance"]
+h2[label="Le genre, la race, la sexualité et la classe
+ne sont pas isolés les uns des autres : les
+axes d’injustice se croisent en affectant
+les intérêts et les identités de chacun"]
+
+i1[label="Un tel projet soulève des problèmes complexes
+dans plusieurs champs : philosophie morale,
+théorie de la société, théorie politique,
+choix de stratégie politique"]
+i2[label="Ce chapitre examine seulement ces
+problèmes sous l'angle de la théorie
+morale et de la théorie de la société"]
+
+j1[label="Charles Taylor et Axel Honneth considèrent la
+reconnaissance comme un élément essentiel pour la
+réalisation de soi, ce qui fait dépendre la reconnaissance
+d'une forme particulière de conception du bien"]
+j2[label="Le problème du déni de reconnaissance est
+plutôt que des individus et des groupes ne
+sont pas considérés comme des partenaires
+à égalité dans l'interaction sociale"]
+
+k1[label="Cela permet de donner un poids
+normatif moralement contraignant aux
+prétentions à la reconnaissance"]
+k2[label=<Le déni de reconnaissance n'est pas un simple problème<br/>
+de vécu psychologique  : le déni est un tort que l'on peut<br/>
+objectiver et il repose sur des obstacles identifiables<br/>
+<font point-size="5"><br/></font>
+<font point-size="10">(L'approche psychologique peut se retourner contre<br/>
+la victime ou réduire le déni à une question de<br/>
+préjugés, de croyances qu'il faudrait policer)</font>>]
+k3[label="Si la reconnaissance est essentielle pour
+la réalisation de soi, tout le monde aurait
+un droit à une estime sociale égale, ce qui 
+fait perdre son sens à la notion d'estime"]
+
+l1[label="Tout déni de reconnaissance n’est pas l’effet
+d’une distribution inique, et pas davantage
+l’effet du couplage de cette distribution
+inique avec une discrimination légale"]
+l2[label="Les théories de la reconnaissance ne
+peuvent cependant pas prétendre proposer
+une théorie complète de la justice"]
+
+m1[label="Selon cette notion, la justice requiert des
+disposition sociales telles que chaque
+membre (adulte) de la société puisse
+interagir en tant que pair avec les autres"]
+m2[label="Il y a une condition objective de la parité de
+participation : les ressources matérielles
+doivent être distribuées de manière à assurer
+l’indépendance et la possibilité de s’exprimer"]
+m3[label="Il y a une condition intersubjective de la parité
+de participation : les modèles culturels
+expriment un égal respect pour tous et
+assurent l’égalité des chances dans
+la recherche de l’estime sociale"]
+
+n1[label="Elle permet de ne pas exclure dogmatiquement
+toute reconnaissance de ce qui distingue
+les personnes les unes des autres"]
+n2[label="Elle évite également la perspective
+selon laquelle tout le monde a toujours
+besoin de voir sa particularité reconnue"]
+n3[label="C'est une approche pragmatique et contextuelle :
+il y a des cas où la reconnaissance d'une spécificité
+est une condition à la participation paritaire, mais
+seules les revendications promouvant la parité
+de participation sont moralement justifiées"]
+
+o1[label="Il faut parvenir à comprendre pourquoi les luttes
+pour la reconnaissance sont devenues si centrales
+alors qu’on assiste à la marginalisation des
+luttes pour la redistribution qui ont pourtant
+longtemps dominé la vie sociale"]
+
+p1[label="Dans une société pré-étatique idéal-typique,
+il n’y a pas de distinction entre classes sociales
+et groupes statutaires : le déni de reconnaissance
+entraîne automatiquement une distribution inique"]
+p2[label="Dans une société qui serait complètement
+déterminée par le marché, la distribution inique
+entraînerait directement le déni de reconnaissance"]
+p3[label="La réalité concrète de la société capitaliste
+actuelle est plus complexe : des modèles de
+valeurs culturelles résistent partiellement au marché,
+et le statut ne dicte pas la position de classe"]
+
+r1[label="Ces deux dimensions ne sont pas des sphères
+séparées et autonomes : un dualisme substantialiste
+ne serait pas adéquat, car il y a un contenu
+culturel des processus économiques, et un
+contenu économique des pratiques culturelles"]
+r2[label="Il faut adopter un dualisme perspectiviste, afin de
+saisir les dimensions culturelles des problèmes
+et des politiques de justice distributive, et les
+dimensions économiques des problèmes et
+des politiques de la reconnaissance"]
+
+s1[label="Par exemple : les prestations destinées
+aux pauvres ont souvent tendance à stigmatiser
+leurs bénéficiaires comme déviants et parasites"]
+t1[label="Les réformes portant sur la reconnaissance ne
+peuvent réussir que si elles s’accompagnent
+de luttes pour la redistribution (exemple :
+les campagnes contre la prostitution)"]
+
+concl1[label="Il faut allier ce qui reste de valable
+dans la vision socialiste et ce qui semble
+justifié et attrayant dans la philosophie
+« postsocialiste » du multiculturalisme"]
+
+edge[penwidth=0.5,arrowhead=none,color=snow4]
+a->a1
+//a->{{rank=same;a1->a2[style=invis;minlen=1]}}
+{{rank=same;b1->b2[style=invis,minlen=1]}}->b[dir=back,arrowtail=none]
+c->{{rank=same;c1->c2[style=invis,minlen=1]}}
+{{rank=same;d1->d2[style=invis,minlen=1]}}->d[dir=back,arrowtail=none]
+e->{{rank=same;e1->e2[style=invis,minlen=1]}}
+{{rank=same;f1->f2[style=invis,minlen=1]}}->f[dir=back,arrowtail=none]
+g->{{rank=same;g1->g2[style=invis,minlen=1]}}
+{{rank=same;h1->h2[style=invis,minlen=1]}}->h[dir=back,arrowtail=none]
+i->{{rank=same;i1->i2[style=invis,minlen=1]}}
+{{rank=same;j1->j2[style=invis,minlen=1]}}->j[dir=back,arrowtail=none]
+k->{{rank=same;k1->k2->k3[style=invis,minlen=1]}}
+{{rank=same;l1->l2[style=invis,minlen=1]}}->l[dir=back,arrowtail=none]
+m->{{rank=same;m1->m2->m3[style=invis,minlen=1]}}
+{{rank=same;n1->n2->n3[style=invis,minlen=1]}}->n[dir=back,arrowtail=none]
+o->o1
+{{rank=same;p1->p2->p3[style=invis,minlen=1]}}->p[dir=back,arrowtail=none]
+r->{{rank=same;r1->r2[style=invis,minlen=1]}}
+s1->s
+t->t1
+concl1->conclusion
+
+edge[color=red,penwidth=0.2,arrowhead=empty,constraint=false]
+}
+
