@@ -1,0 +1,199 @@
+digraph G {
+// Template : diagram
+// Usage : plan sujet philosophie de l'esprit
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Peut-on réduire
+l'esprit au cerveau ?"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->b1[headport=n;label="non";fontcolor=grey50]
+a1->b2[headport=n;label="oui";fontcolor=grey50]
+a1->b3[headport=n;label="non";fontcolor=grey50]
+b1[label="L'esprit et le cerveau
+semblent être deux
+réalités distinctes"]    
+b2[label="Il semble préférable
+de comprendre l'esprit
+à partir du cerveau"]
+b3[label="On ne peut pas
+réduire l'esprit
+au cerveau"]
+
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="… parce que les
+propriétés d'un
+état mental et les
+propriétés d'un
+état physique
+sont radicalement
+différentes"]
+c2[label="… parce qu'on
+peut concevoir
+l'esprit sans
+le cerveau et
+le cerveau
+sans l'esprit"]
+
+b2->{c3,c4}
+c3[label="… parce que cela
+permet de parvenir
+à une conception
+non-mystérieuse
+de l'esprit"]
+c4[label="… parce que
+la réduction de
+l'esprit au cerveau
+est une hypothèse
+scientifique
+féconde"]
+
+b3->{c5,c6}
+c5[label="… parce que
+certains
+phénomènes
+ne sont pas
+expliqués par
+le matérialisme"]
+c6[label="… parce que l'esprit
+n'est pas une
+chose qu'on
+pourrait trouver
+quelque part"]
+
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style="filled,rounded";fillcolor=grey78;shape=box;margin=0.15]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50;fontcolor=grey10]
+// d1[label=""]
+
+c5->{d1,d2}[minlen=2]
+d1[label=<L'accès au sens<br/>
+<font point-size="4"><br/></font>
+<font point-size="14">(l'intentionnalité)</font>>]
+d2[label=<L'expérience<br/>
+vécue<br/>
+<font point-size="14">
+<font point-size="4"><br/></font>
+(les qualia)</font>>]
+c6->{d3,d4,d5}[minlen=1]
+d3[label="L'esprit n'est
+pas une
+chose"]
+d4[label="L'esprit
+est constitué
+par des
+rapports au
+monde"]
+d5[label="L'esprit
+est constitué
+par des
+rapports aux
+autres"]
+
+{rank=same;c4->c5[style=invis;minlen=2]}
+{rank=same;c5->c6[style=invis;minlen=3]}
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+b1->e0a[minlen=0;style=invis]
+e0a[label="=
+dualisme";margin=0]
+
+
+b2->e0b[minlen=0;style=invis]
+e0b[label="=
+matérialisme";margin=0]
+
+
+{rank=same;e0a->b2[style=invis;minlen=2]}
+{rank=same;e0b->b3[style=invis;minlen=2]}
+
+c1->e1[minlen=1;style=invis]
+e1[label=< <B>Descartes</B><BR /><BR />La distinction de nature<br/>entre le corps et l'esprit >]
+
+c2->e2[minlen=1;style=invis]
+e2[label=< <B>Descartes</B><BR /><BR />L'argument de<BR />la concevabilité >]
+
+c3->e3[minlen=1;style=invis]
+e3[label=< <B>D'Holbach</B><BR /><BR />Trois problèmes <br/>pour le dualisme :
+<br/>la nature de l'esprit,
+<br/>l'interaction corps-esprit
+<br/>l'incarnation>]
+
+c4->e4[minlen=1;style=invis]
+e4[label=<<B>Churchland</B><BR /><BR />Le modèle des<br/> neurosciences>]
+
+d1->e5[minlen=1;style=invis]
+e5[label=<<B>Searle</B><BR /><BR />
+L'argument de la<br/>
+chambre chinoise>]
+
+d2->e6[minlen=1;style=invis]
+e6[label=<<B>Nagel</B><BR /><BR />
+Le fossé<br/>
+explicatif>]
+
+//{rank=same;e1,e2,e3,e4;d1}
+//{rank=same;c1,c2,c3,c4,c5,c6}
+
+{rank=same;d2->e7[minlen=2;style=invis]}
+e7[label=<<B>Hume</B><BR /><BR />
+L'esprit<br/>
+comme <br/>faisceau>]
+
+
+d4->e8[minlen=1;style=invis]
+e8[label=<<B>Sartre</B><BR /><BR />
+
+L'engagement<br/>
+dans le monde>]
+
+d5->e9[minlen=1;style=invis]
+e9[label=<<B>Honneth</B><BR /><BR />
+L'importance de<br/>
+la reconnaissance<br/>
+sociale>]
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
