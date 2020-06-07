@@ -1,0 +1,170 @@
+digraph G {
+// Template : diagram
+// Usage : plan de cours, cours sur le libre arbitre
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Le libre arbitre
+est-il une
+illusion ?"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->b1[headport=n;fontcolor=grey50;minlen=4]
+a1->b2[headport=n;fontcolor=grey50;minlen=4]
+a1->b3[headport=n;fontcolor=grey50;minlen=4]
+b1[label="Le libre arbitre ne
+semble pas être une
+illusion, mais une réalité";xlabel=<<FONT color="darkgreen">I</FONT>>]    
+b2[label="On peut douter
+de l'existence du
+libre arbitre";xlabel=<<FONT color="darkgreen">II</FONT>>]
+b3[label="On ne peut pas
+prouver l'inexistence
+du libre arbitre";xlabel=<<FONT color="darkgreen">III</FONT>>]
+
+{rank=same;b1->b2[style=invis;minlen=5]}
+{rank=same;b2->b3[style=invis;minlen=5]}
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="… parce que
+l'expérience de
+l'action volontaire
+prouve que je
+suis la source
+de mes actes";xlabel=<<font point-size="13" color="darkgreen">A.</font>>]
+c2[label="… parce que
+nous pouvons
+réfléchir à des
+possibilités
+alternatives, ce
+qui nous rend
+capable d'agir
+autrement";xlabel=<<font point-size="13" color="darkgreen">B.</font>>]
+
+
+b2->{c4,c5}
+c4[label="… parce qu'il
+est possible que
+la source de mes
+actes se trouve
+dans des facteurs
+dont je n'ai pas
+conscience";xlabel=<<font point-size="13" color="darkgreen">A.</font>>]
+c5[label="… parce que
+l'univers semble
+déterminé par des
+lois de la nature
+qui font qu'il n'y a
+pas de possibilités
+alternatives, mais un
+seul futur possible";xlabel=<<font point-size="13" color="darkgreen">B.</font>>]
+
+
+
+b3->{c6,c7}
+c6[label="… parce que le
+déterminisme
+ne prouve pas
+l'inexistence
+du libre arbitre";xlabel=<<font point-size="13" color="darkgreen">A.</font>>]
+c7[label="… parce
+qu'on peut
+concevoir
+une forme de
+libre arbitre
+compatible
+avec le
+déterminisme";xlabel=<<font point-size="13" color="darkgreen">B.</font>>]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style="filled,rounded";fillcolor=grey78;shape=box;margin=0.15]
+// [arrowhead=none]
+// bc1[label=""]
+
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+c1->e1[minlen=1;style=invis]
+e1[label=< <B>Descartes</B><BR /><BR />La volonté<br/>comme image<br/>de Dieu >]
+
+c2->e2[minlen=1;style=invis]
+e2[label=< <B>Thomas <br/>d'Aquin</B><BR /><BR />Raison<br/>≠ instinct>]
+
+
+c4->e4[minlen=1;style=invis]
+e4[label=< <B>Spinoza</B><BR /><BR />Un être humain<br/>n'est pas un empire
+<br/>dans un empire<br/>
+<br/>
+<b>Le déterminisme</b><br/><br/>
+Le dét. biologique<br/>
+Le dét. psychique<br/>
+Le dét. social>]
+
+c5->e5[minlen=1;style=invis]
+e5[label=<<b>Le déterminisme
+<br/>causal universel</b>
+<br/><br/>
+L'argument <br/>du démon
+<br/>de Laplace>]
+
+c6->e6[minlen=1;style=invis]
+e6[label="Déterminisme
+≠ fatalisme
+
+Déterminisme
+probabiliste et partiel
+≠ déterminisme
+strict et universel"]
+
+c7->e7[minlen=1;style=invis]
+e7[label=<<b>Dennett</b><br/><br/>
+Une théorie<br/>
+évolutionniste<br/>
+de la liberté>]
+
+{rank=same;c1->c2[style=invis;minlen=2]}
+{rank=same;c2->c4[style=invis;minlen=4]}
+{rank=same;c4->c5[style=invis;minlen=2]}
+
+{rank=same;c5->c6[style=invis;minlen=4]}
+{rank=same;c6->c7[style=invis;minlen=2]}
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
