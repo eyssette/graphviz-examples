@@ -1,0 +1,128 @@
+digraph G {
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="La
+technique"]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Une mauvaise
+manière de poser
+le problème"]    
+b2[label="Une bonne
+manière de poser
+le problème"]
+}[headport=n]
+
+{rank=same;b1->b2[style=invis,minlen=5]}
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="En rester à une opposition
+triviale entre les techniques
+pratiques et les mauvais usages"]
+b2->c2
+c2[label="Passer des techniques particulières
+à la question de la place générale de
+la technique dans notre existence"]
+
+{rank=same;c1->c2[style=invis,minlen=7]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+c2->{d1,d2}[minlen=2]
+
+d1[label="La maîtrise des savoir-faire
+permet la constitution d'un
+milieu proprement humain"]
+d2[label="L'évolution des techniques
+conduit à des transformations
+radicales et inquiétantes"]
+
+
+
+d1->d1a
+d1a[label="Faut-il reconnaître le rôle
+fondemental de la technique
+et considérer la technophobie
+comme une attitude irrationnelle ?"]
+
+d2->d2a
+d2a[label="Les mutations technologiques
+sont-elles toujours au service
+de nos objectifs ? Peuvent-elles
+nous échapper et nous asservir ?"]
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+e1[label="Machine à laver vs.
+bombe nucléaire …"]
+c1->e1[minlen=1;style=invis]
+
+e2[label=<⇒ Interroger la dimension culturelle<br/>
+et anthropologique de la technique<br/>
+<font point-size="10"><br/></font>
+<font point-size="15" color="red4">La technique ne se réduit pas<br/>
+à la simple utilité pratique</font>>]
+d1a->e2[minlen=1;style=invis]
+
+e3[label=<⇒ Interroger l'emprise de la technique<br/>
+<font point-size="10"><br/></font>
+<font point-size="15" color="red4">La technique ne se réduit pas à de<br/>
+simples moyens à notre disposition</font>>]
+
+d2a->e3[minlen=1;style=invis]
+
+{rank=same;vide1->d1[style=invis,minlen=6]}
+e1->vide1[minlen=1,style=invis]
+vide1[style=invis]
+
+
+//{rank=same;c1,c2}
+//{rank=same;e1,d1}
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
+
+
+
