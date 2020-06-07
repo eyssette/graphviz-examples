@@ -7,6 +7,8 @@ Les modèles sont disponibles ici : https://github.com/eyssette/graphviz-templat
 
 Voici des exemples de schémas que j'ai créés avec ces modèles.
 
+Accéder directement aux images au format svg : https://github.com/eyssette/graphviz-examples/search?l=SVG
+
 ## Schémas type “carte mentale”
 
 https://github.com/eyssette/graphviz-examples/search?q=Template+%3A+diagram
