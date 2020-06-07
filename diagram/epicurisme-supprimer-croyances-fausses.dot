@@ -1,0 +1,103 @@
+digraph G {
+// Template : diagram
+// Usage : cours sur le bonheur et le désir
+// Référence : Epicure, Lucrèce
+
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Supprimer les
+croyances fausses"]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Sur les dieux"]    
+b2[label="Sur la mort"]
+}[headport=n]
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="Les dieux sont des êtres parfaits, qui
+ne se préoccupent pas des affaires humaines
+(croire que les dieux peuvent être en colère
+et nous punir, ou bien qu’ils sont bienveillants
+et peuvent nous accorder leurs faveurs, c’est
+faire preuve d’anthropomorphisme). Les dieux
+par conséquent n’interviennent pas dans le
+monde : les phénomènes naturels s’expliquent
+de manière purement physique (comprendre la
+nature permet de lutter contre les superstitions)."]
+b2->{c2;c3}
+c2[label="Argument d’Épicure :
+(i) Il n’y a pas de sens à craindre
+ce qui ne peut pas nous faire de mal.
+(ii) Or la mort ne peut pas nous
+faire de mal (la mort n’est qu’une
+dispersion des atomes qui nous
+composent, il n’y a pas de vie
+après la mort donc pas d’enfer
+possible ; de plus, puisque je
+n’existe plus lorsque je suis
+mort, la mort ne peut me causer
+de mal, car un événement ne peut
+faire de mal à quelqu’un
+qui n’existe plus).
+(Concl.) Il n’y a pas de sens
+à craindre la mort."]
+c3[label="Argument de Lucrèce :
+(i) Il n'y a rien d'angoissant dans
+le fait de ne pas avoir existé
+avant notre naissance.
+(ii) Or la non-existence avant
+notre naissance et la non-existence
+après notre mort reviennent
+au même pour nous.
+(Concl.) Il n'y a rien d'angoissant
+dans le fait de ne pas exister
+après notre mort."]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
