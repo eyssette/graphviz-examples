@@ -1,0 +1,130 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Parmi les
+inférences, on
+distingue …"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="les inférences
+logiquement
+valides"]    
+b2[label="les inférences
+logiquement
+non valides …"]
+}[headport=n]
+
+
+{rank=same;b1->b2[style=invis,minlen=6]}
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label=<Si les prémisses sont vraies,<br/>
+alors il n'est pas possible que<br/>
+la conclusion soit fausse<br/>
+<font point-size="8"><br/></font>
+<font point-size="13">(la vérité des prémisses garantit<br/>
+la vérité de la conclusion)</font>>]
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+b2->{bc1,bc2}
+bc1[label="pertinentes"]
+bc2[label="pas ou peu
+pertinentes"]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+
+
+bc1->c2[minlen=2]
+c2[label=<Si les prémisses sont vraies, alors<br/>
+la conclusion, est probablement<br/>
+vraie mais il est possible que<br/>
+la conclusion soit fausse<br/>
+<font point-size="8"><br/></font>
+<font point-size="13">(la vérité des prémisses ne garantit<br/>
+pas la vérité de la conclusion)</font>>]
+
+{rank=same;c1->bc1[style=invis,minlen=6]}
+{rank=same;bc1->bc2[style=invis,minlen=10]}
+
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+c2->{d1,d2}
+d1[label="La conclusion est 
+probablement vraie, parce
+qu'on suppose l'existence
+de régularités statistiques"]
+d2[label="La conclusion est
+probablement vraie, parce
+qu'elle constitue une bonne
+explication des prémisses"]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98,fontsize=15]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+
+
+c1->e1[minlen=1, style=invis]
+e1[label="= une déduction"]
+
+bc2->e2[minlen=1, style=invis]
+e2[label="= raisonnement irrationnel, erreur
+de raisonnement, ou lien trop faible
+entre les prémisses et la conclusion"]
+
+d1->e3[minlen=1, style=invis]
+d2->e4[minlen=1, style=invis]
+e3[label="= une induction forte"]
+e4[label="= une abduction forte"]
+
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+{rank=same;a1->r1[minlen=10]}
+r1[label="Une inférence est un
+raisonnement qui à
+partir de prémisses en
+tire une conclusion"]
+
+
+
+}
