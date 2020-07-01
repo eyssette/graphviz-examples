@@ -1,0 +1,140 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Le relativisme
+de la vérité …"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="… prétend souvent être
+le meilleur moyen de
+défendre plusieurs vertus"]    
+}[headport=n]
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=box, style="filled, rounded"]
+// [arrowhead=none]
+// bc1[label=""]
+b1->{c1, c2, c3, c4}
+c1[label="L'humilité
+intellectuelle"]
+c2[label="La tolérance"]
+c3[label="La non-domination"]
+c4[label="L'ouverture
+aux autres"]
+
+{rank=same;c1->c2->c3->c4[style=invis, minlen=8]}
+
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=red2]
+edge[color=red2,minlen=7, xlabel="
+Mais …  "]
+// c1[label=""]
+c1->d1
+d1[label="… croire qu'il y a des
+vérités n'implique
+pas nécessairement
+une forme d'arrogance"]
+c2->d2
+d2[label="… croire qu'il y a
+des vérités n'implique
+pas nécessairement
+une forme d'intolérance"]
+c3->d3
+d3[label="… la défense de la
+non-domination suppose
+plutôt le refus du
+relativisme de la vérité"]
+c4->d4
+d4[label="… l'ouverture aux
+autres suppose
+plutôt le refus du
+relativisme de la vérité"]
+
+
+
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=red2, penwidth=0.4]
+edge[style=invis,minlen=2]
+// d1[label=""]
+d1->e1
+e1[label="On peut reconnaître la
+possibilité d'une erreur
+ou d'une compréhension
+partielle de la vérité !"]
+d2->e2
+e2[label="La critique d'une
+affirmation n'est pas de
+l'intolérance s'il existe
+une preuve objective
+de la fausseté de
+cette affirmation"]
+e2->e2a
+e2a[label="S'il n'y a pas de
+preuve objective, on peut
+reconnaître la possibilité
+de penser le contraire et
+respecter son adversaire,
+même si on la conviction
+qu'il se trompe"]
+d3->e3
+e3[label="Le relativisme empêche de
+faire appel à des savoirs
+critiques qui permettraient
+de montrer la fausseté des
+discours idéologiques que
+les dominants utilisent pour
+justifier leur pouvoir"]
+d4->e4
+e4[label="Le relativisme conduit
+chacun à rester dans son
+opinion et à refuser le
+dialogue, puisqu'on refuse
+d'envisager la possibilité
+qu'on se trompe"]
+e4->e4a
+e4a[label="Le relativisme conduit à
+ne pas prendre au sérieux
+ce que disent les autres,
+puisqu'on refuse d'entendre
+les arguments d'autrui qui
+pourraient nous inciter
+à modifier nos croyances"]
+
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
