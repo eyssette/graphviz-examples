@@ -63,11 +63,11 @@ line[shape=underline;style="";fontcolor=grey98;width=4;label="";height=0]
 
 e2[label="Point de
 départ assuré"]
-{rank=same;b2->e2[style=invis;minlen=1]}
+e2->b2[style=invis,minlen=1]
 
 e3[label="Cheminement
 assuré"]
-{rank=same;e3->b1[style=invis;minlen=1]}
+e3->b1[style=invis,minlen=1]
 
 e4[label="Point d'arrivée
 assuré"]
