@@ -1,0 +1,85 @@
+digraph G {
+// Template : diagram
+// Usage : cours sur l'épistémologie
+//rankdir=LR
+//ratio=0.75
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.2
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16; shape=oval]
+// b1[label=""]
+
+b1[label="Inférence
+déductive"]
+b2[label="Prémisses
+vraies"]
+
+
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=black;fontcolor=white;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+line->c1
+c1[label="Conclusion
+vraie"]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+e1[label=<<b>+</b>>;fontsize=30;fontcolor=firebrick4]
+{rank=same;b1->e1->b2[minlen=0;style=invis]}
+e1->line[minlen=3;style=invis]
+line[shape=underline;style="";fontcolor=grey98;width=4;label="";height=0]
+
+e2[label="Point de
+départ assuré"]
+{rank=same;b2->e2[style=invis;minlen=1]}
+
+e3[label="Cheminement
+assuré"]
+{rank=same;e3->b1[style=invis;minlen=1]}
+
+e4[label="Point d'arrivée
+assuré"]
+c1->e4[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
