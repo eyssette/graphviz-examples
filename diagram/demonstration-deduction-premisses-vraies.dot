@@ -6,7 +6,7 @@ digraph G {
 splines=true
 //splines=curved
 bgcolor=grey98
-pad=0.2
+pad=0.3
 style=filled
 edge[minlen=4]
 ranksep=0.1
@@ -37,7 +37,11 @@ node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
 node[style=filled;fillcolor=black;fontcolor=white;shape=oval]
 // [arrowhead=none]
 // bc1[label=""]
-line->c1
+line->vide1
+vide1->c1[style=invis,minlen=1]
+
+vide1[shape=point,style=invis]
+
 c1[label="Conclusion
 vraie"]
 
