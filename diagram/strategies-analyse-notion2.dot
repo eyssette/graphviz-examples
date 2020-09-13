@@ -24,7 +24,7 @@ node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
 a1->{
 b1[label="Première
 approche"]    
-b2[label="Enrichir
+b2[label="Approfondir
 l'analyse"]
 }[headport=w;minlen=1]
 
@@ -37,7 +37,7 @@ node [shape=box; style=filled;fillcolor=white;fontcolor=darkgreen;color=darkgree
 b1->{c1,c2,c3}[color=darkgreen]
 c1[label="EC(x)"]
 c2[label="x ≠ y"]
-c3[label="x→ a, b, c …",fontsize=15.5]
+c3[label="x→ a, b, c …",fontsize=15.5]
 b2->{c4,c5}[color=darkgreen]
 c4[label="RT(x)"]
 c5[label="x1, x2 …"]
@@ -96,4 +96,3 @@ edge[color=blue;arrowhead="none";xlabel="";style=dashed]
 
 
 }
-
