@@ -66,7 +66,7 @@ node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
 // e1[label=""]
 // ->e1[minlen=1;style=invis]
 
-c3->d1[style=invis]
+c3->d1[style=invis,minlen=3]
 d1[label="Le divertissement n'est pas le bonheur !
 Il ne fait que masquer, de manière
 illusoire et fragile, le malheur"]
