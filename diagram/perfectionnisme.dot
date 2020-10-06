@@ -35,9 +35,9 @@ node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
 // c1[label=""]
 b1->c1
 c1[label="La vie accomplie
-repose sur l'exercice et
-le développement de
-ses facultés"]
+repose sur l'exercice
+et le développement
+de ses facultés"]
 
 // INTERMEDIAIRE AVANT NIVEAU 3
 node[style=filled;fillcolor=grey78;shape=oval]
