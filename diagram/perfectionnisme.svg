@@ -34,11 +34,11 @@
 <!-- c1 -->
 <g id="node3" class="node">
 <title>c1</title>
-<polygon fill="#ffffff" stroke="#7f7f7f" points="205.9696,-207.7002 42.152,-207.7002 42.152,-123.0998 205.9696,-123.0998 205.9696,-207.7002"/>
+<polygon fill="#ffffff" stroke="#7f7f7f" points="198.4212,-207.7002 49.7004,-207.7002 49.7004,-123.0998 198.4212,-123.0998 198.4212,-207.7002"/>
 <text text-anchor="middle" x="124.0608" y="-189.4" font-family="Times,serif" font-size="16.00" fill="#000000">La vie accomplie</text>
-<text text-anchor="middle" x="124.0608" y="-170.2" font-family="Times,serif" font-size="16.00" fill="#000000">repose sur l&#39;exercice et</text>
-<text text-anchor="middle" x="124.0608" y="-151" font-family="Times,serif" font-size="16.00" fill="#000000">le développement de</text>
-<text text-anchor="middle" x="124.0608" y="-131.8" font-family="Times,serif" font-size="16.00" fill="#000000">ses facultés</text>
+<text text-anchor="middle" x="124.0608" y="-170.2" font-family="Times,serif" font-size="16.00" fill="#000000">repose sur l&#39;exercice</text>
+<text text-anchor="middle" x="124.0608" y="-151" font-family="Times,serif" font-size="16.00" fill="#000000">et le développement</text>
+<text text-anchor="middle" x="124.0608" y="-131.8" font-family="Times,serif" font-size="16.00" fill="#000000">de ses facultés</text>
 </g>
 <!-- b1&#45;&gt;c1 -->
 <g id="edge2" class="edge">
@@ -81,15 +81,15 @@
 <!-- r2 -->
 <g id="node6" class="node">
 <title>r2</title>
-<polygon fill="#fafafa" stroke="#0000ff" points="436.5814,-193.7004 261.5402,-193.7004 261.5402,-137.0996 436.5814,-137.0996 436.5814,-193.7004"/>
-<text text-anchor="middle" x="349.0608" y="-177.1" font-family="Times,serif" font-size="13.00" fill="#000000">L&#39;usage du corps, les émotions,</text>
-<text text-anchor="middle" x="349.0608" y="-161.5" font-family="Times,serif" font-size="13.00" fill="#000000">l&#39;imagination, l&#39;intelligence,</text>
-<text text-anchor="middle" x="349.0608" y="-145.9" font-family="Times,serif" font-size="13.00" fill="#000000">la communication sociale …</text>
+<polygon fill="#fafafa" stroke="#0000ff" points="428.5814,-193.7004 253.5402,-193.7004 253.5402,-137.0996 428.5814,-137.0996 428.5814,-193.7004"/>
+<text text-anchor="middle" x="341.0608" y="-177.1" font-family="Times,serif" font-size="13.00" fill="#000000">L&#39;usage du corps, les émotions,</text>
+<text text-anchor="middle" x="341.0608" y="-161.5" font-family="Times,serif" font-size="13.00" fill="#000000">l&#39;imagination, l&#39;intelligence,</text>
+<text text-anchor="middle" x="341.0608" y="-145.9" font-family="Times,serif" font-size="13.00" fill="#000000">la communication sociale …</text>
 </g>
 <!-- c1&#45;&gt;r2 -->
 <g id="edge5" class="edge">
 <title>c1&#45;&gt;r2</title>
-<path fill="none" stroke="#0000ff" stroke-dasharray="5,2" d="M206.2385,-165.4C224.6492,-165.4 243.0599,-165.4 261.4706,-165.4"/>
+<path fill="none" stroke="#0000ff" stroke-dasharray="5,2" d="M198.6546,-165.4C216.9189,-165.4 235.1832,-165.4 253.4476,-165.4"/>
 </g>
 <!-- r3 -->
 <g id="node7" class="node">
