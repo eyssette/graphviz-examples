@@ -69,9 +69,10 @@ node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
 // e1[label=""]
 // ->e1[minlen=1;style=invis]
 
-e1[label="Exemples : le désir de la richesse,
+e1[label="Exemples :
+le désir de la richesse,
 du pouvoir, de la gloire …";fontsize=14]
-{d1,d2}->e1[minlen=1,style=invis]
+{rank=same;a1->e1[minlen=1,style=invis]}
 
 // Remarques
 node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
