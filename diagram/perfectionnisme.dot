@@ -75,26 +75,21 @@ edge[color=blue;arrowhead="none";xlabel="";style=dashed]
 {rank=same;c1->r2}
 {rank=same;d1->r3}
 
-r1[label=<Le perfectionnisme ancien :<br/>
-<font point-size="11">un idéal universel d'excellence<br/></font>
-<font point-size="7"><br/></font>
-≠ le perfectionnisme moderne :<br/>
-<font point-size="11">un idéal de développement de<br/>
-son individualité</font><font point-size="10">(il n'y a pas une<br/>
-seule forme possible d'excellence)</font>>]
+r1[label=<Le perfectionnisme moderne :<br/>
+<font point-size="12">un idéal de développement de<br/>
+son individualité </font><font point-size="10">(il n'y a pas une<br/>
+seule forme possible d'excellence)</font><br/>
+<font point-size="5"><br/></font>
+≠ le perfectionnisme ancien :<br/>
+<font point-size="12">un idéal universel d'excellence<br/></font>>]
 r2[label="L'usage du corps, les émotions,
 l'imagination, l'intelligence,
 la communication sociale …"]
-r3[label=<Ce qui est important :<br/>
-<font point-size="5"><br/></font>
-– c'est de vivre une vie pleine<br/>
-de sens, riche et profonde<br/>
-<font point-size="11">(≠ une vie simplement 
-pleine<br/> de satisfactions)</font><br/>
-<font point-size="5"><br/></font>
-– c'est la qualité des plaisirs<br/>
-<font point-size="11">(≠ la quantité : le bonheur n'est pas<br/>
-une simple somme de plaisirs)</font>>]
+r3[label="Ce qui est important, c'est de vivre une vie
+pleine de sens, riche et profonde (≠ une vie
+simplement pleine de satisfactions) et c'est la
+qualité des plaisirs (≠ la quantité : le bonheur
+ne se réduit pas à une somme de plaisirs)"]
 
 
 }
