@@ -1,0 +1,160 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Quelques distinctions
+pour mieux comprendre
+la notion de laïcité"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="La laïcité va plus
+loin que la simple
+tolérance religieuse"]
+b2[label="La laïcité, ce n'est
+pas la réduction
+de la religion à la
+sphère privée"]
+b3[label="Il faut distinguer
+la laïcité dans les
+textes et la laïcité
+dans les têtes"]
+}[headport=n]
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="La laïcité garantit de manière
+plus fondamentale la liberté de
+croire (être laïc, ce n'est pas
+militer pour l'athéisme), car
+elle pose cette liberté comme
+un droit humain fondamental
+(et non comme un simple
+droit accordé par une
+autorité politique)
+
+La laïcité garantit aussi la
+liberté de changer de religion,
+et la liberté de ne pas croire
+(un régime politique tolérant
+envers d'autres religions
+peut ne pas l'être envers
+l'apostasie ou l'athéisme)"]
+c2[label="La laïcité interdit tout
+privilège en faveur d'une
+religion particulière (ce qui
+interdit la reconnaissance
+d'une religion officielle)
+et toute discrimination à
+l'encontre d'une religion
+(ce qui protège notamment
+les religions minoritaires),
+alors que la tolérance est
+compatible avec la croyance
+en la supériorité d'une
+religion particulière"]
+b2->{c3,c4}
+c3[label="La laïcité exige la neutralité
+de la puissance publique
+(puisqu'elle ne doit pas
+discriminer entre les croyances
+religieuses ou l'incroyance),
+mais elle n'exige pas la
+neutralité de l'espace public :
+elle n'interdit pas l'expression
+publique des croyances
+religieuses ou de l'athéisme
+et elle garantit au contraire
+l'exercice de la liberté de culte"]
+c4[label="La laïcité n'exige pas la
+sécularisation de la société :
+elle ne repose pas sur le
+déclin ou la privatisation des
+croyances religieuses ; elle exige
+simplement la sécularisation de
+l'État, dont les décisions doivent
+reposer sur des justifications
+accessibles à tous, et non pas
+sur des raisons religieuses"]
+
+b3->{c5}
+c5[label="La laïcité dans les textes, c'est
+la laïcité juridique définie par des
+textes de droit : elle correspond aux
+quatre principes que nous avons dégagés.
+
+La laïcité dans les têtes fait référence
+aux conceptions particulières que
+l'on peut avoir de la laïcité : on peut
+militer pour une laïcité plus “ouverte”,
+ou au contraire, une laïcité plus “stricte”,
+ou plus “interventionniste” mais ces
+conceptions ne peuvent prétendre définir
+ce qu'est la laïcité"]
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+c1->e1[minlen=1, style=invis]
+e1[label="La laïcité repose sur
+le principe de la liberté
+de concience"]
+
+c2->e2[minlen=1, style=invis]
+e2[label="La laïcité repose sur le
+principe de l'égalité et de
+la non-discrimination"]
+
+c3->e3[minlen=1, style=invis]
+e3[label="La laïcité repose sur le
+principe de la neutralité
+de la puissance publique
+(≠ l'espace public)"]
+
+c4->e4[minlen=1, style=invis]
+e4[label="La laïcité repose sur le principe
+de la séparation de l'État et de
+la religion : la religion n'est plus
+considérée comme le fondement
+de la puissance publique"]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
