@@ -21,9 +21,10 @@ la notion de laïcité"]
 // NIVEAU 2
 node[fillcolor=red4, fontsize=16]
 a1->{
-b1[label="La laïcité va plus
-loin que la simple
-tolérance religieuse"]
+b1[label="La laïcité
+se distingue de la
+simple tolérance
+religieuse"]
 b2[label="La laïcité, ce n'est
 pas la réduction
 de la religion à la
@@ -40,11 +41,12 @@ node [shape=box, fillcolor=white, color=grey50]
 // c1[label=""]
 b1->{c1,c2}
 c1[label="La laïcité garantit de manière
-plus fondamentale la liberté de
-croire (être laïc, ce n'est pas
-militer pour l'athéisme), car
-elle pose cette liberté comme
-un droit humain fondamental
+plus fondamentale la liberté
+de croire (défendre la laïcité,
+ce n'est pas militer pour
+l'athéisme), car elle pose
+cette liberté comme un
+droit humain fondamental
 (et non comme un simple
 droit accordé par une
 autorité politique)
@@ -128,23 +130,23 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
 // ->e1[minlen=1, style=invis]
 
 c1->e1[minlen=1, style=invis]
-e1[label="La laïcité repose sur
+e1[label="La laïcité se définit par
 le principe de la liberté
 de concience"]
 
 c2->e2[minlen=1, style=invis]
-e2[label="La laïcité repose sur le
+e2[label="La laïcité se définit par le
 principe de l'égalité et de
 la non-discrimination"]
 
 c3->e3[minlen=1, style=invis]
-e3[label="La laïcité repose sur le
+e3[label="La laïcité se définit par le
 principe de la neutralité
 de la puissance publique
 (≠ l'espace public)"]
 
 c4->e4[minlen=1, style=invis]
-e4[label="La laïcité repose sur le principe
+e4[label="La laïcité se définit par le principe
 de la séparation de l'État et de
 la religion : la religion n'est plus
 considérée comme le fondement
