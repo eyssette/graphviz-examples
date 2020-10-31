@@ -132,7 +132,7 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
 c1->e1[minlen=1, style=invis]
 e1[label="La laïcité se définit par
 le principe de la liberté
-de concience"]
+de conscience"]
 
 c2->e2[minlen=1, style=invis]
 e2[label="La laïcité se définit par le
