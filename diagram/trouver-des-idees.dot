@@ -1,0 +1,106 @@
+digraph G {
+// Template : diagram
+// Usage : méthode pour la construction du plan d'une dissertation, progression des parties
+
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// 
+a1[label="Trouver
+des idées"]
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Explorer
+un maximum
+de réponses
+possibles"]    
+b2[label="Approfondir
+au maximum
+chaque réponse"]
+b3[label="Vérifier la
+pertinence
+de ses idées"]
+}[headport=w]
+
+{rank=same;b1->b2[style=invis;minlen=7]}
+{rank=same;b2->b3[style=invis;minlen=5]}
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="– Pas seulement les réponses de type
+“oui” (ou de type “non”)
+– pas seulement les réponses les plus
+évidentes, les plus intuitives
+– pas seulement les réponses les plus
+communes, les plus ordinaires
+– pas seulement les réponses qui
+correspondent à son opinion"]
+c2[label="Afin d'ouvrir les perspectives sur le sujet, on
+approfondit son travail d'analyse et notamment
+on cherche des références théoriques
+(on utilise le cours et le dossier) et on est
+attentif aux différents sens possibles du sujet"]
+b2->c3
+c3[label="Pour chaque idée, même si on n'est pas d'accord
+avec cette idée : on cherche des arguments, des
+objections, des réponses possibles à ces objections"]
+
+b3->{c4,c5,c6,c7}
+c4[label="On évite les banalités,
+les idées simplistes"]
+c5[label="On n'en reste pas à une simple
+liste de cas particuliers"]
+c6[label="Une bonne idée repose sur
+des concepts précis ou sur
+une distinction conceptuelle"]
+c7[label="Une bonne idée repose sur
+un raisonnement bien construit
+(attention aux liens logiques)"]
+{rank=same;c2->c3[style=invis;minlen=2]}
+
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
