@@ -1,0 +1,188 @@
+digraph G {
+// Template : diagram
+// Usage :
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="La liberté
+d'expression"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="C'est un droit
+humain
+fondamental"]    
+b2[label="Ce n'est
+pas un droit
+absolu"]
+}[headport=n]
+
+{rank=same;b1->b2[style=invis, minlen=25]}
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->{c1,c2,c3}
+c1[label="Sans liberté
+d'expression il n'y
+a pas de débat public
+et pas de possibilité
+de contester les lois"]
+c2[label="Sans liberté
+d'expression, on ne
+peut pas dénoncer
+les injustices et
+défendre les autres
+droits humains"]
+c3[label="Le désir
+de s'exprimer est
+une caractéristique
+essentielle des
+êtres humains"]
+
+
+b2->{c4,c5}
+c4[label="Il y a des limites à la
+liberté d'expression qui
+ne sont généralement
+pas contestées"]
+c5[label="Il y a des limites
+possibles à la
+liberté d'expression,
+qui font débat"]
+
+{rank=same;c3->c4[style=invis, minlen=8]}
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+
+
+
+c4->{bc1,bc2}
+bc1[label="Les
+menaces"]
+bc2[label="La
+diffamation"]
+
+c5->{bc3,bc4,bc5}
+bc3[label="L'injure et
+l'expression
+de la haine"]
+bc4[label="Les offenses à la
+sensiblité morale :
+l'obscénité"]
+bc5[label="Les offenses à des
+symboles nationaux
+ou religieux"]
+
+// {rank=same;bc2->bc3[style=invis, minlen=4]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+bc1->d1[minlen=3]
+d1[label="= une forme
+d'expression qui met
+en danger l'intégrité
+physique d'une personne
+ou d'un groupe de
+personnes défini"]
+
+bc2->d2[minlen=3]
+d2[label="= une accusation sans
+preuve, ou relative à la vie
+privée, qui porte atteinte
+à l'intégrité morale
+(l'honneur, la réputation)
+d'une personne ou d'un
+groupe de personnes défini"]
+
+bc3->d3[minlen=3]
+d3[label="= une forme d'expression
+méprisante ou violente
+qui vise, sans accusation
+précise, à porter atteinte à
+l'intégrité morale (la dignité)
+d'une personne ou d'un
+groupe de personnes défini"]
+
+bc4->d4[minlen=3]
+d4[label="= une forme d'expression
+qui, par sa violence ou son
+caractère explicite, offense
+le sentiment de pudeur ou
+notre sensibilité face à la
+représentation de la violence"]
+
+bc5->d5[minlen=3]
+d5[label="= une forme d'expression
+irrespectueuse envers un
+symbole considéré comme
+important par une nation
+ou une religion"]
+
+{rank=same;d2->d3[style=invis, minlen=2]}
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+e1[label="La liberté d'expression
+est au fondement de
+toute démocratie"]
+c1->e1[minlen=1, style=invis]
+
+e2[label="La liberté d'expression
+est au fondement des
+autres droits humains"]
+c2->e2[minlen=1, style=invis]
+
+e3[label="La liberté d'expression
+est au fondement d'une
+vie proprement humaine"]
+c3->e3[minlen=1, style=invis]
+
+e4[label="Dans ces deux cas, le principe de non-nuisance
+envers autrui s'applique plus facilement, dans la
+mesure où il y a un préjudice réel et identifiable"]
+{d1,d2}->e4[minlen=1, style=invis]
+
+e5[label="Dans ces trois cas, la question est de savoir si le principe de non-nuisance
+envers autrui s'applique : y a-t-il ou non préjudice réel ou bien faut-il accepter ces
+formes d'expression en raison de l'absence d'un tort réel et facilement identifiable ?"]
+{d3,d4,d5}->e5[minlen=1, style=invis]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
+
