@@ -1,0 +1,179 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Quelques distinctions
+pour mieux comprendre
+la notion de laïcité"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Il faut distinguer les
+conceptions particulières
+de la laïcité et les grands
+principes de la laïcité"]
+b2[label="La laïcité
+se distingue de la
+simple tolérance
+religieuse"]
+b3[label="La laïcité, ce n'est
+pas la réduction
+de la religion à la
+sphère privée"]
+}[headport=n]
+
+{rank=same;b1->b2->b3[style=invis, minlen=10]}
+
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label=<Dans les <b>débats politiques</b><font point-size="5"> </font>  ,<br/>
+plusieurs conceptions de la<br/>
+laïcité s'affrontent : certains<br/>
+militent pour une laïcité plus<br/>
+ouverte, ou, au contraire,<br/>
+pour une laïcité plus stricte,<br/>
+ou plus interventionniste.<br/>
+<font point-size="10"><br/></font>
+Ces <b>conceptions politiques</b> <br/>
+ne peuvent prétendre <br/>
+définir ce qu'est la laïcité.<br/>
+La laïcité se définit par des<br/>
+<b>principes juridiques</b>   <br/>
+inscrits dans des textes de<br/>
+droit : il faut distinguer la<br/>
+<b>laïcité dans les têtes</b>et la  <br/>
+<b>laïcité dans les textes</b>>]
+
+b2->{c2,c3}
+c2[label=<La laïcité garantit la<br/>
+<B>liberté de croire</B>   (défendre<br/>
+la laïcité ce n'est pas militer<br/>
+pour l'athéisme), et elle<br/>
+pose cette liberté comme un<br/>
+<B>droit humain fondamental</B>  <br/>
+(et non comme une simple<br/>
+faveur accordée par une<br/>
+autorité politique)<br/>
+<font point-size="10"><br/></font>
+La laïcité garantit aussi la<br/>
+liberté de <B>changer de religion</B>  <br/>
+et la liberté de <B>ne pas croire</B><br/>
+(un régime politique tolérant<br/>
+envers d'autres religions<br/>
+peut ne pas l'être envers<br/>
+l'apostasie ou l'athéisme)>]
+c3[label=<La laïcité interdit tout<br/>
+<b>privilège</b> en faveur d'une<br/>
+conviction particulière (ce<br/>
+qui interdit l'existence d'une<br/>
+religion officielle, ou d'un<br/>
+système de cultes reconnus)<br/>
+et toute <b>discrimination </b>   à<br/>
+l'encontre d'une conviction<br/>
+particulière (ce qui protège<br/>
+les convictions minoritaires),<br/>
+alors que la tolérance est<br/>
+compatible avec la croyance<br/>
+en la supériorité d'une<br/>
+conviction particulière>]
+b3->{c4,c5}
+c4[label=<La laïcité exige la neutralité<br/>
+de <b>la puissance publique</b>   ,<br/>
+c'est-à-dire des institutions<br/>
+et des agents de l'État (qui ne<br/>
+doivent pas discriminer entre<br/>
+les différentes convictions),<br/>
+mais elle n'exige pas la<br/>
+neutralité de <b>l'espace public </b>  :<br/>
+elle n'interdit pas l'expression<br/>
+publique des croyances<br/>
+religieuses ou de l'athéisme<br/>
+et elle garantit au contraire<br/>
+l'exercice de la liberté de culte>]
+c5[label=<On confond parfois la laïcité<br/>
+avec la <b>sécularisation de la<br/>
+société</b>, qui désigne la perte<br/>
+d'influence de la religion dans<br/>
+la vie sociale des individus.<br/>
+Mais la laïcité ne repose pas sur<br/>
+la sécularisation de la société,<br/>
+elle repose seulement sur une<br/>
+forme de pluralisme dans<br/>
+la société, et sur une<br/>
+<b>sécularisation de l'État</b>    : les<br/>
+décisions politiques, dans une<br/>
+société pluraliste, ne peuvent pas<br/>
+être fondées sur une religion<br/>
+particulière : elles doivent reposer<br/>
+sur des justifications accessibles<br/>
+à tous et issues d'un débat public>]
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+c2->e1[minlen=1, style=invis]
+e1[label=<La laïcité se définit<br/>
+par le principe de la<br/>
+<b>liberté de conscience</b>>]
+
+c3->e2[minlen=1, style=invis]
+e2[label=<La laïcité se définit par le<br/>
+principe de <b>l'égalité </b> et de<br/>
+<b>la non-discrimination   </b>>]
+
+c4->e3[minlen=1, style=invis]
+e3[label=<La laïcité se définit par le<br/>
+principe de la <b>neutralité<br/>
+de la puissance publique </b><br/>
+(≠ l'espace public)>]
+
+c5->e4[minlen=1, style=invis]
+e4[label=<La laïcité se définit par le principe<br/>
+de la <b>séparation de l'État et de    <br/>
+la religion  </b> : la religion n'est plus<br/>
+considérée comme le fondement<br/>
+de la puissance publique>]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
