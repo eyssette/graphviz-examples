@@ -3,7 +3,7 @@ digraph G {
 // Usage : 
 forcelabels=true
 bgcolor=white
-pad=0.3
+pad=0
 //ratio=0.75
 layers="argument:objections:remarques:remarques+objections:all"
 //layerselect="argument"
@@ -39,7 +39,6 @@ objection !";penwidth=0.8]
 // ATTENTION : PRECISER COULEUR red2 POUR CHAQUE OBJECTION
 // o1[label="";color=red2]
 
-0[style=invis;shape=plaintext;label=""]
 
 
 // Lien objection->prémisse
