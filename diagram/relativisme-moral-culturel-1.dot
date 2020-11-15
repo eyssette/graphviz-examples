@@ -3,7 +3,7 @@ digraph G {
 // Usage : 
 forcelabels=true
 bgcolor=white
-pad=0
+pad=0.15
 //ratio=0.75
 layers="argument:objections:remarques:remarques+objections:all"
 //layerselect="argument"
