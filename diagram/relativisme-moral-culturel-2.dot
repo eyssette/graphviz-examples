@@ -3,7 +3,7 @@ digraph G {
 // Usage : 
 forcelabels=true
 bgcolor=white
-pad=0
+pad=0.15
 //ratio=0.75
 layers="argument:objections:remarques:remarques+objections:all"
 //layerselect="argument"
@@ -38,6 +38,7 @@ edge[color=red3;minlen=6;xlabel="
 objection !";penwidth=0.8]
 // ATTENTION : PRECISER COULEUR red2 POUR CHAQUE OBJECTION
 // o1[label="";color=red2]
+
 
 
 
@@ -112,12 +113,14 @@ node[shape=rect, style="rounded,filled", fillcolor=white, layer="argument,remarq
 // p1[label="";style="filled";fillcolor=grey28;fontcolor=white;shape=ellipse;margin=0.05]
 
 
-p1[label="Nous concevons le bien
-et le mal à travers le filtre
-de notre propre culture"]
+p1[label="Croire en l'existence d'une vérité en morale,
+c'est peut-être simplement croire en la
+supériorité de sa propre culture et ne pas
+accepter la diversité des croyances morales"]
 
-p2[label="Les croyances morales sont
-différentes selon les cultures"]
+p2[label="Croire à l'existence d'une vérité en
+morale nous conduit à une forme
+d'intolérance qui n'est pas acceptable"]
 
 p1->p2->C
 
@@ -128,13 +131,14 @@ edge[layer="remarques,remarques+objections", color=blue, arrowhead="none", xlabe
 // r1[label=""]
 r1[label="= 1 forme
 d'ethnocentrisme
-au sens faible"]
+au sens fort"]
 {rank=same;p1->r1[minlen=2]}
 r1->p2[style=invis]
 
 // Conclusion
-C[label="Il n'y pas de vérités
-morales universelles", fillcolor=black, fontcolor=white, color=black, shape=ellipse, fontsize=18]
+C[label="Il faut se méfier de la
+croyance en l'existence
+d'une vérité en morale", fillcolor=black, fontcolor=white, color=black, shape=ellipse, fontsize=18]
 }
 
 
