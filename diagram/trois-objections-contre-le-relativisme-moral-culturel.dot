@@ -1,0 +1,122 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Trois objections
+contre le relativisme
+moral culturel"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Un fondement
+confus"]    
+b2[label="Un raisonnement
+confus"]
+b3[label="Une conséquence
+inacceptable"]
+}[headport=n]
+
+{rank=same;b1->b2->b3[style=invis,minlen=6]}
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="Une conception
+stéréotypée, trop
+homogène et trop
+figée de ce qu'est
+une culture"]
+
+b2->{c2,c3}
+c2[label="Une confusion entre
+ce qui est accepté et
+ce qui est acceptable"]
+c3[label="Un raisonnement
+auto-réfutant"]
+
+b3->c4
+c4[label="L'acceptation
+de pratiques
+intolérables"]
+
+{rank=same;c1->c2[style=invis]}
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+c1->d1
+d1[label="Une culture se
+modifie dans le temps,
+et il y a des traditions
+contestées au sein
+même d’une culture"]
+
+c2->d2
+d2[label="Le simple fait qu'une
+pratique soit largement
+ou depuis longtemps
+acceptée ne la rend pas
+pour autant acceptable
+et non contestable"]
+
+c3->d3
+d3[label="Le relativisme moral
+culturel rejette l'idée
+d'une vérité morale
+universelle, mais en
+reconnaît au moins une
+implicitement : l'exigence
+de la tolérance envers
+la diversité culturelle"]
+
+c4->d4
+d4[label="Le relativisme moral
+culturel ne fait pas la
+distinction entre les
+pratiques simplement
+contraires aux habitudes
+sociales, et les pratiques
+contraires à des principes
+moraux fondamentaux"]
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
