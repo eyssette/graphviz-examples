@@ -1,6 +1,4 @@
 digraph G {
-// Template : diagram
-// Usage : cours sur la philosophie morale
 //rankdir=LR
 splines=true
 //splines=curved
@@ -8,95 +6,100 @@ bgcolor=grey98
 pad=0.3
 style=filled
 edge[minlen=4]
-node[style=filled, fontcolor=white]
 ranksep=0.1
-nodesep=0.2
+nodesep=0.2 // valeur à changer ?
 
 // NIVEAU 1
-node[fillcolor=12, fontsize=18]
-a1[label=<Les morales<br/>
-de la raison<br/>
-<font point-size="5"><br/></font>
-<font point-size="12">(rationalisme moral)</font>
-<font point-size="5"><br/> </font>>]
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label=<Les morales de la raison<br/>
+<font point-size="14"><br/>(rationalisme moral)</font>>;margin=0.11]
 
 // NIVEAU 2
-node[fillcolor=red4, fontsize=16, shape=box, style="filled, rounded", margin=0.15]
-a1->{
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->b1
 b1[label="Pour savoir ce qui est bien et ce
-qui est mal, il faut réfléchir …"]    
-}[headport=n]
+qui est mal, il faut réfléchir …";shape=box;margin=0.13;style="filled,rounded"]   
 
-node[fontcolor=black]
+
+
+
 // NIVEAU 3 (sans intermédiaire)
-node [shape=box, fillcolor=white, color=grey50, style="", margin=0.09]
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
 // c1[label=""]
-b1->c1
+b1->{c1,c2}
 c1[label="… aux conséquences
 de notre choix"]
-b1->c2
 c2[label="… au principe
 de notre choix"]
 
-// INTERMÉDIAIRE AVANT NIVEAU 3
-node[fillcolor=grey78, shape=oval]
+{rank=same;c1->c2[style=invis;minlen=8]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
 // [arrowhead=none]
 // bc1[label=""]
 
 // NIVEAU 3 (avec intermédiaire)
-node[fillcolor=white, shape=box, color=grey50]
+node[style="filled";fillcolor=white;shape=box;color=grey50]
 // c1[label=""]
 
 // NIVEAU 4
-node[style=rounded, fillcolor=white, shape=box, color=grey50]
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
 // d1[label=""]
 
 c1->d1
 d1[label=<= morale des<br/>
 conséquences<br/>
-<font point-size="5"><br/></font>
-<font point-size="12">(conséquentialisme)</font>>]
+<font point-size="7"><br/></font>
+<font point-size="13">(conséquentialisme)</font>>;margin=0.13]
 
 c2->d2
 d2[label=<= morale des<br/>
 principes<br/>
-<font point-size="5"><br/></font>
-<font point-size="12">(déontologisme)</font>>]
+<font point-size="7"><br/></font>
+<font point-size="13">(déontologisme)</font>>;margin=0.13]
 
-{rank=same;c1->c2[style=invis,minlen=8]}
+{rank=same;d1->d2[style=invis;minlen=14]}
 
-
-// ÉTIQUETTES EN ROUGE
-node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
 // e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
 // e1[label=""]
-// ->e1[minlen=1, style=invis]
+// ->e1[minlen=1;style=invis
 
+
+a1->e1[minlen=0;style=invis]
 e1[label=<≠ morales du sentiment<br/>
-<font point-size="5"><br/></font>
-<font point-size="12">(sentimentalisme moral)</font>>]
-{rank=same;a1->e1[minlen=1, style=invis]}
+<font point-size="3"><br/></font>
+<font point-size="13">(sentimentalisme moral)</font>>]
 
+c1->e2[minlen=1;style=invis]
 e2[label=<= réfléchir à ce<br/>
 qui arrive après<br/>
 notre choix<br/>
 <font point-size="5"><br/></font>
 <font point-size="12">(focalisation sur le résultat)</font>>]
 
+c2->e3[minlen=1;style=invis]
 e3[label=<= réfléchir à ce<br/>
 qui guide notre choix<br/>
 avant même de le faire<br/>
 <font point-size="5"><br/></font>
 <font point-size="12">(focalisation sur le résultat)</font>>]
 
-c1->e2[minlen=1, style=invis]
-c2->e3[minlen=1, style=invis]
 
-// REMARQUES EN BLEU
-node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=13]
-edge[color=blue, arrowhead="none", xlabel="", style=dashed]
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
 // r1[label=""]
 // {rank=same;->r1}
 // {rank=same;r1->[dir=back]}
 
+
 }
+
+
+
+
