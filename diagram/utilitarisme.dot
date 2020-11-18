@@ -1,0 +1,112 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="L'utilitarisme", margin=0.11]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Une finalité", margin=0.10]    
+b2[label="Une méthode", margin=0.10]
+}[headport=n]
+
+{rank=same;b1->b2[minlen=10,style=invis]}
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="Il faut viser un maximum de bonheur
+et un minimum de souffrances
+pour le plus grand nombre"]
+b2->c2
+c2[label="Il faut faire un calcul
+des conséquences
+de nos choix"]
+
+{rank=same;c1->c2[minlen=5,style=invis]}
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+c2->{bc1,bc2}
+bc1[label="Ce calcul doit être le
+plus objectif possible"]
+bc2[label="Ce calcul doit
+être global"]
+
+{rank=same;bc1->bc2[minlen=5,style=invis]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+bc1->{d1,d2}
+d1[label="Il faut éviter
+d'être dogmatique"]
+d2[label="Il faut faire un
+examen empirique
+des conséquences"]
+
+{rank=same;d2->d3[minlen=4,style=invis]}
+
+bc2->{d3,d4}
+d3[label="Il faut aussi prendre en compte
+les conséquences lointaines et
+indirectes, et les conséquences
+de ce que nous ne faisons pas"]
+d4[label="Il faut prendre en compte
+tous les êtres qui subiront
+les conséquences
+de nos choix"]
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+{d1,d2}->e1[minlen=1, style=invis]
+e1[label="Exemples : la défense des
+politiques de réduction des
+risques liés aux drogues et la
+défense de l'homoparentalité"]
+
+d3->e2[minlen=1, style=invis]
+e2[label="Exemple : la défense
+d'un devoir de donner de
+l'argent à des associations
+humanitaires efficaces"]
+
+d4->e3[minlen=1, style=invis]
+e3[label="Exemple : la critique
+de la production
+industrielle de viande"]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
