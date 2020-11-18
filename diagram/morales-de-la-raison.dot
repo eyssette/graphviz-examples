@@ -87,7 +87,7 @@ e3[label=<= réfléchir à ce<br/>
 qui guide notre choix<br/>
 avant même de le faire<br/>
 <font point-size="5"><br/></font>
-<font point-size="12">(focalisation sur le résultat)</font>>]
+<font point-size="12">(focalisation sur l'intention')</font>>]
 
 
 // Remarques
@@ -99,7 +99,3 @@ edge[color=blue;arrowhead="none";xlabel="";style=dashed]
 
 
 }
-
-
-
-
