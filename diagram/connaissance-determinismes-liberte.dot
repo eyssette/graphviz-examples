@@ -1,0 +1,90 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="La connaissance
+des déterminismes"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="= la connaissance des
+facteurs biologiques,
+psychiques et sociaux qui
+peuvent agir sur nous"]
+}[headport=n]
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="Or, parmi ces facteurs, il y a …"]
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+c1->{bc1,bc2}
+bc1[label="Ceux qui limitent
+notre capacité de
+faire des choix"]
+bc2[label="Ceux qui rendent
+possible notre capacité
+de faire des choix"]
+
+{rank=same;bc1->bc2[style=invis, minlen=8]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+bc1->d1
+d1[label="La connaissance des déterminismes nous
+permet de nous libérer de leur emprise
+et nous donne accès à un répertoire
+de possibilités d'action plus vaste"]
+
+bc2->d2
+d2[label="La connaissance des déterminismes
+nous permet de mieux comprendre les
+conditions qui nous rendent capables
+d'exercer un contrôle sur nous-mêmes"]
+
+{rank=same;d1->d2[style=invis, minlen=5]}
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+
+{d1,d2}->e1[minlen=1, style=invis]
+e1[label="⇒   La connaissance des déterminismes augmente notre liberté"]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
