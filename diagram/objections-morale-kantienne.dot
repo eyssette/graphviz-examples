@@ -1,0 +1,101 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Quelques objections
+contre la morale
+kantienne"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Une morale
+trop rigoriste"]    
+b2[label="Une conception
+trop formelle"]
+b3[label="Un concept de
+dignité trop vague"]
+}[headport=n]
+
+{rank=same;b1->b2->b3[style=invis]}
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="Agir moralement,
+est-ce vraiment agir
+par pur devoir ?"]
+b2->c2
+c2[label="La morale kantienne
+n'est-elle pas trop
+générale et abstraite ?"]
+b3->c3
+c3[label="Le respect de la dignité ne
+peut-il pas être interprété de
+manière très différente ?"]
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+c1->d1
+d1[label="Ne faut-il pas reconnaître
+l'importance de la sensibilité
+morale ? Faut-il opposer
+le devoir moral et la
+recherche du bonheur ?"]
+
+c2->d2
+d2[label="Dans une situation concrète, face
+à un dilemme moral particulier,
+les principes dégagés par Kant
+permettent-ils vraiment de
+savoir ce qu'il faut faire ?"]
+
+c3->d3
+d3[label="Y a-t-il des critères pour
+déterminer ce qui est réellement
+une atteinte à la dignité ?
+A-t-on vraiment besoin de
+la notion de dignité ?"]
+
+{rank=same;d1->d2->d3[style=invis,minlen=3]}
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
