@@ -26,7 +26,7 @@ trop rigoriste"]
 b2[label="Une conception
 trop formelle"]
 b3[label="Un concept de
-dignité trop vague"]
+dignité trop vague", URL="https://docs.google.com/document/d/1K-_-mzQFSjUQi7tpYJQwSr4WjTQwio0kK5iGPpox81k/edit?usp=sharing"]
 }[headport=n]
 
 {rank=same;b1->b2->b3[style=invis]}
@@ -46,7 +46,7 @@ générale et abstraite ?"]
 b3->c3
 c3[label="Le respect de la dignité ne
 peut-il pas être interprété de
-manière très différente ?"]
+manière très différente ?", URL="https://docs.google.com/document/d/1K-_-mzQFSjUQi7tpYJQwSr4WjTQwio0kK5iGPpox81k/edit?usp=sharing"]
 
 
 // INTERMÉDIAIRE AVANT NIVEAU 3
@@ -63,25 +63,28 @@ node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
 // d1[label=""]
 
 c1->d1
-d1[label="Ne faut-il pas reconnaître
-l'importance de la sensibilité
-morale ? Faut-il opposer
-le devoir moral et la
-recherche du bonheur ?"]
+d1[label="Ne faut-il pas
+reconnaître l'importance
+de la sensibilité morale ?
+Faut-il opposer le devoir
+moral et la recherche
+du bonheur ?"]
 
 c2->d2
-d2[label="Dans une situation concrète, face
-à un dilemme moral particulier,
-les principes dégagés par Kant
+d2[label="Dans une situation concrète,
+face à un dilemme moral
+particulier, les principes
+dégagés par Kant
 permettent-ils vraiment de
 savoir ce qu'il faut faire ?"]
 
 c3->d3
-d3[label="Y a-t-il des critères pour
-déterminer ce qui est réellement
-une atteinte à la dignité ?
+d3[label="Y a-t-il des critères
+pour déterminer ce qui
+est réellement une
+atteinte à la dignité ?
 A-t-on vraiment besoin de
-la notion de dignité ?"]
+la notion de dignité ?", URL="https://docs.google.com/document/d/1K-_-mzQFSjUQi7tpYJQwSr4WjTQwio0kK5iGPpox81k/edit?usp=sharing"]
 
 {rank=same;d1->d2->d3[style=invis,minlen=3]}
 
