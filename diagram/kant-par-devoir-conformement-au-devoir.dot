@@ -33,7 +33,7 @@ node[fontcolor=black]
 node [shape=box, fillcolor=white, color=grey50]
 // c1[label=""]
 b2->c1
-c1[label="≠ agir
+c1[label="≠ simplement agir
 conformément
 au devoir"]
 
