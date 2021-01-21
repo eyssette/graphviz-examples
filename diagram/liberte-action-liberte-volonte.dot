@@ -32,13 +32,13 @@ node[fontcolor=black]
 node [shape=box, fillcolor=white, color=grey50]
 // c1[label=""]
 b1->c1
-c1[label=<Un pouvoir d'agir<br/>
+c1[label=<<font point-size="12">« Pouvoir faire … »</font><br/>
 <font point-size="8"><br/></font>
-<font point-size="12">« Pouvoir faire … »</font>>]
+Un pouvoir d'agir>]
 b2->c2
-c2[label=<Un pouvoir de choisir<br/>
+c2[label=<<font point-size="12">« … ce que je veux »</font><br/>
 <font point-size="8"><br/></font>
-<font point-size="12">« … ce que je veux »</font>>]
+Un pouvoir de choisir<br/>>]
 
 // INTERMÉDIAIRE AVANT NIVEAU 3
 node[fillcolor=grey78, shape=oval]
