@@ -70,18 +70,21 @@ node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
 // d1[label=""]
 
 c1->d1
-d1[label="Droit à la sûreté,
-interdiction
-des peines ou
-traitements cruels
+d1[label="Interdiction de
+l'esclavage,
+interdiction des
+peines et des
+traitements cruels,
+droit à la sûreté
 
 Liberté de pensée,
 de conscience et
 de religion"]
 
 c2->d2
-d2[label="Liberté de circulation,
-droits de propriété,
+d2[label="Liberté de
+circulation, droits
+de propriété,
 respect de la vie
 privée, droit de
 fonder une famille"]
