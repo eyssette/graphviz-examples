@@ -1,0 +1,31 @@
+digraph G {
+splines=curves
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.4
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+
+a1[label="Présentation"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="Parcours
+professionnel"]
+b2[label="Usages du
+numérique"]
+b3[label="Ce que vous
+aimeriez
+savoir faire"]
+}[headport=n]
+
+}
+
+
