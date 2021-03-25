@@ -1,0 +1,173 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label=<Cadre de référence des<br/>
+compétences numériques<br/>
+<font point-size="5"><br/></font>
+<font point-size="12"><i>(CRCN)</i></font>>]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Informations
+et données"]    
+b2[label="Communication
+et collaboration"]
+b3[label="Création de
+contenus"]
+b4[label="Protection
+et sécurité"]
+b5[label="Environnement
+numérique"]
+}[headport=n]
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="– 1.1 : Mener une recherche
+et une veille d’information
+– 1.2 : Gérer des données
+– 1.3 : Traiter des données"]
+b2->c2
+c2[label="– 2.1 : Interagir
+– 2.2 : Partager et publier
+– 2.3 : Collaborer
+– 2.4 : S'insérer dans
+le monde numérique"]
+b3->c3
+c3[label="– 3.1 : Développer des
+documents textuels
+– 3.2 : Développer des
+documents multimédia
+– 3.3 : Adapter les
+documents à leur finalité
+– 3.4 : Programmer"]
+b4->c4
+c4[label="– 4.1 : Sécuriser
+l'environnement numérique
+– 4.2 : Protéger les données
+personnelles et la vie privée
+– 4.3 : Protéger la santé, le
+bien-être et l’environnement"]
+b5->c5
+c5[label="– 5.1 : Résoudre des
+problèmes techniques
+– 5.2 : Évoluer dans un
+environnement numérique"]
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50, fontsize="11"]
+// d1[label=""]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=17]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+c1->d1[minlen=1, style=invis]
+d1[label="– 1.1 : Web et navigation,
+moteurs de recherche,
+sources et citations,
+recul critique,
+droits d'auteurs
+
+– 1.2 : Dossiers et fichiers,
+stockage et compression,
+transfert et synchronisation,
+tags, indexation,
+structuration des données
+
+– 1.3 : Statistiques,
+représentations graphiques,
+collecte de données,
+algorithmes"]
+
+c2->d2[minlen=1, style=invis]
+d2[label="– 2.1, 2.2, 2.3 et 2.4 :
+Applications pour
+l'interaction, le partage,
+la collaboration,
+protocoles, rôles,
+vie privée et
+confidentialité,
+identité numérique,
+nétiquette, réseaux
+sociaux, droits
+d'accès, révisions,
+droits d'auteur"]
+
+c3->d3[minlen=1, style=invis]
+d3[label="– 3.1, 3.2 et 3.3 :
+Applications d'édition
+de document, chartes
+graphiques, interopérabilité,
+ergonomie, accessibilité,
+droits d'auteur, licences
+
+– 3.4 : Algorithmes, programmes,
+langages de programmation,
+représentation et codage
+de l'information, collecte
+et exploitation de données,
+intelligence artificielle"]
+
+c4->d4[minlen=1, style=invis]
+d4[label="– 4.1 et 4.2 :
+Attaques et menaces,
+chiffrement, logiciels de
+protection, authentification,
+big data, vie privée,
+confidentialité
+
+– 4.3 : Ergonomie du poste
+de travail, communications
+sans fil, capteurs, impact
+environnemental"]
+
+c5->d5[minlen=1, style=invis]
+d5[label="– 5.1 : Pannes et support
+informatique, administration
+et configuration, maintenance
+et mise à jour, sauvegardes
+et restauration, interopérabilité
+
+– 5.2 : Histoire de l'informatique,
+logiciels et matériels,
+systèmes d'exploitation,
+réseau informatique"]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
