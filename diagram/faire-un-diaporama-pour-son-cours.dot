@@ -1,0 +1,107 @@
+digraph G {
+// Template : diagram
+// Usage : 
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.1
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Faire un
+diaporama pour
+son cours"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Intérêt"]    
+b2[label="Risques
+possibles"]
+}[headport=w]
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->{c1,c2,c3,c4}[headport=w]
+c1[label="Intégration possible de plusieurs contenus
+différents : textes, schémas, vidéo, exercices"]
+c2[label="Clarification de la structure du cours avec des
+étapes facilement identifiables, ou un code couleur"]
+c3[label="Guidage des élèves grâce à l'explicitation des
+consignes et la focalisation sur les points essentiels"]
+c4[label="Polyvalence des usages : pour la projection en classe,
+pour l'impression d'un support, pour les révisions des
+élèves, pour l'échange avec les collègues …"]
+
+{rank=same;c1->c2->c3->c4[style=invis,minlen=2]}
+
+
+
+b2->{c5,c6,c7, c8}[headport=w]
+c5[label="Diaporama surchargé en textes : contenu pas lisible
+tendance au simple recopiage du diaporama,
+peu d'intérêt des élèves pour le suivi du cours"]
+c6[label="Diaporama surchargé en images ou effets de transition"]
+c7[label="Cours trop directif, trop linéaire, trop rigide"]
+c8[label="Temps de préparation trop important"]
+{rank=same;c4->c5[style=invis, minlen=8]}
+
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50, fontsize=13]
+// d1[label=""]
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=16]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+{rank=same;c5->e1[minlen=1, style=invis]}
+e1[label="⇒ Faire attention à la lisibilité, mettre seulement
+l'essentiel, concevoir son diaporama principalement
+comme un support pour la mise en activité des élèves"]
+
+{rank=same;c6->e2[minlen=1, style=invis]}
+e2[label="⇒ Focaliser le diaporama sur le contenu,
+ne pas perdre l'attention des élèves"]
+
+{rank=same;c7->e3[minlen=1, style=invis]}
+e3[label="⇒ Ménager des temps de questionnement,
+accepter certains détours, certaines digressions"]
+
+{rank=same;c8->e4[minlen=1, style=invis]}
+e4[label="⇒ Mettre dans un premier temps seulement la structure,
+les points les plus importants, quelques exercices"]
+
+{rank=same;e1->c6[style=invis,minlen=3]}
+{rank=same;e2->c7[style=invis,minlen=3]}
+{rank=same;e3->c8[style=invis,minlen=3]}
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
