@@ -56,7 +56,7 @@ PRAG, PRCE, ou contractuel"]
 cc2[label="en prison"]
 cc3[label="en hôpital psychiatrique"]
 cc4[label="dans le cadre d'interventions
-dans un collègue, une école"]
+dans un collège, une école"]
 
 {rank=same;ca7->cb1[style=invis]}
 {rank=same;cb4->cc1[style=invis]}
