@@ -52,7 +52,7 @@ cb4[label="dans un microlycée"]
 
 b3->{cc1,cc2,cc3, cc4}[headport=w]
 cc1[label="à l'université en tant que
-PRGA, PRCE, ou contractuel"]
+PRAG, PRCE, ou contractuel"]
 cc2[label="en prison"]
 cc3[label="en hôpital psychiatrique"]
 cc4[label="dans le cadre d'interventions
