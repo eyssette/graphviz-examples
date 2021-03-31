@@ -51,12 +51,17 @@ cb3[label="dans un lycée agricole"]
 cb4[label="dans un microlycée"]
 
 b3->{cc1,cc2,cc3, cc4}[headport=w]
-cc1[label="à l'université en tant que
-PRAG, PRCE, ou contractuel"]
-cc2[label="en prison"]
+cc1[label="à l'université, notamment
+en tant que PRAG,
+PRCE, ou contractuel"]
+cc2[label="en prison, ou en travaillant avec
+la PJJ, ou les unités éducatives /
+hébergement (UEHC)"]
 cc3[label="en hôpital psychiatrique"]
 cc4[label="dans le cadre d'interventions
-dans un collège, une école"]
+dans un collège, une école,
+une bibliothèque, ou avec une
+association partenaire de l'EN"]
 
 {rank=same;ca7->cb1[style=invis]}
 {rank=same;cb4->cc1[style=invis]}
