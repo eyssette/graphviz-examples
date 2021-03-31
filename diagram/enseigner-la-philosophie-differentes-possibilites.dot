@@ -84,6 +84,7 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
 
 {rank=same;a1->e1[minlen=2, style=invis]}
 e1[label="Quelques possibilités
+institutionnelles
 parfois méconnues"]
 
 // REMARQUES EN BLEU
