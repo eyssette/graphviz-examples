@@ -1,0 +1,96 @@
+digraph G {
+// Template : diagram
+// Usage : 
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.15
+
+// NIVEAU 1
+node[fillcolor=12, fontsize=18]
+a1[label="Enseigner la
+philosophie"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Dans un
+lycée “ordinaire”"]    
+b2[label="Dans un
+lycée “spécifique”"]    
+b3[label="Hors du
+lycée"]
+}[headport=w]
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->{ca1,ca2,ca3,ca4,ca5, ca6, ca7}[headport=w]
+ca1[label="en HLP"]
+ca2[label="en EMC"]
+ca3[label="en DNL dans une section européenne"]
+ca4[label="dans une section Cinéma et Audiovisuel
+ou dans une autre section artistique
+(danse, histoire de l'art, théâtre)"]
+ca5[label="dans le cadre de l'option DGEMC"]
+
+ca6[label="dans une DN MADE ou un BTS"]
+ca7[label="dans une classe préparatoire"]
+
+b2->{cb1,cb2, cb3, cb4}[headport=w]
+cb1[label="dans un lycée à l'étranger"]
+cb2[label="en lycée professionnel"]
+cb3[label="dans un lycée agricole"]
+cb4[label="dans un microlycée"]
+
+b3->{cc1,cc2,cc3, cc4}[headport=w]
+cc1[label="à l'université en tant que
+PRGA, PRCE, ou contractuel"]
+cc2[label="en prison"]
+cc3[label="en hôpital psychiatrique"]
+cc4[label="dans le cadre d'interventions
+dans un collègue, une école"]
+
+{rank=same;ca7->cb1[style=invis]}
+{rank=same;cb4->cc1[style=invis]}
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+{rank=same;a1->e1[minlen=2, style=invis]}
+e1[label="Quelques possibilités
+parfois méconnues"]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
