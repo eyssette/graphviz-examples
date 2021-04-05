@@ -30,18 +30,20 @@ node[fontcolor=black]
 // NIVEAU 3 (sans intermédiaire)
 node [shape=box, fillcolor=white, color=grey50]
 // c1[label=""]
-b1->{c1,c2,c3,c4}[headport=w]
-c1[label="Intégration possible de plusieurs contenus
+b1->{ba1,ba2,ba3,ba4,ba5}[headport=w]
+ba1[label="Intégration possible de plusieurs contenus
 différents : textes, schémas, vidéo, exercices"]
-c2[label="Clarification de la structure du cours avec des
+ba2[label="Clarification de la structure du cours avec des
 étapes facilement identifiables, ou un code couleur"]
-c3[label="Guidage des élèves grâce à l'explicitation des
+ba3[label="Guidage des élèves grâce à l'explicitation des
 consignes et la focalisation sur les points essentiels"]
-c4[label="Polyvalence des usages : pour la projection en classe,
+ba4[label="Efficacité dans la gestion du temps et disponibilité pour
+l'interaction avec les élèves et la gestion de la classe"]
+ba5[label="Polyvalence des usages : pour la projection en classe,
 pour l'impression d'un support, pour les révisions des
 élèves, pour l'échange avec les collègues …"]
 
-{rank=same;c1->c2->c3->c4[style=invis,minlen=2]}
+{rank=same;ba1->ba2->ba3->ba4->ba5[style=invis,minlen=2]}
 
 
 
@@ -52,7 +54,7 @@ peu d'intérêt des élèves pour le suivi du cours"]
 c6[label="Diaporama surchargé en images ou effets de transition"]
 c7[label="Cours trop directif, trop linéaire, trop rigide"]
 c8[label="Temps de préparation trop important"]
-{rank=same;c4->c5[style=invis, minlen=8]}
+{rank=same;ba5->c5[style=invis, minlen=8]}
 
 
 
