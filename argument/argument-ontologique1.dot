@@ -11,11 +11,17 @@ cet argument n'est pas que réellement
 Dieu existe, mais simplement que, par 
 définition, Dieu a la propriété d'exister,
 ce qui n'est pas la même chose"]
-o3[label="L'existence est-elle vraiment une propriété
-d'une entité ? Si P est une propriété, alors
-le fait d'avoir la propriété P doit permettre
-de distinguer les entités qui ont cette
-propriété et celles qui ne l'ont pas"]
+o3[label="L'existence est-elle vraiment une propriété d'une entité ?
+1/ D'un point de vue épistémologique, une propriété est un
+moyen de distinguer, parmi tout ce qui existe, les entités
+qui possèdent cette propriété et celles qui ne la possèdent
+pas, or l'existence n'est pas une caractéristique distinctive.
+2/ D'un point de vue logique, la structure d'un jugement qui
+attribue une propriété à un objet (forme logique : Pa) n'est pas
+la même que celle d'un jugement d'existence (∃x.Px) ; on peut
+concevoir l'existence comme une propriété de second-ordre,
+qui signifierait qu'une propriété est instanciée, mais ce n'est
+pas une propriété de premier-ordre attribuable à une entité"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 
