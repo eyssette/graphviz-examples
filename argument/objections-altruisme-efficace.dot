@@ -1,0 +1,122 @@
+digraph G {
+splines=true
+newrank=true
+compound=true
+label=<<FONT point-size="26"><B>   Examen critique de la démarche de l'altruisme efficace : quelques objections à prendre en compte</B></FONT>
+<FONT point-size="5"><BR/><BR/></FONT>
+<FONT point-size="16">(à partir de : Iason Gabriel, <i>“Effective Altruism and Its Critics”</i>et du travail de John Danaher : <i>“The Philosophical Merits of Effective Altruism”)</i><BR/><BR/><BR/></FONT>>
+labelloc=t
+labeljust=l
+
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
+
+
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
+edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label="  Mais …", fontcolor=red4,fontsize=18]
+
+
+
+subgraph cluster_0 {
+bgcolor=grey90
+style=rounded
+color=grey50
+margin=40
+label=""
+
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black]
+edge[label="",xlabel="Par
+conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
+
+
+C->{p1,p2,p3}
+
+
+
+p1[label="(1) Il faut évaluer
+l'efficacité des
+actions humanitaires"]
+p2[label="(2) Il est possible
+d'évaluer objectivement
+l'efficacité des
+actions humanitaires"]
+p3[label="(3) Il faut accomplir
+les actions humanitaires
+les plus efficaces"]
+
+
+
+{rank=same;p1->p2->p3[style=invis,xlabel="",minlen=1]}
+//p1->p3[style=invis,xlabel="",minlen=1]
+//{rank=same;p3->p4[style=invis,xlabel="",minlen=1]}
+//{rank=same;p1->p2[style=invis,xlabel="",minlen=1]}
+
+//p2:s->p3:n[ltail=cluster_1]
+//p2:w->p3:n[ltail=cluster_1]
+//p3[label="(3) Lemme 1"]
+
+
+
+
+
+C[label="Il faut adopter
+la démarche de
+l'altruisme efficace",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
+
+}
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, fontcolor=black, fontsize=18, margin=0.1]
+o1[label="Vouloir toujours évaluer l'efficacité des actions humanitaires
+peut être contre-productif : la surévaluation de la démarche
+rationnelle peut conduire à mettre en doute l'impact réel
+d'un acte altruiste individuel, à négliger l'importance des
+facteurs affectifs, et à véhiculer une conception de l'altruisme
+qui cherche davantage à se rassurer sur l'importance morale
+de son action, que sur la mise en œuvre politique et
+collective de changements systémiques essentiels"]
+p1->o1
+o2[label="L'évaluation des actions humanitaires en fonction de
+leur efficacité a tendance à créer un biais en faveur
+des actions quantifiables, ciblées et menées par des
+experts, ce qui peut conduire à ne pas prendre en
+compte des actions moins ou non quantifiables,
+d'envergure plus importante, ou conduites
+par des associations locales avec un mode
+d'organisation davantage participatif"]
+p2->o2
+o3[label="L'efficacité n'est pas la
+seule valeur importante : il
+faut aussi prendre en compte
+les considérations d'égalité,
+la priorité des besoins,
+et les droits humains"]
+p3->o3
+
+node[shape=rect, style="filled", color="darkorchid4"]
+
+subgraph cluster_1 {
+style="box, rounded"
+margin=15
+bgcolor=white
+color=white
+label=""
+/*
+ro1[label="Réponse possible :
+"]
+ro2[label="Réponse possible :
+"]
+ro3[label="Réponse possible :
+"]
+{rank=same;ro1->ro2->ro3[style=invis]}
+*/
+}
+/*
+edge[color="darkorchid4",label="  Cependant …", fontcolor="darkorchid4"]
+o1->ro1
+o2->ro2
+o3->ro3
+*/
+
+}
