@@ -4,12 +4,16 @@ newrank=true
 compound=true
 
 
-node[color=red3, style="rounded, filled", shape="circle", fillcolor=red3, penwidth=0.5, fontcolor=white, margin=0, size=1]
-//o1[label="o1"]
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
+
+o2[label="o2"]
+o1[label="o1"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
-edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label="Objection !", fontcolor=red4,fontsize=10]
-//{rank=same;o1->p1[dir=back]}
+
+edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=14]
+o2->p2[dir=back]
+{rank=same;o1->p1[dir=back]}
 
 
 subgraph cluster_0 {
@@ -35,12 +39,10 @@ p1[label="(P1) Dieu est, par
 définition, un
 être parfait"]
 
-p2[label="(P2) Un être parfait est un être qui
-possède à un degré absolu toutes
-les propriétés qui sont telles que
-le fait d'avoir cette propriété
-est jugé meilleur que le fait de
-ne pas avoir cette propriété"]
+p2[label="(P2) Un être parfait est un être qui possède
+à un degré absolu toutes les propriétés
+qui sont telles que c'est mieux d'avoir
+cette propriété que de ne pas l'avoir"]
 }
 
 
@@ -49,38 +51,43 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p3[label="(L1) Si P est une propriété telle que
-le fait d'avoir cette propriété
-est jugé meilleur que le fait de
-ne pas avoir cette propriété,
+l1[label="(L1) Si P est une propriété telle
+que c'est mieux d'avoir cette
+propriété que de ne pas l'avoir,
 alors Dieu a la propriété P"]
-p4[label="(P3) L'existence
+p3[label="(P3) L'existence
 est une
 propriété"]
-p5[label="(P4) Le fait d'exister
-est meilleur que le fait
-de ne pas exister"]
+p4[label="(P4) C'est mieux d'avoir
+la propriété d'exister
+que de ne pas exister"]
 }
 
 
 //p1->p2[style=invis,xlabel="",minlen=1]
 {rank=same;p1->p2[style=invis,xlabel="",minlen=1]}
-{rank=same;p3->p4->p5[style=invis,xlabel="",minlen=1]}
+{rank=same;l1->p3->p4[style=invis,xlabel="",minlen=1]}
 
-p2:w->p3[ltail=cluster_1]
+p2:w->l1[ltail=cluster_1]
 
-p4:w->C[ltail=cluster_2]
-
-
+p3:s->C[ltail=cluster_2]
 
 
-C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
+
+C[label="Dieu a la propriété
+d'exister, c'est-à-dire :
+Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 
 
 }
 
-node[color=red3, style="rounded, filled", shape="circle", fillcolor=red3, penwidth=0.5, fontcolor=white, margin=0, size=1,fontsize=14]
-//o2[label="o2"]
-//{rank=same;p4->o2}
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
+o2->{o1,o3}[style=invis]
+o3
+{rank=same;p2->o3[style=invis]}
+o3:sw->p3[dir=back]
+o4[label="Objection contre
+cette prémisse"]
+{rank=same;p4->o4}
 
 }
