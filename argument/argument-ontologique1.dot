@@ -5,23 +5,24 @@ compound=true
 
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
-o1[label="Si cette première prémisse formule
-une définition, alors la conclusion de
-cet argument n'est pas que réellement
-Dieu existe, mais simplement que, par 
-définition, Dieu a la propriété d'exister,
-ce qui n'est pas la même chose"]
+o1[label="Si cette première prémisse formule une définition, alors la
+conclusion de cet argument n'est pas que réellement Dieu
+existe, mais simplement que, la définition de Dieu inclut
+la propriété d'exister, ce qui n'est pas la même chose : on ne
+peut pas passer de l'inconcevabilité de Dieu sans l'existence
+(dans notre esprit) à l'affirmation de son existence réelle (dans
+le monde), ce serait faire un saut illégitime de la pensée au réel"]
 o3[label="L'existence est-elle vraiment une propriété d'une entité ?
-1/ D'un point de vue épistémologique, une propriété est un
-moyen de distinguer, parmi tout ce qui existe, les entités
-qui possèdent cette propriété et celles qui ne la possèdent
-pas, or l'existence n'est pas une caractéristique distinctive.
-2/ D'un point de vue logique, la structure d'un jugement qui
-attribue une propriété à un objet (forme logique : Pa) n'est pas
-la même que celle d'un jugement d'existence (∃x.Px) ; on peut
-concevoir l'existence comme une propriété de second-ordre,
-qui signifierait qu'une propriété est instanciée, mais ce n'est
-pas une propriété de premier-ordre attribuable à une entité"]
+1/ D'un point de vue épistémologique, une propriété est un moyen de distinguer
+parmi tout ce qui existe les entités qui possèdent cette propriété et celles qui
+ne la possèdent pas, or l'existence n'est pas une caractéristique distinctive.
+2/ D'un point de vue logique, la structure d'un jugement qui attribue une
+propriété à un objet (forme logique : Pa) n'est pas la même que celle d'un
+jugement d'existence (∃x.Px) ; on peut concevoir l'existence comme une
+propriété de second-ordre, qui signifierait qu'une propriété est instanciée,
+mais ce n'est pas une propriété de premier-ordre attribuable à une entité
+3/ Si l'existence est une propriété, alors elle fait partie des propriétés du
+concept de “licorne existante”, ce qui signifierait que les licornes existent !"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 
@@ -97,13 +98,25 @@ Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
-o2[label="Y a-t-il vraiment un fondement objectif
-qui permet de hiérarchiser les propriétés
-et de reconnaître les propriétés telles
-que c'est mieux de les avoir ?"]
+o2[label="1/ Y a-t-il vraiment un fondement objectif qui permet de hiérarchiser
+les propriétés et de reconnaître les propriétés telles que c'est mieux
+de les avoir ? On peut juger de la perfection de quelque chose quand
+on en a un concept déterminé (on peut par exemple juger de la qualité
+d'un tournevis), mais comment cela est-il possible quand on parle
+simplement d'un être qui n'est pas défini par un concept déterminé ?
+2/ Rien ne garantit l'absence de contradiction entre toutes ces
+propriétés : il est possible que l'une de ces propriétés soit
+en fait incompatible avec une autre"]
 {rank=same;p2->o2}
-o4[label="Objection contre
-cette prémisse"]
+o4[label="1/ Une telle affirmation a-t-elle vraiment du sens ? Peut-on vraiment
+comparer le degré de perfection d'une entité qui existe et d'une entité
+qui n'existe pas ? Cela semble aussi absurde que de vouloir comparer
+le poids de bananes qui existent et de bananes qui n'existent pas.
+2/ Le fait d'exister est-il toujours mieux que le fait de ne pas exister ?
+C'est mieux que certaines choses n'existent pas (p.ex. : le mal), mais
+l'objection ici ne semble pas très forte, car on pourrait affaiblir la
+prémisse P4 en soutenant qu'elle vaut ici seulement pour Dieu, défini
+comme un être parfait, et dont l'existence ne pourrait envelopper du mal"]
 {rank=same;p4->o4}
 
 }
