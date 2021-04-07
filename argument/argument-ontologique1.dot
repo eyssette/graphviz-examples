@@ -11,7 +11,11 @@ cet argument n'est pas que réellement
 Dieu existe, mais simplement que, par 
 définition, Dieu a la propriété d'exister,
 ce qui n'est pas la même chose"]
-o3[label="Une propriété"]
+o3[label="L'existence est-elle vraiment une propriété
+d'une entité ? Si P est une propriété, alors
+le fait d'avoir la propriété P doit permettre
+de distinguer les entités qui ont cette
+propriété et celles qui ne l'ont pas"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 
@@ -87,7 +91,10 @@ Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
-o2[label="Peut-on vraiment "]
+o2[label="Y a-t-il vraiment un fondement objectif
+qui permet de hiérarchiser les propriétés
+et de reconnaître les propriétés telles
+que c'est mieux de les avoir ?"]
 {rank=same;p2->o2}
 o4[label="Objection contre
 cette prémisse"]
