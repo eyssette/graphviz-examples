@@ -111,14 +111,15 @@ les élèves",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 }
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=20, margin=0.1]
-o2[label="L'appel à l'esprit de compétition des élèves, ou du moins à
-leur désir de se situer par rapport aux autres n'a que peu de
-pertinence : l'argument n'est valable que pour quelques élèves,
-il masque les effets délétères du classement des élèves sur
-un grand nombre d'élèves, notamment sur les plus fragiles,
-enfin il néglige le fait que la focalisation sur la note peut
-inciter à un apprentissage superficiel, à un désintérêt pour
-le contenu profond enseigné, ou même à la triche"]
+o2[label="L'appel à l'esprit de compétition des élèves, ou du moins
+à leur désir de se situer par rapport aux autres n'a que
+peu de pertinence : l'argument n'est valable que pour
+quelques élèves, il masque les effets délétères du
+classement et de la comparaison sociale sur un grand
+nombre d'élèves, notamment sur les plus fragiles, enfin
+il néglige le fait que la focalisation sur la note peut
+inciter à un apprentissage superficiel, à un désintérêt
+pour le contenu enseigné, ou même à la triche"]
 {rank=same;p2->o2}
 
 o3[label="Il est possible de motiver les élèves par des
