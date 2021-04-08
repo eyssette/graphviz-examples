@@ -45,7 +45,7 @@ conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, a
 
 
 subgraph cluster_1 {
-label=""
+label=<<br/><font point-size="24">Argument 2<br/></font><br/>>
 style="box"
 margin=20
 bgcolor=grey73
@@ -77,7 +77,7 @@ p1->p2->p3[style=invis,xlabel="",minlen=1]
 }
 
 subgraph cluster_2 {
-label=""
+label=<<br/><font point-size="24">Argument 1<br/></font><br/>>
 style="box"
 margin=20
 bgcolor=grey73
