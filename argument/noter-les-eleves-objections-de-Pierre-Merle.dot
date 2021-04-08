@@ -1,0 +1,129 @@
+digraph G {
+splines=true
+newrank=true
+compound=true
+
+label=<<FONT point-size="32"><b>Noter les élèves a-t-il vraiment un sens ? Examen critique de deux arguments</b><br/><FONT point-size="10"><br/></FONT><FONT point-size="28">À partir de l'article de Pierre Merle : « Faut-il en finir avec les notes ? »</FONT><br/><br/></FONT>>
+labelloc=t
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=20, margin=0.1]
+ob2[label="Les recherches sur les pratiques de notation des élèves
+montrent que les notes ne mesurent pas de façon précise
+les compétences des élèves et qu'il existe des biais
+sociaux de notation. On peut cependant faire un bon
+usage d'évaluations standardisées et centralisées, si
+celles-ci ont pour finalité non pas de classer les élèves
+ou les établissements, mais d'identifier les problèmes
+et de permettre une discussion collective afin
+de pouvoir élaborer des solutions appropriées"]
+ob3[label="Il existe d'autres pratiques pour évaluer de façon plus
+précise et objective les compétences des élèves : les
+conseils plutôt que les notes ; l'évaluation formative
+pour entraîner plutôt que l'évaluation sommative
+pour sélectionner ; l'évaluation préparée, par contrat
+de confiance, et que l'on peut repasser, plutôt qu'une
+note qui fonctionne comme un couperet définitif"]
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
+edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=14]
+{rank=same;ob2->pb2[dir=back]}
+{rank=same;ob3->pb3[dir=back]}
+
+subgraph cluster_0 {
+label=""
+bgcolor=grey90
+style=rounded
+color=grey50
+margin=40
+
+
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black]
+edge[label="",xlabel="Par
+conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
+
+
+
+subgraph cluster_1 {
+label=""
+style="box"
+margin=20
+bgcolor=grey73
+color=grey73
+
+p1[label="(B1) Il est essentiel
+de motiver les élèves à
+améliorer leurs compétences"]
+
+p2[label="(B2) Noter les élèves
+permet de motiver les
+élèves à améliorer
+leurs compétences"]
+
+p3[label="(B3) Si on ne note pas les
+élèves, alors on ne peut pas
+les motiver à améliorer
+leurs compétences"]
+
+p1->p2->p3[style=invis,xlabel="",minlen=1]
+
+// p2:s->p3:n[ltail=cluster_1]
+//p2:w->p3:n[ltail=cluster_1]
+// p3[label="(3) Lemme 1"]
+
+// {rank=same;p3->p4[style=invis]}
+
+// p4[label="(4) Prémisse 3"]
+}
+
+subgraph cluster_2 {
+label=""
+style="box"
+margin=20
+bgcolor=grey73
+color=grey73
+
+pb1[label="(A1) Il est essentiel d’évaluer
+de façon précise et objective
+les compétences des élèves"]
+
+pb2[label="(A2) Noter les élèves
+permet d’évaluer de façon
+précise et objective les
+compétences des élèves"]
+
+pb3[label="(A3) Si on ne note pas les élèves,
+alors on ne peut pas évaluer
+de façon précise et objective
+les compétences des élèves"]
+
+pb1->pb2->pb3[style=invis,xlabel="",minlen=1]
+
+}
+
+p3:s->C:wn[ltail=cluster_1]
+pb3:s->C:en[ltail=cluster_2]
+
+C[label="Il faut noter
+les élèves",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
+
+
+}
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=20, margin=0.1]
+o2[label="L'appel à l'esprit de compétition des élèves, ou du moins à
+leur désir de se situer par rapport aux autres n'a que peu de
+pertinence : l'argument n'est valable que pour quelques élèves,
+il masque les effets délétères du classement des élèves sur
+un grand nombre d'élèves, notamment sur les plus fragiles,
+enfin il néglige le fait que la focalisation sur la note peut
+inciter à un apprentissage superficiel, à un désintérêt pour
+le contenu profond enseigné, ou même à la triche"]
+{rank=same;p2->o2}
+
+o3[label="Il est possible de motiver les élèves par des
+facteurs intrinsèques aux apprentissages
+et non par des facteurs extrinsèques"]
+{rank=same;p3->o3}
+
+}
