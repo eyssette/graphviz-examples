@@ -21,8 +21,7 @@ margin=40
 
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black]
-edge[label="",xlabel="Par
-conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
+edge[label="",xlabel="Par conséquent … ",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
 
 
 
@@ -55,18 +54,24 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p4[label="L'existence
+
+p4[label="(4) L'existence
 du monde est
 contingente"]
 
-p5[label="Si l'existence de X est contingente, il doit y avoir
-une explication du fait que X existe alors que
-X aurait pu ne pas exister, et cette explication
-ne peut pas se trouver dans X lui-même"]
-}
-{rank=same;p4->p5[style=invis,xlabel="",minlen=1]}
+p5[label="(5) Si l'existence de X est contingente,
+il doit y avoir une explication
+du fait que X existe alors que
+X aurait pu ne pas exister"]
 
-p5:w->p6:n[ltail=cluster_2]
+p6[label="(6) Si l'existence de X est
+contingente, alors on ne peut
+pas trouver l'explication du fait
+que X existe dans X lui-même"]
+}
+{rank=same;p4->p5->p6[style=invis,xlabel="",minlen=1]}
+
+p5:s->p7:n[ltail=cluster_2]
 
 
 subgraph cluster_3 {
@@ -74,19 +79,19 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p6[label="Il doit y avoir une explication
+p7[label="(7) Il doit y avoir une explication
 du fait que le monde existe, et
 cette explication ne peut pas se
 trouver dans le monde lui-même"]
 
-p7[label="S'il doit y avoir une explication du fait que X existe,
-et si cette explication ne peut pas se trouver dans
-X lui-même, alors il existe une réalité différente
-de X dont l'existence explique l'existence de X"]
+p8[label="(8) S'il doit y avoir une explication du fait que X existe, et
+si cette explication ne peut pas se trouver dans X lui-même,
+alors il existe une réalité différente de X, et qui n'est pas
+dans X lui-même, dont l'existence explique l'existence de X"]
 }
-{rank=same;p6->p7[style=invis,xlabel="",minlen=1]}
+{rank=same;p7->p8[style=invis,xlabel="",minlen=1]}
 
-p7:w->p8:n[ltail=cluster_3]
+p8:w->p9:n[ltail=cluster_3]
 
 
 subgraph cluster_4 {
@@ -94,16 +99,32 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p8[label="Il existe une réalité différente
-du monde dont l'existence
-explique l'existence du monde"]
-p9[label="Cette réalité
-ne peut être
-que Dieu"]
+p9[label="(9) Il existe une réalité différente du monde,
+et qui n'est pas dans le monde lui-même,
+dont l'existence explique l'existence du monde"]
+p10[label="(10) Le monde est
+la totalité des
+réalités contingentes"]
 }
-{rank=same;p8->p9[style=invis,xlabel="",minlen=1]}
+{rank=same;p9->p10[style=invis,xlabel="",minlen=1]}
 
-p9:w->C:n[ltail=cluster_4]
+p10:w->p11:n[ltail=cluster_4]
+
+subgraph cluster_5 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p11[label="(11) Il existe une réalité
+non-contingente dont
+l'existence explique
+l'existence du monde"]
+p12[label="(12) Cette réalité,
+c'est Dieu"]
+}
+{rank=same;p11->p12[style=invis,xlabel="",minlen=1]}
+
+p12:w->C:n[ltail=cluster_5]
 
 C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 
