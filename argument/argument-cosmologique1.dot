@@ -80,9 +80,9 @@ cette explication ne peut pas se
 trouver dans le monde lui-même"]
 
 p7[label="S'il doit y avoir une explication du fait que X existe,
-et que cette explication ne peut pas se trouver dans X
-lui-même, alors il existe une réalité différente de X
-dont l'existence explique l'existence de X"]
+et si cette explication ne peut pas se trouver dans
+X lui-même, alors il existe une réalité différente
+de X dont l'existence explique l'existence de X"]
 }
 {rank=same;p6->p7[style=invis,xlabel="",minlen=1]}
 
@@ -94,11 +94,12 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p8[label="Il existe une réalité différente du
-monde dont l'existence explique
-l'existence du monde"]
-p9[label="Cette réalité ne peut
-être que Dieu"]
+p8[label="Il existe une réalité différente
+du monde dont l'existence
+explique l'existence du monde"]
+p9[label="Cette réalité
+ne peut être
+que Dieu"]
 }
 {rank=same;p8->p9[style=invis,xlabel="",minlen=1]}
 
