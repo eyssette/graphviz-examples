@@ -4,12 +4,27 @@ newrank=true
 compound=true
 
 
-node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=20, margin=0.1]
+o1[label="On pourrait penser que l'existence du monde n'est
+pas contingente, soit parce que la contigence n'est
+qu'une illusion de notre pensée ou le résultat d'un
+sophisme (peut-on attribuer la contingence au tout du
+monde à partir de la contingence de ses éléments ?), soit
+parce que l'argument tout entier serait autoréfutant
+(si l'existence du monde s'explique par une réalité
+dont l'existence est nécessaire, peut-elle vraiment être
+contingente ?) ; mais ces objections semblent faibles"]
 
+o11[label="L'existence d'une réalité non-contingente
+explique-t-elle vraiment l'existence du
+monde ? On ne peut accepter une explication
+d'un fait que si elle fournit une raison
+satisfaisante : est-ce vraiment le cas ici ?"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
-edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=12]
-//{rank=same;o1->p1[dir=back]}
+edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=14]
+{rank=same;o1->p4[dir=back]}
+{rank=same;o11->p11[dir=back]}
 
 
 subgraph cluster_0 {
@@ -99,12 +114,15 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p9[label="(9) Il existe une réalité différente du monde,
-et qui n'est pas dans le monde lui-même,
-dont l'existence explique l'existence du monde"]
-p10[label="(10) Le monde est
-la totalité des
-réalités contingentes"]
+p9[label="(9) Il existe une réalité différente
+du monde, et qui n'est pas dans le
+monde lui-même, dont l'existence
+explique l'existence du monde"]
+p10[label="(10) Le monde est la totalité
+des réalités contingentes : si X est
+une réalité différente du monde et
+n'est pas dans le monde lui-même,
+alors X est une réalité non-contingente"]
 }
 {rank=same;p9->p10[style=invis,xlabel="",minlen=1]}
 
@@ -131,8 +149,40 @@ C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellip
 
 }
 
-node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=20, margin=0.1]
+o5[label="Ce principe correspond à ce qu'on appelle
+le principe de raison suffisante (PRS), or le
+PRS se heurte à deux objections majeures : 
+1/ On ne peut pas prouver le PRS ;
+2/ Le PRS a pour domaine premier d'application
+les phénomènes empiriques : peut-on appliquer
+ce principe hors de ce domaine ?"]
+o5->p5[dir=back]
+{rank=same;p3->o5[style=invis]}
+o6[label="Quand on cherche à expliquer l'existence d'un tout,
+on peut l'expliquer par l'existence de ses éléments
+constitutifs, or le monde est justement un tout, dont
+on peut expliquer l'existence en expliquant l'existence
+de chaque réalité qui fait partie du monde : il n'y aurait
+pas besoin de chercher une explication supplémentaire"]
+{rank=same;p6->o6}
 
-//{rank=same;p4->o2}
+o10[label="On pourrait s'interroger sur la possibilité même
+de définir le monde comme totalité, et il y a une
+ambiguïté : si on entend par “réalités
+contingentes” seulement celles qui existent
+maintenant, alors il est possible de trouver dans
+un état antérieur du monde actuel, une réalité
+différente du monde actuel et qui en explique
+l'existence"]
+{rank=same;p10->o10}
+
+o12[label="Cette identification est-elle légitime ?
+L'argument ne prouve au mieux que
+l'existence d'un être nécessaire, ce
+qui ne prouve pas l'existence de
+Dieu au sens ordinaire de ce terme"]
+{rank=same;p12->o12}
+
 
 }
