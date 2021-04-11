@@ -16,10 +16,11 @@ dont l'existence est nécessaire, peut-elle vraiment être
 contingente ?) ; mais ces objections semblent faibles"]
 
 o11[label="L'existence d'une réalité non-contingente
-explique-t-elle vraiment l'existence du
-monde ? On ne peut accepter une explication
-d'un fait que si elle fournit une raison
-satisfaisante : est-ce vraiment le cas ici ?"]
+permet-elle véritablement d'expliquer
+l'existence du monde ? On ne peut accepter une
+explication d'un fait que si elle fournit une
+raison satisfaisante qui nous permet de mieux
+comprendre ce fait : est-ce vraiment le cas ici ?"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=14]
