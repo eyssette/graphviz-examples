@@ -103,11 +103,13 @@ p6[label="(6) Il existe une réalité différente
 du monde, et qui n'est pas dans le
 monde lui-même, dont l'existence
 explique l'existence du monde"]
-p7[label="(7) Cette réalité est non-contingente : soit parce que le monde est 
-lui-même défini comme la totalité des réalités contingentes, soit parce que
-la non-contingence de cette réalité conduirait à rechercher à nouveau une
-explication de son existence, ce qui nous mènerait à une régression à l'infini
-dans l'explication si on ne pose pas l'existence d'une réalité non-contingente"]
+p7[label="(7) Cette réalité est non-contingente : soit parce que
+le monde est lui-même défini comme la totalité des
+réalités contingentes, soit parce que la non-contingence
+de cette réalité conduirait à rechercher à nouveau une
+explication de son existence, ce qui nous mènerait à une
+régression à l'infini dans l'explication si on ne pose
+pas l'existence d'une réalité non-contingente"]
 }
 {rank=same;p6->p7[style=invis,xlabel="",minlen=1]}
 
@@ -150,8 +152,10 @@ expliquant l'existence de chaque réalité qui fait partie du monde :
 il n'y aurait pas besoin de chercher une explication supplémentaire"]
 {rank=same;p3->o3}
 
-o7[label="La définition même du monde comme totalité
-des réalités contingentes semble "]
+o7[label="A-t-on vraiment le droit d'affirmer l'existence
+d'une réalité non-contingente simplement à partir
+d'une définition du monde ou de la difficulté à
+admettre une régression à l'infini dans l'explication ?"]
 {rank=same;p7->o7}
 
 o9[label="Cette identification est-elle légitime ?
