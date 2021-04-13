@@ -134,7 +134,6 @@ p9:w->C:wn[ltail=cluster_5]
 
 C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 
-
 }
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=20, margin=0.1]
