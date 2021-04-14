@@ -18,21 +18,13 @@ suffisante (PRS), or le PRS se heurte à deux objections majeures :
 domaine premier d'application les phénomènes empiriques :
 peut-on appliquer ce principe hors de ce domaine ?"]
 
-o5[label="L'existence d'une réalité non-contingente
-permet-elle véritablement d'expliquer
-l'existence du monde ? On ne peut accepter une
-explication d'un fait que si elle fournit une
-raison satisfaisante qui nous permet de mieux
-comprendre ce fait : est-ce vraiment le cas ici ?"]
-
-
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 edge[color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=14]
 
 {rank=same;o1->p1[dir=back]}
 {rank=same;o2->p2[dir=back]}
-{rank=same;o5->p5[dir=back]}
+
 
 subgraph cluster_0 {
 bgcolor=grey90
@@ -60,11 +52,11 @@ margin=15
 bgcolor=grey73
 color=grey73
 
-a1[label="(4) S'il y a une explication de l'existence du monde,
+p4[label="(4) S'il y a une explication de l'existence du monde,
 on ne peut pas trouver cette explication dans le monde
 lui-même : l'explication doit se trouver dans une réalité 
 différente du monde et qui n'est pas dans le monde"]
-a2[label="(5) S'il y a une explication de l'existence du monde, elle ne peut
+p5[label="(5) S'il y a une explication de l'existence du monde, elle ne peut
 se trouver que dans une réalité non-contingente, car sinon la
 contingence de cette réalité conduirait, d'après (2), à rechercher
 à nouveau une explication de son existence, ce qui nous
@@ -72,9 +64,9 @@ mènerait à une régression à l'infini dans l'explication si on
 ne pose pas l'existence d'une réalité non-contingente ; or il ne
 peut pas y avoir de régression à l'infini dans l'explication"]
 }
-a1->a2[style=invis,xlabel="",minlen=1]
-a2:s->p4[ltail=cluster_2arg]
-{rank=same;p1->a1[style=invis]}
+p4->p5[style=invis,xlabel="",minlen=1]
+p5:s->p6[ltail=cluster_2arg]
+{rank=same;p1->p4[style=invis]}
 
 subgraph cluster_1 {
 style="box"
@@ -87,10 +79,11 @@ monde est contingente :
 le monde existe, mais il
 aurait pu ne pas exister"]
 
-p2[label="(2) Si l'existence de X est contingente,
-il doit y avoir une explication
-du fait que X existe alors que
-X aurait pu ne pas exister"]
+p2[label="(2) Si l'existence de X est
+contingente, il doit y avoir
+une explication du fait
+que X existe alors que X
+aurait pu ne pas exister"]
 }
 
 p1->p2[style=invis,xlabel="",minlen=1]
@@ -105,14 +98,14 @@ color=grey73
 p3[label="(3) Il doit y avoir
 une explication de
 l'existence du monde"]
-p4[label="(6) S'il y a une explication de l'existence
+p6[label="(6) S'il y a une explication de l'existence
 du monde, elle ne peut se trouver que dans
 une réalité non-contingente différente du
 monde et qui n'est pas dans le monde"]
 }
-{rank=same;p3->p4[style=invis,xlabel="",minlen=1]}
+{rank=same;p3->p6[style=invis,xlabel="",minlen=1]}
 
-p4:w->p5[ltail=cluster_2]
+p6:w->p7[ltail=cluster_2]
 
 
 subgraph cluster_3 {
@@ -120,17 +113,17 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p5[label="(7) Il existe une réalité non-contingente,
+p7[label="(7) Il existe une réalité non-contingente,
 différente du monde, et qui n'est pas
 dans le monde, et dont l'existence
 explique l'existence du monde"]
-p6[label="(8) Cette réalité,
+p8[label="(8) Cette réalité,
 c'est Dieu"]
 
 }
-{rank=same;p5->p6[style=invis,xlabel="",minlen=1]}
+{rank=same;p7->p8[style=invis,xlabel="",minlen=1]}
 
-p6:w->C[ltail=cluster_3]
+p8:w->C[ltail=cluster_3]
 
 C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
 
@@ -141,28 +134,33 @@ node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth
 
 
 
-o3[label="Quand on cherche à expliquer l'existence d'un
+o4[label="Quand on cherche à expliquer l'existence d'un
 tout, on peut l'expliquer par l'existence de ses
 éléments constitutifs, or le monde est justement
 un tout, dont on peut expliquer l'existence en
 expliquant l'existence de chaque réalité qui fait
 partie du monde : il n'y aurait pas besoin de
 chercher une explication supplémentaire"]
-{rank=same;a1->o3}
+{rank=same;p4->o4}
 
-o7[label="A-t-on vraiment le droit d'affirmer
-l'existence d'une réalité non-contingente
-simplement à partir de la difficulté à admettre
-une régression à l'infini dans l'explication ?"]
-{rank=same;a2->o7}
+o7[label="Il y a ici deux problèmes majeurs :
+1/ A-t-on vraiment le droit de postuler l'existence d'une réalité 
+non-contingente simplement parce qu'on refuse la possibilité
+d'une régression à l'infini dans l'explication ? Ne faut-il pas
+plutôt accepter la possibilité d'une telle régression à l'infini ? ;
+2/ Postuler l'existence d'une réalité non-contingente permet-il
+vraiment d'expliquer l'existence du monde ? Une explication doit
+nous donner une compréhension précise du processus qui conduit
+à l'existence du fait qu'on explique : est-ce vraiment le cas ici ?"]
+{rank=same;p5->o7}
 
 
-o6[label="Cette identification est-elle légitime ?
+o8[label="Cette identification est-elle légitime ?
 L'argument ne prouve au mieux que l'existence
 d'un être nécessaire, et non l'existence d'un être
 personnel, parfait, tout-puissant, omniscient, 
 bienveillant, et libre créateur du monde"]
-{rank=same;p6->o6}
+{rank=same;p8->o8}
 
 
 }
