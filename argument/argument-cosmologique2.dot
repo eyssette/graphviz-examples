@@ -4,11 +4,24 @@ newrank=true
 compound=true
 
 
-node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
+
+o1[label="Ce principe se heurte à trois objections :
+1/ Il n'y a pas de preuve de ce principe,
+qui semble simplement reposer sur
+une intuition et le refus d'accepter
+l'apparition magique d'une entité,
+sans cause explicative ;
+2/ Si ce principe s'applique dans le
+domaine des phénomènes empiriques,
+peut-on appliquer ce principe au-delà ?
+3/ Il y a des phénomènes empiriques qui
+semblent être sans causes, notamment
+dans le domaine de la physique quantique"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=12]
-//{rank=same;o1->p1[dir=back]}
+{rank=same;o1->p1[dir=back]}
 
 
 subgraph cluster_0 {
@@ -22,7 +35,6 @@ margin=40
 node[shape=box, fillcolor=white, style="filled,rounded", color=black]
 edge[label="",xlabel="Par
 conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
-
 
 
 subgraph cluster_1 {
@@ -67,11 +79,11 @@ style="box"
 margin=15
 bgcolor=grey73
 color=grey73
-p5[label="Il existe une réalité
-différente du monde, et qui
-n'est pas dans le monde,
+p5[label="(5) Il existe une réalité
+différente du monde, qui
+n'est pas dans le monde, et
 qui est la cause du monde"]
-p6[label="Cette réalité,
+p6[label="(6) Cette réalité,
 c'est Dieu"]
 }
 
@@ -84,6 +96,17 @@ C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellip
 
 }
 
-node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
+
+o2[label=""]
+
+{rank=same;p2->o2}
+
+o6[label="L'argument prouve au mieux l'existence
+d'une réalité non matérielle, non spatiale,
+non temporelle qui est la cause du monde,
+mais, sans hypothèses supplémentaires,
+cela ne prouve pas l'existence de Dieu"]
+{rank=same;p6->o6}
 
 }
