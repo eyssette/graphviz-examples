@@ -1,0 +1,89 @@
+digraph G {
+splines=true
+newrank=true
+compound=true
+
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
+edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=12]
+//{rank=same;o1->p1[dir=back]}
+
+
+subgraph cluster_0 {
+bgcolor=grey90
+style=rounded
+color=grey50
+margin=40
+
+
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black]
+edge[label="",xlabel="Par
+conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
+
+
+
+subgraph cluster_1 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p1[label="(1) Tout ce qui a un
+commencement
+a une cause"]
+
+p2[label="(2) Le monde a
+un commencement"]
+}
+
+//p1->p2[style=invis,xlabel="",minlen=1]
+{rank=same;p1->p2[style=invis,xlabel="",minlen=1]}
+
+p2:w->p3:n[ltail=cluster_1]
+//p2:w->p3:n[ltail=cluster_1]
+
+
+subgraph cluster_2 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p3[label="(3) Le monde
+a une cause"]
+p4[label="(4) Si le monde a une cause,
+cette cause ne peut pas être
+une réalité dans le monde,
+ou le monde lui-même"]
+}
+{rank=same;p3->p4[style=invis,xlabel="",minlen=1]}
+
+p4:w->p5:n[ltail=cluster_2]
+
+
+subgraph cluster_3 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p5[label="Il existe une réalité
+différente du monde, et qui
+n'est pas dans le monde,
+qui est la cause du monde"]
+p6[label="Cette réalité,
+c'est Dieu"]
+}
+
+{rank=same;p5->p6[style=invis,xlabel="",minlen=1]}
+
+p6:w->C:n[ltail=cluster_3]
+
+C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
+
+
+}
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+
+}
