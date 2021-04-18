@@ -38,13 +38,14 @@ conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, a
 
 {
 node[fontsize=18]
-p2a2[label="(2a2) Si le passé était infini, cela voudrait dire
-qu'il serait possible de former un ensemble
-infini (la série des instants passés) par simple
-ajout d'éléments finis (les différents instants
-du temps), alors que c'est impossible"]
-p2a1[label="(2a1) Si le passé est infini, cela voudrait dire
-qu'il serait possible"]
+p2a2[label="(2a2) Si le passé était infini, cela voudrait dire qu'un
+ensemble infini (la série des instants passés) pourrait
+être constitué par un simple ajout d'éléments finis (les
+différents instants du temps), alors que c'est impossible"]
+p2a1[label="(2a1) Si le passé est infini, cela voudrait dire qu'un
+ensemble infini pourrait réellement exister, alors que les
+ensembles infinis ne sont que des constructions mathématiques :
+l'existence réelle d'un ensemble infini conduirait à des absurdités"]
 node[fontsize=20]
 p2b[label="(2b) L'hypothèse d'un passé infini
 n'est pas en accord avec les meilleures
