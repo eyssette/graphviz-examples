@@ -11,10 +11,10 @@ o2a[label=""]
 o1[label="1/ Le simple refus d'accepter l'apparition magique d'une entité
 sans cause explicative peut-il vraiment justifier ce principe ?
 L'idée d'un événement sans cause ne semble pas impossible.
-2/ Si ce principe s'applique aux événements dans le monde,
-peut-on appliquer ce principe au monde lui-même ?
-3/ Il y a des phénomènes qui semblent être sans causes,
-notamment dans le domaine de la physique quantique"]
+2/ Il y a des phénomènes qui semblent être sans causes,
+notamment dans le domaine de la physique quantique
+3/ Si ce principe s'applique aux événements dans le monde,
+peut-on appliquer ce principe au monde lui-même ?"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=12]
