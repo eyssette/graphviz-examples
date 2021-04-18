@@ -6,22 +6,21 @@ compound=true
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
-o1[label="Ce principe se heurte à trois objections :
-1/ Il n'y a pas de preuve de ce principe,
-qui semble simplement reposer sur
-une intuition et le refus d'accepter
-l'apparition magique d'une entité,
-sans cause explicative ;
-2/ Si ce principe s'applique dans le
-domaine des phénomènes empiriques,
-peut-on appliquer ce principe au-delà ?
-3/ Il y a des phénomènes empiriques qui
-semblent être sans causes, notamment
-dans le domaine de la physique quantique"]
+o2a[label=""]
+
+o1[label="1/ Le simple refus d'accepter l'apparition magique d'une entité
+sans cause explicative peut-il vraiment justifier ce principe ?
+L'idée d'un événement sans cause ne semble pas impossible.
+2/ Si ce principe s'applique aux événements dans le monde,
+peut-on appliquer ce principe au monde lui-même ?
+3/ Il y a des phénomènes qui semblent être sans causes,
+notamment dans le domaine de la physique quantique"]
 
 node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
 edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label=" Mais …", fontcolor=red4,fontsize=12]
 {rank=same;o1->p1[dir=back]}
+
+
 
 
 subgraph cluster_0 {
@@ -36,6 +35,21 @@ node[shape=box, fillcolor=white, style="filled,rounded", color=black]
 edge[label="",xlabel="Par
 conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
 
+
+{
+node[fontsize=20]
+p2b[label="(2b) L'hypothèse d'un passé infini
+n'est pas en accord avec les meilleures
+théories physiques contemporaines"]
+p2a[label="(2a) L'hypothèse d'un
+passé infini conduit 
+à des contradictions"]
+}
+
+p2a->p2[minlen=1, fontsize=14]
+p2b->p2[style="dashed", xlabel="Donc, il est
+justifié de
+penser que …",minlen=1, fontsize=14]
 
 subgraph cluster_1 {
 style="box"
@@ -98,9 +112,18 @@ C[label="Dieu existe",fillcolor=black, fontcolor=white, color=black, shape=ellip
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
-o2[label=""]
-
-{rank=same;p2->o2}
+o2b[label="1/ La physique contemporaine affirme l'existence de ce qui
+semble être un commencement du monde : le Big Bang ;
+cependant il existe des modèles cosmologiques dans lesquels le
+Big Bang n'est pas incompatible avec l'idée d'un passé infini
+2/ La physique contemporaine affirme la vérité du deuxième
+principe de la thermodynamique, selon lequel l'entropie d'un
+système fermé qui évolue de manière irréversible augmente
+nécessairement (jusqu'à sa valeur maximale) : appliqué au monde,
+l'hypothèse d'un passé infini impliquerait que l'entropie du monde
+devrait être maximale, ce qui n'est pas le cas ; mais peut-on
+appliquer ce principe thermodynamique au monde lui-même ?"]
+{rank=same;p2b->o2b}
 
 o6[label="L'argument prouve au mieux l'existence
 d'une réalité non matérielle, non spatiale,
@@ -108,5 +131,8 @@ non temporelle qui est la cause du monde,
 mais, sans hypothèses supplémentaires,
 cela ne prouve pas l'existence de Dieu"]
 {rank=same;p6->o6}
+
+
+{rank=same;o2a->p2a[dir=back]}
 
 }
