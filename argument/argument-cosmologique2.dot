@@ -145,7 +145,10 @@ mais, sans hypothèses supplémentaires,
 cela ne prouve pas l'existence de Dieu"]
 {rank=same;p6->o6}
 
-o2a2[label=""]
+o2a2[label="Cet argument semble présupposer que le temps a un commencement :
+si on commence à ajouter des instants à partir d'un instant donné,
+alors effectivement, on n'aura jamais un ensemble infini, mais
+on présuppose alors ce que l'on voulait montrer !"]
 
 {rank=same;p2a2->o2a2}
 
