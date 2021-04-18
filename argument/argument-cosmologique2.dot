@@ -6,7 +6,28 @@ compound=true
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
-o2a[label=""]
+o2a[label="Le refus d'un passé infini repose sur deux arguments très discutables :
+1/ Soit on prétend trouver une contradiction dans l'idée même d'un ensemble 
+réellement infini produit par une simple succession d'événements passés : 
+d'après cet argument, un ensemble infini ne peut pas être constitué par un 
+simple ajout d'éléments finis, or le temps est constitué par simple ajout 
+d'éléments finis (les différents instants ou intervalles du temps) ; mais cet 
+argument semble présupposer l'idée que le temps a un commencement : si on 
+commence à ajouter des instants à partir d'un instant donné, alors 
+effectivement, on n'aura jamais un ensemble infini, mais il n'y a plus de 
+contradiction si on part d'un ensemble déjà infini ;
+2/ Soit on prétend trouver une contradiction dans les conséquences de l'idée 
+que le passé serait un ensemble réellement infini :
+a) si le passé est infini, alors on ne pourrait jamais arriver au moment 
+présent (puisqu'il faut d'abord une infinité, jamais terminée, d'instants, 
+avant de pouvoir atteindre le présent) ; mais
+b) si le passé est infini, alors on pourrait accomplir des actes impossibles : 
+si le passé est infini, à chaque instant du temps, il aurait été possible qu'un 
+être ait terminé de compter l'ensemble des nombres entiers, ou bien il aurait 
+été possible qu'existe un “hôtel d'Hilbert” dans lequel on peut toujours 
+trouver de la place à de nouveaux clients même quand l'hôtel est plein, et dans 
+lequel le départ de clients peut ne rien changer au nombre de places 
+disponibles de l'hôtel ; mais "]
 
 o1[label="1/ Le simple refus d'accepter l'apparition magique d'une entité
 sans cause explicative peut-il vraiment justifier ce principe ?
