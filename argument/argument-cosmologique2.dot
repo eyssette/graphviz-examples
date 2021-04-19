@@ -2,11 +2,24 @@ digraph G {
 splines=true
 newrank=true
 compound=true
-ranksep=0.3
+ranksep=0.2
 
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
-o2a1[label=""]
+o2a1[label="D'après cet argument, un passé infini conduirait à ce type d'absurdités : 
+1/ Si le passé était infini, il aurait été à la fois possible et impossible
+qu'à chaque instant du temps un être immortel ait terminé de compter 
+l'ensemble des nombres entiers : ce serait possible car il y avait
+suffisamment de temps (un temps infini) pour le faire, mais ce serait
+aussi impossible car il aurait déjà dû avoir fini l'instant d'avant
+(puisqu'il y avait également suffisamment de temps : un temps infini)
+2/ un “hôtel d'Hilbert” pourrait exister : il s'agit d'un hôtel avec une 
+infinité de places, dans lequel on peut toujours trouver de la place à
+de nouveaux clients même quand l'hôtel est plein, et dans lequel le
+départ de clients peut ne rien changer au nombre de places disponibles
+Mais ces absurdités ne constituent-elles pas seulement des paradoxes
+apparents que l'on peut résoudre, soit en remettant en cause
+"]
 
 o1[label="1/ Le simple refus d'accepter l'apparition magique d'une entité
 sans cause explicative peut-il vraiment justifier ce principe ?
@@ -37,16 +50,21 @@ conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, a
 
 
 {
-node[fontsize=18]
+node[fontsize=17]
 p2a2[label="(2a2) Si le passé était infini, cela voudrait dire qu'un
-ensemble infini (la série des instants passés) pourrait
-être constitué par un simple ajout d'éléments finis (les
-différents instants du temps), alors que c'est impossible"]
-p2a1[label="(2a1) Si le passé est infini, cela voudrait dire qu'un
-ensemble infini pourrait réellement exister, alors que les
-ensembles infinis ne sont que des constructions mathématiques :
-l'existence réelle d'un ensemble infini conduirait à des absurdités"]
-node[fontsize=20]
+ensemble infini (la série des événements passés) pourrait
+être constitué par une simple succession d'éléments finis
+(les différents événements), alors que c'est impossible
+(autrement dit : si le temps est une succession d'événements, 
+si une succession d'événements ne peut pas constituer un
+ensemble infini, alors, si le passé est infini, on ne peut
+jamais atteindre le présent : le présent n'existerait pas)"]
+p2a1[label="(2a1) Si le passé est infini, cela voudrait dire
+qu'un ensemble infini pourrait réellement exister,
+alors que les ensembles infinis ne sont que des
+constructions mathématiques : l'existence réelle
+d'un ensemble infini conduirait à des absurdités"]
+node[fontsize=18]
 p2b[label="(2b) L'hypothèse d'un passé infini
 n'est pas en accord avec les meilleures
 théories physiques contemporaines"]
@@ -97,7 +115,7 @@ ou le monde lui-même"]
 }
 {rank=same;p3->p4[style=invis,xlabel="",minlen=1]}
 
-p4:w->p5:n[ltail=cluster_2]
+p4:w->p5:n[ltail=cluster_2,xlabel="Par conséquent …"]
 
 
 subgraph cluster_3 {
@@ -146,9 +164,9 @@ cela ne prouve pas l'existence de Dieu"]
 {rank=same;p6->o6}
 
 o2a2[label="Cet argument semble présupposer que le temps a un commencement :
-si on commence à ajouter des instants à partir d'un instant donné,
-alors effectivement, on n'aura jamais un ensemble infini, mais
-on présuppose alors ce que l'on voulait montrer !"]
+si on commence à ajouter des événements à partir d'un événement
+donné, alors effectivement, on n'aura jamais un ensemble infini,
+mais on présuppose alors ce que l'on voulait montrer !"]
 
 {rank=same;p2a2->o2a2}
 
