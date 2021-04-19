@@ -7,19 +7,23 @@ ranksep=0.2
 node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=18, margin=0.1]
 
 o2a1[label="D'après cet argument, un passé infini conduirait à ce type d'absurdités : 
-1/ Si le passé était infini, il aurait été à la fois possible et impossible
-qu'à chaque instant du temps un être immortel ait terminé de compter 
-l'ensemble des nombres entiers : ce serait possible car il y avait
-suffisamment de temps (un temps infini) pour le faire, mais ce serait
-aussi impossible car il aurait déjà dû avoir fini l'instant d'avant
-(puisqu'il y avait également suffisamment de temps : un temps infini)
+1/ Si le passé était infini, cela serait à la fois possible et impossible qu'à
+chaque instant du temps un être immortel ait terminé de compter
+l'ensemble des nombres entiers : ce serait possible car il avait
+suffisamment de temps (un temps infini) pour le faire, mais ce
+serait aussi impossible car il aurait déjà dû avoir fini l'instant
+d'avant (puisqu'il disposait également d'un temps infini)
 2/ un “hôtel d'Hilbert” pourrait exister : il s'agit d'un hôtel avec une 
-infinité de places, dans lequel on peut toujours trouver de la place à
-de nouveaux clients même quand l'hôtel est plein, et dans lequel le
-départ de clients peut ne rien changer au nombre de places disponibles
+infinité de places, dans lequel on peut toujours trouver de la place à de
+nouveaux clients même quand l'hôtel est plein, et dans lequel le départ
+de clients peut ne rien changer au nombre de places disponibles.
 Mais ces absurdités ne constituent-elles pas seulement des paradoxes
-apparents que l'on peut résoudre, soit en remettant en cause
-"]
+apparents ? Plusieurs auteurs ont proposé de résoudre ces paradoxes,
+soit en remettant en cause la possibilité du scénario imaginé, soit en
+soulignant que la prétendue impossibilité n'était qu'une pétition de
+principe et qu'elle reposait simplement sur le refus d'admettre
+l'existence réelle d'ensemble infinis et les propriétés,
+certes contre-intuitives, de ces ensembles",fontsize=17]
 
 o1[label="1/ Le simple refus d'accepter l'apparition magique d'une entité
 sans cause explicative peut-il vraiment justifier ce principe ?
@@ -56,7 +60,7 @@ ensemble infini (la série des événements passés) pourrait
 être constitué par une simple succession d'éléments finis
 (les différents événements), alors que c'est impossible
 (autrement dit : si le temps est une succession d'événements, 
-si une succession d'événements ne peut pas constituer un
+et si une succession d'événements ne peut pas constituer un
 ensemble infini, alors, si le passé est infini, on ne peut
 jamais atteindre le présent : le présent n'existerait pas)"]
 p2a1[label="(2a1) Si le passé est infini, cela voudrait dire
@@ -69,7 +73,7 @@ p2b[label="(2b) L'hypothèse d'un passé infini
 n'est pas en accord avec les meilleures
 théories physiques contemporaines"]
 p2a[label="(2a) L'hypothèse d'un
-passé infini conduit à 
+passé infini conduit à
 des contradictions"]
 }
 
@@ -79,7 +83,7 @@ p2a->p2[minlen=1, fontsize=14]
 p2b->p2[style="dashed", xlabel="Donc, il est
 justifié de
 penser que …",minlen=1, fontsize=14]
-{rank=same;p2a->p2b[style=invis,minlen=3]}
+{rank=same;p2a->p2b[style=invis,minlen=4]}
 
 subgraph cluster_1 {
 style="box"
@@ -166,10 +170,12 @@ cela ne prouve pas l'existence de Dieu"]
 o2a2[label="Cet argument semble présupposer que le temps a un commencement :
 si on commence à ajouter des événements à partir d'un événement
 donné, alors effectivement, on n'aura jamais un ensemble infini,
-mais on présuppose alors ce que l'on voulait montrer !"]
+mais on présuppose alors ce que l'on voulait montrer !",fontsize=17]
 
 {rank=same;p2a2->o2a2}
 
 {rank=same;o2a1->p2a1[dir=back]}
+
+p2a2->p2b[minlen=1,style=invis]
 
 }
