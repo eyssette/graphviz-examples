@@ -1,0 +1,135 @@
+digraph G {
+splines=true
+newrank=true
+compound=true
+
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black, fontsize=24, penwidth=1,fontcolor=black, margin=0.1]
+edge[minlen=2,color=red3, penwidth=0.8, arrowsize=0.8, label="Objection !", fontcolor=red4,fontsize=10]
+
+
+subgraph cluster_0 {
+bgcolor=grey90
+style=rounded
+color=grey50
+margin=40
+
+
+
+node[shape=box, fillcolor=white, style="filled,rounded", color=black]
+edge[label="",xlabel="Par
+conséquent …",fontcolor=grey40;fontsize=15,minlen=3,color=black,penwidth=1, arrowsize=1]
+
+
+vide1[style=invis]
+vide1->p1a[minlen=1,style=invis]
+vide1->vide2[minlen=1,style=invis]
+vide1->p2a1[weight=100,minlen=1,style=invis]
+p2a1->p2a[minlen=1,xlabel="Par conséquent"]
+p2a1[label="(5) Il est impossible de transmettre nos
+idées directement à quelqu'un d'autre"]
+vide2[style=invis]
+{rank=same;p1a->vide2->p2a1[style=invis]}
+
+
+
+subgraph cluster_3 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p2a[label="(6) Pour pouvoir transmettre nos idées, il
+faut qu'il existe un moyen d'accomplir un acte
+dans le monde extérieur, perceptible par autrui,
+et pouvant être associé, dans l'esprit d'autrui,
+aux idées que nous voulons transmettre"]
+p2b[label="(7) Le langage est
+un ensemble de signes
+extérieurs et sensibles :
+l'usage des mots est un acte
+dans le monde extérieur,
+perceptible par autrui"]
+p2c[label="(8) Les signes du
+langage sont associés
+à des idées (par une
+institution arbitraire)"]
+}
+p2c:w->p2[ltail=cluster_3]
+
+p2a->{p2c}[style=invis, minlen=1]
+{rank=same;p2b->p2c[style=invis,xlabel="",minlen=1,weight=100]}
+
+subgraph cluster_1 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p1c[label="(3) Pour pouvoir communiquer
+avec les autres, il faut pouvoir
+transmettre nos idées aux autres"]
+
+p1b[label="(2) Pour pouvoir jouir des avantages
+de la société, il faut pouvoir
+communiquer avec les autres"]
+
+p1a[label="(1) Il est essentiel pour les
+êtres humains de pouvoir jouir
+des avantages de la société"]
+}
+
+p1c:s->p1[ltail=cluster_1]
+
+p1a->p1b->p1c[style=invis,xlabel="",minlen=1,weight=100]
+
+
+
+
+
+
+
+
+subgraph cluster_2 {
+style="box"
+margin=15
+bgcolor=grey73
+color=grey73
+p1[label="(4) Les êtres humains ont dû inventer
+un moyen dont la fonction est de
+transmettre nos idées aux autres"]
+p2[label="(9) Le langage est un moyen
+qui permet de transmettre
+nos idées aux autres"]
+}
+
+
+//p1->p2[style=invis,xlabel="",minlen=1]
+{rank=same;p1->p2[style=invis,xlabel="",minlen=3]}
+
+
+
+p2:w->C[ltail=cluster_2]
+
+//p2:s->p3:n[ltail=cluster_1]
+//p2:w->p3:n[ltail=cluster_1]
+//p3[label="(3) Lemme 1"]
+
+//{rank=same;p3->p4[style=invis]}
+
+//p4[label="(4) Prémisse 3"]
+
+//{p3,p4}->C
+
+
+C[label="La fonction du langage est de
+transmettre nos idées aux autres",fillcolor=black, fontcolor=white, color=black, shape=ellipse]
+
+
+}
+
+node[color=red3, style="rounded, filled", shape="box", fillcolor=white, penwidth=1, fontcolor=black, fontsize=16, margin=0.1]
+
+
+}
