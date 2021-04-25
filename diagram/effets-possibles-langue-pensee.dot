@@ -1,0 +1,75 @@
+digraph G {
+//rankdir=LR
+splines=curves
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+
+a1[label="Effets possibles
+de la langue
+sur la pensée"]
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+
+a1->{
+b1[label="Enrichissement
+de la pensée"]
+b2[label="Appauvrissement
+de la pensée"]
+}
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style="filled";fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+
+b1->c1
+c1[label="Exemple :
+le vocabulaire
+scientifique
+d'une discipline"]
+
+b2->c2
+c2[label="Exemple :
+la novlangue
+et ses formes
+contemporaines"]
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+
+// c1[label=""]
+
+
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+
+// d1[label=""]
+
+
+
+// ETIQUETTES EN ROUGE
+node[shape="plaintext";fontcolor=firebrick3;fillcolor=grey98]
+
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// ->e1[minlen=1;style="invis"]
+
+
+}
+
+
+
+
