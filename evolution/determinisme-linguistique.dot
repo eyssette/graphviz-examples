@@ -15,23 +15,23 @@ node[shape=rect, style=rounded, color=white]
 rank=same    
 //non4[label=""]
 //non3[label=""]
-non2[label="❌  ce n'est pas une
-thèse sur la nécessité
-du langage en général
-pour pouvoir penser"]
-non1[label="❌  ce n'est pas une thèse
-sur l'effet de certaines
-paroles particulières
-sur notre esprit"]
+non2[label=<❌  Ce n'est pas une<br/>
+thèse sur la nécessité<br/>
+du <b>langage  </b>en général<br/>
+pour pouvoir penser>]
+non1[label=<❌  Ce n'est pas une thèse<br/>
+sur l'effet de certaines<br/>
+<b>paroles  </b>particulières<br/>
+sur notre esprit>]
 }->
 fleche
 ->
 {
-oui1[label="✅  … c'est l'idée que les
-caractéristiques particulières
-d'une langue (sa syntaxe,
-son lexique) ont un effet
-sur les manières de penser"]}
+oui1[label=<✅   C'est l'idée que les<br/>
+caractéristiques particulières<br/>
+d'une<b>langue </b>(sa syntaxe,<br/>
+son lexique) ont un effet<br/>
+sur les manières de penser>]}
 [style=invis]
 
 
