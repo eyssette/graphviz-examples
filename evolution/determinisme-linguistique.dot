@@ -2,7 +2,7 @@ digraph G {
 // Template : evolution
 // Usage : 
 rankdir=LR
-label=<<b>Le déterminisme linguistique <br/>(l'hypothèse de Sapir-Whorf) …</b><br/>>
+label=<<b>Le déterminisme linguistique <br/>(l'hypothèse de Sapir-Whorf)</b><br/>>
 labelloc=t
 fontsize=18
 
@@ -15,21 +15,21 @@ node[shape=rect, style=rounded, color=white]
 rank=same    
 //non4[label=""]
 //non3[label=""]
-non2[label="❌  … n'est pas une thèse
+non2[label="❌  ce n'est pas une thèse
 sur la nécessité du langage en
 général pour pouvoir penser"]
-non1[label="❌  … n'est pas une thèse
+non1[label="❌  ce n'est pas une thèse
 sur l'effet de certaines paroles
 particulières sur notre esprit"]
 }->
 fleche
 ->
 {
-oui1[label="✅  … c'est l'idée que
-les caractéristiques particulières
-d'une langue (sa syntaxe, son lexique)
-ont un effet
-manières de penser"]}
+oui1[label="✅  … c'est l'idée que les
+caractéristiques particulières
+d'une langue (sa syntaxe,
+son lexique) ont un effet
+sur les manières de penser"]}
 [style=invis]
 
 
