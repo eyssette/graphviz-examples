@@ -6,6 +6,7 @@ label=<<b>Le déterminisme linguistique <br/>(l'hypothèse de Sapir-Whorf)</b><b
 labelloc=t
 fontsize=18
 ranksep=0.1
+pad=0
 
 subgraph cluster_0{
 label=""
