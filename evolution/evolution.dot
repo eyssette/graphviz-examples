@@ -1,0 +1,35 @@
+digraph G {
+// Template : evolution
+// Usage : 
+rankdir=LR
+label=<<b>Titre</b>>
+labelloc=t
+fontsize=24
+
+subgraph cluster_0{
+label=""
+color=grey44
+penwidth=0.7
+node[shape=rect, style=rounded, color=white]
+{
+rank=same    
+//non4[label=""]
+//non3[label=""]
+non2[label="❌  Mauvaise
+réponse"]
+non1[label="❌  Mauvaise
+réponse"]
+}->
+fleche
+->
+{
+oui1[label="✅  Bonne
+réponse"]}
+[style=invis]
+
+
+fleche[shape=rarrow,label="",color=grey33, height=0.03, width=0.3, fillcolor=grey33, style="filled", penwidth=5]
+
+}
+
+}
