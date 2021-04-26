@@ -5,12 +5,14 @@ rankdir=LR
 label=<<b>Le déterminisme linguistique <br/>(l'hypothèse de Sapir-Whorf)</b><br/>>
 labelloc=t
 fontsize=18
+ranksep=0.1
 
 subgraph cluster_0{
 label=""
 color=grey44
 penwidth=0.7
-node[shape=rect, style=rounded, color=white]
+
+node[shape=rect, style=rounded, color=white,fontsize=10]
 {
 rank=same    
 //non4[label=""]
@@ -24,18 +26,20 @@ sur l'effet de certaines<br/>
 <b>paroles  </b>particulières<br/>
 sur notre esprit>]
 }->
-fleche
-->
+fleche[style=invis,minlen=1]
+
+fleche->
 {
+node[fontsize=11]
 oui1[label=<✅   C'est l'idée que les<br/>
 caractéristiques particulières<br/>
 d'une<b>langue </b>(sa syntaxe,<br/>
 son lexique) ont un effet<br/>
 sur les manières de penser>]}
-[style=invis]
+[style=invis,minlen=2]
 
 
-fleche[shape=rarrow,label="",color=grey33, height=0.03, width=0.3, fillcolor=grey33, style="filled", penwidth=5]
+fleche[shape=rarrow,label="",color=grey33, height=0.03, width=0.22, fillcolor=grey33, style="filled", penwidth=5]
 
 }
 
