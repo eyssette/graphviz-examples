@@ -41,11 +41,14 @@ pour être heureux ?",xlabel=<<FONT color="darkgreen">IV</FONT>>]
 
 
 node[color=red4, fillcolor=white, fontcolor=black, penwidth=0]
-a2->a[dir=back]
 {rank=same;a1->a[dir=back]}
-{c1,c2}->c[dir=back]
-b->{b1,b2}
-d->{d1,d2}
+a2->a[dir=back]
+c1->c[dir=back]
+{rank=same;c->c2}
+{rank=same;b->b1}
+b->b2
+{rank=same;d1->d[dir=back]}
+d->d2
 
 
 a1[label="Kant"]
