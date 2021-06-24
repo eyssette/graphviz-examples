@@ -1,0 +1,63 @@
+digraph G {
+splines=curved
+nodesep=2
+ranksep=0.7
+
+node[style=filled, fontcolor=white, fillcolor=black]
+N[label="Le bonheur
+n'est-il
+qu'un idéal ?", fontsize=22]
+
+node[style="rounded, filled", shape=oval, margin=0.1, fillcolor=red4, penwidth=1, fontsize=18, fontcolor=white]
+{a,c}->N[dir=back]
+N->{b,d}
+
+
+{rank=same
+a->c[style=invis]
+}
+
+{rank=same
+d->b[style=invis]
+}
+
+
+// edge[style=invis]
+
+
+
+a[label="Peut-on savoir
+ce qu'est le
+bonheur ?",xlabel=<<FONT color="darkgreen">I</FONT>>]
+c[label="Le désir
+est-il
+insatiable ?",xlabel=<<FONT color="darkgreen">II</FONT>>]
+b[label="Que pouvons-nous
+face au tragique
+de l'existence ?",xlabel=<<FONT color="darkgreen">III</FONT>>]
+d[label="Le simple plaisir
+d'exister suffit-il
+pour être heureux ?",xlabel=<<FONT color="darkgreen">IV</FONT>>]
+
+
+node[color=red4, fillcolor=white, fontcolor=black, penwidth=0]
+a2->a[dir=back]
+{rank=same;a1->a[dir=back]}
+{c1,c2}->c[dir=back]
+b->{b1,b2}
+d->{d1,d2}
+
+
+a1[label="Kant"]
+a2[label="L'idée de
+sagesse"]
+b1[label="Pascal"]
+b2[label="Épictète"]
+c1[label="Schopenhauer"]
+c2[label="Épicure"]
+d1[label="Épicure"]
+d2[label="J.S. Mill"]
+
+
+
+}
