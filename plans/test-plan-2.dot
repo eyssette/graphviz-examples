@@ -2,7 +2,7 @@ digraph G {
 pad=0.2
 splines=curved
 nodesep=1.7
-ranksep=0.8
+ranksep=0.5
 bgcolor=grey98
 
 node[style=filled, fontcolor=white, fillcolor=black]
@@ -12,31 +12,19 @@ qu'un idéal ?", fontsize=22]
 
 node[style="rounded, filled", shape=oval, margin=0.1, fillcolor=red4, penwidth=1, fontsize=18, fontcolor=white]
 a->N[dir=back,headlabel=<<FONT color="darkgreen">I<BR/><BR/></FONT>>]
-c->N[dir=back,headlabel=<<FONT color="darkgreen">II<BR/><BR/></FONT>>]
-N->b[taillabel=<<FONT color="darkgreen"><BR/>            III</FONT>>]
-N->d[taillabel=<<FONT color="darkgreen"><BR/>IV    </FONT>>]
-
-
-{rank=same
-a->c[style=invis]
-}
-
-{rank=same
-d->b[style=invis]
-}
-
-
-// edge[style=invis]
+b->N[dir=back,headlabel=<<FONT color="darkgreen">II<BR/><BR/></FONT>>]
+N->c[taillabel=<<FONT color="darkgreen"><BR/>               III</FONT>>]
+N->d[taillabel=<<FONT color="darkgreen"><BR/>IV       </FONT>>]
 
 
 
 a[label="Peut-on savoir
 ce qu'est le
 bonheur ?"]
-c[label="Le désir
+b[label="Le désir
 est-il
 insatiable ?"]
-b[label="Que pouvons-nous
+c[label="Que pouvons-nous
 face au tragique
 de l'existence ?"]
 d[label="Le simple plaisir
@@ -44,14 +32,18 @@ d'exister suffit-il
 pour être heureux ?"]
 
 
+{rank=same;a->b[minlen=2,style=invis]}
+{rank=same;d->c[minlen=2,style=invis]}
+
+
 node [shape=box,style="filled,rounded",fillcolor=white,fontcolor=black,color=grey50, margin=0.2]
 
 a1->a[dir=back]
 a2->a[dir=back]
-c1->c[dir=back]
-c2->c[dir=back]
-b->b1
-b->b2
+b1->b[dir=back]
+b2->b[dir=back]
+c->c1
+c->c2
 d->d1
 d->d2
 
@@ -59,10 +51,10 @@ d->d2
 a1[label="Kant"]
 a2[label="L'idée de
 sagesse"]
-b1[label="Pascal"]
-b2[label="Épictète"]
-c1[label="Schopenhauer"]
-c2[label="Épicure"]
+b1[label="Schopenhauer"]
+b2[label="Épicure"]
+c1[label="Pascal"]
+c2[label="Épictète"]
 d1[label="Épicure"]
 d2[label="J.S. Mill"]
 
