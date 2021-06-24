@@ -24,13 +24,13 @@
 <text text-anchor="middle" x="725.3959" y="-172.266" font-family="Times,serif" font-size="18.00" fill="#ffffff">Que pouvons&#45;nous</text>
 <text text-anchor="middle" x="725.3959" y="-150.666" font-family="Times,serif" font-size="18.00" fill="#ffffff">face au tragique</text>
 <text text-anchor="middle" x="725.3959" y="-129.066" font-family="Times,serif" font-size="18.00" fill="#ffffff">de l&#39;existence ?</text>
-<text text-anchor="start" x="601.7231" y="-217.186" font-family="Times,serif" font-size="18.00" fill="#006400">III</text>
 </g>
 <!-- N&#45;&gt;b -->
 <g id="edge3" class="edge">
 <title>N&#45;&gt;b</title>
 <path fill="none" stroke="#000000" d="M598.7608,-272.9011C629.85,-244.0033 649.1803,-226.0582 664.5569,-211.8479"/>
 <polygon fill="#000000" stroke="#000000" points="667.3053,-214.0741 672.2788,-204.7191 662.557,-208.9308 667.3053,-214.0741"/>
+<text text-anchor="start" x="598.7608" y="-243.5011" font-family="Times,serif" font-size="14.00" fill="#006400">            III</text>
 </g>
 <!-- d -->
 <g id="node5" class="node">
@@ -39,13 +39,13 @@
 <text text-anchor="middle" x="363.3959" y="-172.266" font-family="Times,serif" font-size="18.00" fill="#ffffff">Le simple plaisir</text>
 <text text-anchor="middle" x="363.3959" y="-150.666" font-family="Times,serif" font-size="18.00" fill="#ffffff">d&#39;exister suffit&#45;il</text>
 <text text-anchor="middle" x="363.3959" y="-129.066" font-family="Times,serif" font-size="18.00" fill="#ffffff">pour être heureux ?</text>
-<text text-anchor="start" x="231.6811" y="-217.186" font-family="Times,serif" font-size="18.00" fill="#006400">IV</text>
 </g>
 <!-- N&#45;&gt;d -->
 <g id="edge4" class="edge">
 <title>N&#45;&gt;d</title>
 <path fill="none" stroke="#000000" d="M493.5027,-271.676C464.8021,-242.5946 446.2971,-224.2183 431.1417,-210.2162"/>
 <polygon fill="#000000" stroke="#000000" points="433.2402,-207.3939 423.4855,-203.2592 428.5327,-212.5746 433.2402,-207.3939"/>
+<text text-anchor="start" x="446.0931" y="-242.276" font-family="Times,serif" font-size="14.00" fill="#006400">IV    </text>
 </g>
 <!-- a -->
 <g id="node2" class="node">
@@ -54,13 +54,13 @@
 <text text-anchor="middle" x="397.3959" y="-507.0255" font-family="Times,serif" font-size="18.00" fill="#ffffff">Peut&#45;on savoir</text>
 <text text-anchor="middle" x="397.3959" y="-485.4255" font-family="Times,serif" font-size="18.00" fill="#ffffff">ce qu&#39;est le</text>
 <text text-anchor="middle" x="397.3959" y="-463.8255" font-family="Times,serif" font-size="18.00" fill="#ffffff">bonheur ?</text>
-<text text-anchor="start" x="307.6288" y="-551.9455" font-family="Times,serif" font-size="18.00" fill="#006400">I</text>
 </g>
 <!-- a&#45;&gt;N -->
 <g id="edge1" class="edge">
 <title>a&#45;&gt;N</title>
 <path fill="none" stroke="#000000" d="M446.937,-434.8695C458.9803,-421.1646 474.0124,-403.9875 497.6945,-376.8921"/>
 <polygon fill="#000000" stroke="#000000" points="444.1258,-432.7661 440.1487,-442.5862 449.3816,-437.3896 444.1258,-432.7661"/>
+<text text-anchor="start" x="497.6945" y="-397.8921" font-family="Times,serif" font-size="14.00" fill="#006400">I</text>
 </g>
 <!-- c -->
 <g id="node3" class="node">
@@ -69,7 +69,6 @@
 <text text-anchor="middle" x="692.3959" y="-507.0255" font-family="Times,serif" font-size="18.00" fill="#ffffff">Le désir</text>
 <text text-anchor="middle" x="692.3959" y="-485.4255" font-family="Times,serif" font-size="18.00" fill="#ffffff">est&#45;il</text>
 <text text-anchor="middle" x="692.3959" y="-463.8255" font-family="Times,serif" font-size="18.00" fill="#ffffff">insatiable ?</text>
-<text text-anchor="start" x="612.9042" y="-551.9455" font-family="Times,serif" font-size="18.00" fill="#006400">II</text>
 </g>
 <!-- a&#45;&gt;c -->
 <!-- c&#45;&gt;N -->
@@ -77,6 +76,7 @@
 <title>c&#45;&gt;N</title>
 <path fill="none" stroke="#000000" d="M651.2205,-434.9081C638.8342,-420.3351 622.7833,-403.3687 595.4447,-375.3876"/>
 <polygon fill="#000000" stroke="#000000" points="648.6966,-437.3477 657.7732,-442.8128 654.0858,-432.8803 648.6966,-437.3477"/>
+<text text-anchor="start" x="595.4447" y="-396.3876" font-family="Times,serif" font-size="14.00" fill="#006400">II</text>
 </g>
 <!-- c2 -->
 <g id="node9" class="node">

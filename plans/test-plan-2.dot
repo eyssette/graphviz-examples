@@ -9,8 +9,10 @@ n'est-il
 qu'un idéal ?", fontsize=22]
 
 node[style="rounded, filled", shape=oval, margin=0.1, fillcolor=red4, penwidth=1, fontsize=18, fontcolor=white]
-{a,c}->N[dir=back]
-N->{b,d}
+a->N[dir=back,headlabel=<<FONT color="darkgreen">I<BR/><BR/></FONT>>]
+c->N[dir=back,headlabel=<<FONT color="darkgreen">II<BR/><BR/></FONT>>]
+N->b[taillabel=<<FONT color="darkgreen"><BR/>            III</FONT>>]
+N->d[taillabel=<<FONT color="darkgreen"><BR/>IV    </FONT>>]
 
 
 {rank=same
@@ -28,16 +30,16 @@ d->b[style=invis]
 
 a[label="Peut-on savoir
 ce qu'est le
-bonheur ?",xlabel=<<FONT color="darkgreen">I</FONT>>]
+bonheur ?"]
 c[label="Le désir
 est-il
-insatiable ?",xlabel=<<FONT color="darkgreen">II</FONT>>]
+insatiable ?"]
 b[label="Que pouvons-nous
 face au tragique
-de l'existence ?",xlabel=<<FONT color="darkgreen">III</FONT>>]
+de l'existence ?"]
 d[label="Le simple plaisir
 d'exister suffit-il
-pour être heureux ?",xlabel=<<FONT color="darkgreen">IV</FONT>>]
+pour être heureux ?"]
 
 
 node[color=red4, fillcolor=white, fontcolor=black, penwidth=0]
