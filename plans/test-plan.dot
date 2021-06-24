@@ -1,0 +1,46 @@
+digraph G {
+nodesep=2
+node[style=rounded, shape=oval, margin=0.1, color=red4, penwidth=2, fontsize=18]
+edge[style=invis]
+
+a[label="Peut-on savoir ce
+qu'est le bonheur ?"]
+b[label="Que pouvons-nous
+face au tragique
+de l'existence ?"]
+c[label="Le désir est-il
+insatiable ?"]
+d[label="Le simple plaisir
+d'exister suffit-il
+pour être heureux ?"]
+
+a->b->c->d
+
+node[color=yellow3]
+edge[style="", color=red4, penwidth=1.5,arrowhead=none, arrowtail=none]
+{rank=same
+a1->a[dir=back]
+a->a2}
+{rank=same
+b1->b[dir=back]
+b->b2}
+{rank=same
+c1->c[dir=back]
+c->c2}
+{rank=same
+d1->d[dir=back]
+d->d2}
+
+a1[label="Kant"]
+a2[label="L'idée de
+sagesse"]
+b1[label="Pascal"]
+b2[label="Épictète"]
+c1[label="Schopenhauer"]
+c2[label="Épicure"]
+d1[label="Épicure"]
+d2[label="J.S. Mill"]
+
+
+
+}
