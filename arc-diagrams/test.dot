@@ -1,26 +1,20 @@
 digraph G {
 rankdir=LR
-// splines=polyline
-
-
 nodesep=2
-node[shape=none]
-edge[style="",constraint=none,arrowtail=normal,fontsize=12,dir=both]
-// a->ab[arrowhead=none,minlen=1,constraint=""]
-// b->ab[arrowhead=none,constraint=""]
-// ab->e[arrowtail=none,constraint=""]
-// ab[shape=point]
-//a:e->e[ltail=cluster_1]
-ab[shape=point,penwidth=0]
-te[shape=point,penwidth=0]
-a->ab[minlen=0,arrowhead=none]
-ab->b[minlen=0,arrowtail=none]
-{rank=same;te->e[minlen=0,dir=""]}
-ab->te[dir="",arrowhead=none,label="Peut-on savoir ce qu'est le bonheur ?"]
+node[style=rounded, shape=box, margin=0.1, color=yellow3, penwidth=2, fontsize=18]
+edge[style="",constraint=none,arrowtail=normal,dir=both, color=red4]
+
+a0->e[label="Peut-on savoir ce
+qu'est le bonheur ?"]
+b->c[label="Que pouvons-nous face au
+tragique de l'existence ?"]
+a->d[label="Le désir est-il insatiable ?"]
 
 edge[style=invis, constraint=""]
-a->b->c->d->e->f
+a0->a->b->c->d->e->f
 
+a0[label="L'idée de
+sagesse"]
 a[label="Épicure"]
 b[label="Épictète"]
 c[label="Pascal"]
@@ -28,11 +22,10 @@ d[label="Schopenhauer"]
 e[label="Kant"]
 f[label="J.S. Mill"]
 
-edge[style="",constraint=none,arrowtail=normal,fontsize=12,dir=both]
-b->c[label="Que pouvons-nous face au
-tragique de l'existence ?"]
+edge[style="",constraint=none,arrowtail=normal,dir=both, color=red4]
 
-a->d[label="Le désir est-il insatiable ?"]
+
+
 a->f[label="Le simple plaisir d'exister suffit-il
 pour être heureux ?"]
 
