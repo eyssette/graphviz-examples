@@ -29,25 +29,27 @@
 <!-- a1 -->
 <g id="node5" class="node">
 <title>a1</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="108.9955" cy="-741.8046" rx="34.7781" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="108.9955" cy="-741.8046" rx="34.7781" ry="25.3472"/>
 <text text-anchor="middle" x="108.9955" y="-736.4046" font-family="Times,serif" font-size="18.00" fill="#000000">Kant</text>
 </g>
 <!-- a&#45;&gt;a1 -->
 <g id="edge4" class="edge">
 <title>a&#45;&gt;a1</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M293.8232,-867.1234C221.6962,-858.2832 199.6965,-839.9357 128.7119,-763.2026"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M293.8232,-867.1234C224.091,-858.5767 201.2127,-841.1436 135.6242,-770.6547"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="138.0786,-768.154 128.7119,-763.2026 132.9465,-772.9144 138.0786,-768.154"/>
 </g>
 <!-- a2 -->
 <g id="node6" class="node">
 <title>a2</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="656.9955" cy="-741.8046" rx="59.3722" ry="40.3931"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="656.9955" cy="-741.8046" rx="59.3722" ry="40.3931"/>
 <text text-anchor="middle" x="656.9955" y="-747.2046" font-family="Times,serif" font-size="18.00" fill="#000000">L&#39;idée de</text>
 <text text-anchor="middle" x="656.9955" y="-725.6046" font-family="Times,serif" font-size="18.00" fill="#000000">sagesse</text>
 </g>
 <!-- a&#45;&gt;a2 -->
 <g id="edge5" class="edge">
 <title>a&#45;&gt;a2</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M460.6776,-868.4836C534.2244,-861.0531 558.4377,-844.5383 624.581,-775.8604"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M460.6776,-868.4836C531.4952,-861.3289 556.5726,-845.7515 617.386,-783.2929"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="620.1404,-785.4797 624.581,-775.8604 615.1109,-780.6109 620.1404,-785.4797"/>
 </g>
 <!-- b -->
 <g id="node2" class="node">
@@ -69,69 +71,75 @@
 <!-- b1 -->
 <g id="node7" class="node">
 <title>b1</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="57.9955" cy="-258.959" rx="42.3236" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="57.9955" cy="-258.959" rx="42.3236" ry="25.3472"/>
 <text text-anchor="middle" x="57.9955" y="-253.559" font-family="Times,serif" font-size="18.00" fill="#000000">Pascal</text>
 </g>
 <!-- b&#45;&gt;b1 -->
 <g id="edge6" class="edge">
 <title>b&#45;&gt;b1</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M303.6638,-337.7209C189.4593,-281.8358 161.2328,-271.5563 99.6667,-263.7019"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M303.6638,-337.7209C195.928,-285.0011 164.7062,-272.8671 109.829,-265.0678"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="110.0439,-261.5653 99.6667,-263.7019 109.1114,-268.5029 110.0439,-261.5653"/>
 </g>
 <!-- b2 -->
 <g id="node8" class="node">
 <title>b2</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="703.9955" cy="-258.959" rx="56.3902" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="703.9955" cy="-258.959" rx="56.3902" ry="25.3472"/>
 <text text-anchor="middle" x="703.9955" y="-253.559" font-family="Times,serif" font-size="18.00" fill="#000000">Épictète</text>
 </g>
 <!-- b&#45;&gt;b2 -->
 <g id="edge7" class="edge">
 <title>b&#45;&gt;b2</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M458.42,-337.8225C564.4566,-286.1296 596.4321,-273.5363 649.5179,-265.6001"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M458.42,-337.8225C557.6222,-289.4614 592.0026,-275.3221 639.4909,-267.2019"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="640.1953,-270.6338 649.5179,-265.6001 639.091,-263.7215 640.1953,-270.6338"/>
 </g>
 <!-- c&#45;&gt;b -->
 <!-- c1 -->
 <g id="node9" class="node">
 <title>c1</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="81.9955" cy="-492.7451" rx="81.9911" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="81.9955" cy="-492.7451" rx="81.9911" ry="25.3472"/>
 <text text-anchor="middle" x="81.9955" y="-487.3451" font-family="Times,serif" font-size="18.00" fill="#000000">Schopenhauer</text>
 </g>
 <!-- c&#45;&gt;c1 -->
 <g id="edge8" class="edge">
 <title>c&#45;&gt;c1</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M309.9557,-600.5896C188.5104,-583.5306 166.8028,-573.8572 107.0476,-516.9722"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M309.9557,-600.5896C193.7287,-584.2636 168.8525,-574.7021 114.5506,-524.0479"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="116.7241,-521.2868 107.0476,-516.9722 111.9215,-526.3794 116.7241,-521.2868"/>
 </g>
 <!-- c2 -->
 <g id="node10" class="node">
 <title>c2</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="661.9955" cy="-492.7451" rx="49.2415" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="661.9955" cy="-492.7451" rx="49.2415" ry="25.3472"/>
 <text text-anchor="middle" x="661.9955" y="-487.3451" font-family="Times,serif" font-size="18.00" fill="#000000">Épicure</text>
 </g>
 <!-- c&#45;&gt;c2 -->
 <g id="edge9" class="edge">
 <title>c&#45;&gt;c2</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M443.6903,-600.5652C559.9646,-584.0112 580.1866,-574.0426 639.6278,-515.1775"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M443.6903,-600.5652C554.9685,-584.7225 578.2715,-574.9114 632.172,-522.4991"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="634.9451,-524.6813 639.6278,-515.1775 630.0405,-519.6868 634.9451,-524.6813"/>
 </g>
 <!-- d1 -->
 <g id="node11" class="node">
 <title>d1</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="236.9955" cy="-25.173" rx="49.2415" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="236.9955" cy="-25.173" rx="49.2415" ry="25.3472"/>
 <text text-anchor="middle" x="236.9955" y="-19.773" font-family="Times,serif" font-size="18.00" fill="#000000">Épicure</text>
 </g>
 <!-- d&#45;&gt;d1 -->
 <g id="edge10" class="edge">
 <title>d&#45;&gt;d1</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M337.6003,-90.4732C311.8278,-60.9442 298.1011,-49.3154 277.0572,-39.8689"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M337.6003,-90.4732C315.8547,-65.5581 302.6848,-53.3864 286.4595,-44.5168"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="287.5728,-41.1629 277.0572,-39.8689 284.4707,-47.438 287.5728,-41.1629"/>
 </g>
 <!-- d2 -->
 <g id="node12" class="node">
 <title>d2</title>
-<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="3" cx="524.9955" cy="-25.173" rx="53.292" ry="25.3472"/>
+<ellipse fill="#ffffff" stroke="#8b0000" stroke-width="0" cx="524.9955" cy="-25.173" rx="53.292" ry="25.3472"/>
 <text text-anchor="middle" x="524.9955" y="-19.773" font-family="Times,serif" font-size="18.00" fill="#000000">J.S. Mill</text>
 </g>
 <!-- d&#45;&gt;d2 -->
 <g id="edge11" class="edge">
 <title>d&#45;&gt;d2</title>
-<path fill="none" stroke="#8b0000" stroke-width="4" d="M424.4787,-90.4898C449.3862,-62.0114 463.0426,-50.1844 482.8321,-40.8969"/>
+<path fill="none" stroke="#000000" stroke-width="1.75" d="M424.4787,-90.4898C445.4944,-66.4612 458.5003,-54.2869 473.9387,-45.4902"/>
+<polygon fill="#000000" stroke="#000000" stroke-width="1.75" points="475.5533,-48.5956 482.8321,-40.8969 472.341,-42.3762 475.5533,-48.5956"/>
 </g>
 <!-- a1&#45;&gt;c1 -->
 <!-- a2&#45;&gt;c2 -->

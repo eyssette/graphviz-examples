@@ -19,8 +19,8 @@ pour être heureux ?"]
 
 a->c->b->d[minlen=2]
 
-node[color=red4, fillcolor=white, fontcolor=black, penwidth=3]
-edge[style="", color=red4, penwidth=4, arrowhead=none]
+node[color=red4, fillcolor=white, fontcolor=black, penwidth=0]
+edge[style="", penwidth=1.75]
 a->{a1,a2}
 b->{b1,b2}
 c->{c1,c2}
