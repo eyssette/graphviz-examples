@@ -1,35 +1,36 @@
 digraph G {
+splines=curved
 nodesep=2
-node[style=rounded, shape=oval, margin=0.1, color=red4, penwidth=2, fontsize=18]
+node[style="rounded, filled", shape=oval, margin=0.1, fillcolor=red4, penwidth=1, fontsize=18, fontcolor=white]
 edge[style=invis]
 
-a[label="Peut-on savoir ce
-qu'est le bonheur ?"]
+a[label="Peut-on savoir
+ce qu'est le
+bonheur ?"]
 b[label="Que pouvons-nous
 face au tragique
 de l'existence ?"]
-c[label="Le désir est-il
+c[label="Le désir
+est-il
 insatiable ?"]
 d[label="Le simple plaisir
 d'exister suffit-il
 pour être heureux ?"]
 
-a->c->b->d
+a->c->b->d[minlen=2]
 
-node[color=yellow3]
-edge[style="", color=red4, penwidth=1.5,arrowhead=none, arrowtail=none]
+node[color=red4, fillcolor=white, fontcolor=black, penwidth=3]
+edge[style="", color=red4, penwidth=4, arrowhead=none]
+a->{a1,a2}
+b->{b1,b2}
+c->{c1,c2}
+d->{d1,d2}
+
 {rank=same
-a1->a[dir=back]
-a->a2}
-{rank=same
-b1->b[dir=back]
-b->b2}
-{rank=same
-c1->c[dir=back]
-c->c2}
-{rank=same
-d1->d[dir=back]
-d->d2}
+a1,a2}
+
+a1->c1->b1->d1[style=invis]
+a2->c2->b2->d2[style=invis]
 
 a1[label="Kant"]
 a2[label="L'idée de
