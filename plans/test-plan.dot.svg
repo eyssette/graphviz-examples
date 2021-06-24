@@ -16,15 +16,14 @@
 <text text-anchor="middle" x="388.9955" y="-457.6196" font-family="Times,serif" font-size="18.00" fill="#000000">Peut&#45;on savoir ce</text>
 <text text-anchor="middle" x="388.9955" y="-436.0196" font-family="Times,serif" font-size="18.00" fill="#000000">qu&#39;est le bonheur ?</text>
 </g>
-<!-- b -->
-<g id="node2" class="node">
-<title>b</title>
-<ellipse fill="none" stroke="#8b0000" stroke-width="2" cx="388.9955" cy="-320.0531" rx="105.8928" ry="55.9409"/>
-<text text-anchor="middle" x="388.9955" y="-336.2531" font-family="Times,serif" font-size="18.00" fill="#000000">Que pouvons&#45;nous</text>
-<text text-anchor="middle" x="388.9955" y="-314.6531" font-family="Times,serif" font-size="18.00" fill="#000000">face au tragique</text>
-<text text-anchor="middle" x="388.9955" y="-293.0531" font-family="Times,serif" font-size="18.00" fill="#000000">de l&#39;existence ?</text>
+<!-- c -->
+<g id="node3" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="#8b0000" stroke-width="2" cx="388.9955" cy="-335.3266" rx="80.5048" ry="40.3931"/>
+<text text-anchor="middle" x="388.9955" y="-340.7266" font-family="Times,serif" font-size="18.00" fill="#000000">Le désir est&#45;il</text>
+<text text-anchor="middle" x="388.9955" y="-319.1266" font-family="Times,serif" font-size="18.00" fill="#000000">insatiable ?</text>
 </g>
-<!-- a&#45;&gt;b -->
+<!-- a&#45;&gt;c -->
 <!-- a2 -->
 <g id="node6" class="node">
 <title>a2</title>
@@ -37,24 +36,13 @@
 <title>a&#45;&gt;a2</title>
 <path fill="none" stroke="#8b0000" stroke-width="1.5" d="M496.1635,-452.2196C543.9664,-452.2196 591.7692,-452.2196 639.5721,-452.2196"/>
 </g>
-<!-- c -->
-<g id="node3" class="node">
-<title>c</title>
-<ellipse fill="none" stroke="#8b0000" stroke-width="2" cx="388.9955" cy="-187.8865" rx="80.5048" ry="40.3931"/>
-<text text-anchor="middle" x="388.9955" y="-193.2865" font-family="Times,serif" font-size="18.00" fill="#000000">Le désir est&#45;il</text>
-<text text-anchor="middle" x="388.9955" y="-171.6865" font-family="Times,serif" font-size="18.00" fill="#000000">insatiable ?</text>
-</g>
-<!-- b&#45;&gt;c -->
-<!-- b2 -->
-<g id="node8" class="node">
-<title>b2</title>
-<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="694.9955" cy="-320.0531" rx="56.3902" ry="25.3472"/>
-<text text-anchor="middle" x="694.9955" y="-314.6531" font-family="Times,serif" font-size="18.00" fill="#000000">Épictète</text>
-</g>
-<!-- b&#45;&gt;b2 -->
-<g id="edge7" class="edge">
-<title>b&#45;&gt;b2</title>
-<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M494.7807,-320.0531C542.7488,-320.0531 590.717,-320.0531 638.6851,-320.0531"/>
+<!-- b -->
+<g id="node2" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="#8b0000" stroke-width="2" cx="388.9955" cy="-203.16" rx="105.8928" ry="55.9409"/>
+<text text-anchor="middle" x="388.9955" y="-219.36" font-family="Times,serif" font-size="18.00" fill="#000000">Que pouvons&#45;nous</text>
+<text text-anchor="middle" x="388.9955" y="-197.76" font-family="Times,serif" font-size="18.00" fill="#000000">face au tragique</text>
+<text text-anchor="middle" x="388.9955" y="-176.16" font-family="Times,serif" font-size="18.00" fill="#000000">de l&#39;existence ?</text>
 </g>
 <!-- d -->
 <g id="node4" class="node">
@@ -64,17 +52,29 @@
 <text text-anchor="middle" x="388.9955" y="-50.32" font-family="Times,serif" font-size="18.00" fill="#000000">d&#39;exister suffit&#45;il</text>
 <text text-anchor="middle" x="388.9955" y="-28.72" font-family="Times,serif" font-size="18.00" fill="#000000">pour être heureux ?</text>
 </g>
-<!-- c&#45;&gt;d -->
+<!-- b&#45;&gt;d -->
+<!-- b2 -->
+<g id="node8" class="node">
+<title>b2</title>
+<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="694.9955" cy="-203.16" rx="56.3902" ry="25.3472"/>
+<text text-anchor="middle" x="694.9955" y="-197.76" font-family="Times,serif" font-size="18.00" fill="#000000">Épictète</text>
+</g>
+<!-- b&#45;&gt;b2 -->
+<g id="edge7" class="edge">
+<title>b&#45;&gt;b2</title>
+<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M494.7807,-203.16C542.7488,-203.16 590.717,-203.16 638.6851,-203.16"/>
+</g>
+<!-- c&#45;&gt;b -->
 <!-- c2 -->
 <g id="node10" class="node">
 <title>c2</title>
-<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="662.9955" cy="-187.8865" rx="49.2415" ry="25.3472"/>
-<text text-anchor="middle" x="662.9955" y="-182.4865" font-family="Times,serif" font-size="18.00" fill="#000000">Épicure</text>
+<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="662.9955" cy="-335.3266" rx="49.2415" ry="25.3472"/>
+<text text-anchor="middle" x="662.9955" y="-329.9266" font-family="Times,serif" font-size="18.00" fill="#000000">Épicure</text>
 </g>
 <!-- c&#45;&gt;c2 -->
 <g id="edge9" class="edge">
 <title>c&#45;&gt;c2</title>
-<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M469.8041,-187.8865C517.7247,-187.8865 565.6452,-187.8865 613.5657,-187.8865"/>
+<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M469.8041,-335.3266C517.7247,-335.3266 565.6452,-335.3266 613.5657,-335.3266"/>
 </g>
 <!-- d2 -->
 <g id="node12" class="node">
@@ -101,24 +101,24 @@
 <!-- b1 -->
 <g id="node7" class="node">
 <title>b1</title>
-<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="96.9955" cy="-320.0531" rx="42.3236" ry="25.3472"/>
-<text text-anchor="middle" x="96.9955" y="-314.6531" font-family="Times,serif" font-size="18.00" fill="#000000">Pascal</text>
+<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="96.9955" cy="-203.16" rx="42.3236" ry="25.3472"/>
+<text text-anchor="middle" x="96.9955" y="-197.76" font-family="Times,serif" font-size="18.00" fill="#000000">Pascal</text>
 </g>
 <!-- b1&#45;&gt;b -->
 <g id="edge6" class="edge">
 <title>b1&#45;&gt;b</title>
-<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M139.4838,-320.0531C187.4044,-320.0531 235.3249,-320.0531 283.2455,-320.0531"/>
+<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M139.4838,-203.16C187.4044,-203.16 235.3249,-203.16 283.2455,-203.16"/>
 </g>
 <!-- c1 -->
 <g id="node9" class="node">
 <title>c1</title>
-<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="81.9955" cy="-187.8865" rx="81.9911" ry="25.3472"/>
-<text text-anchor="middle" x="81.9955" y="-182.4865" font-family="Times,serif" font-size="18.00" fill="#000000">Schopenhauer</text>
+<ellipse fill="none" stroke="#cdcd00" stroke-width="2" cx="81.9955" cy="-335.3266" rx="81.9911" ry="25.3472"/>
+<text text-anchor="middle" x="81.9955" y="-329.9266" font-family="Times,serif" font-size="18.00" fill="#000000">Schopenhauer</text>
 </g>
 <!-- c1&#45;&gt;c -->
 <g id="edge8" class="edge">
 <title>c1&#45;&gt;c</title>
-<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M164.142,-187.8865C212.1576,-187.8865 260.1732,-187.8865 308.1888,-187.8865"/>
+<path fill="none" stroke="#8b0000" stroke-width="1.5" d="M164.142,-335.3266C212.1576,-335.3266 260.1732,-335.3266 308.1888,-335.3266"/>
 </g>
 <!-- d1 -->
 <g id="node11" class="node">

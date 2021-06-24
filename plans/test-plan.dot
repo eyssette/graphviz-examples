@@ -14,7 +14,7 @@ d[label="Le simple plaisir
 d'exister suffit-il
 pour être heureux ?"]
 
-a->b->c->d
+a->c->b->d
 
 node[color=yellow3]
 edge[style="", color=red4, penwidth=1.5,arrowhead=none, arrowtail=none]
