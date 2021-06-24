@@ -1,0 +1,39 @@
+digraph G {
+rankdir=LR
+// splines=polyline
+
+
+nodesep=2
+node[shape=none]
+edge[style="",constraint=none,arrowtail=normal,fontsize=12,dir=both]
+// a->ab[arrowhead=none,minlen=1,constraint=""]
+// b->ab[arrowhead=none,constraint=""]
+// ab->e[arrowtail=none,constraint=""]
+// ab[shape=point]
+//a:e->e[ltail=cluster_1]
+ab[shape=point,penwidth=0]
+te[shape=point,penwidth=0]
+a->ab[minlen=0,arrowhead=none]
+ab->b[minlen=0,arrowtail=none]
+{rank=same;te->e[minlen=0,dir=""]}
+ab->te[dir="",arrowhead=none,label="Peut-on savoir ce qu'est le bonheur ?"]
+
+edge[style=invis, constraint=""]
+a->b->c->d->e->f
+
+a[label="Épicure"]
+b[label="Épictète"]
+c[label="Pascal"]
+d[label="Schopenhauer"]
+e[label="Kant"]
+f[label="J.S. Mill"]
+
+edge[style="",constraint=none,arrowtail=normal,fontsize=12,dir=both]
+b->c[label="Que pouvons-nous face au
+tragique de l'existence ?"]
+
+a->d[label="Le désir est-il insatiable ?"]
+a->f[label="Le simple plaisir d'exister suffit-il
+pour être heureux ?"]
+
+}
