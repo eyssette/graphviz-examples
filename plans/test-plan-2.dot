@@ -1,7 +1,9 @@
 digraph G {
+pad=0.2
 splines=curved
 nodesep=2
 ranksep=0.7
+bgcolor=grey98
 
 node[style=filled, fontcolor=white, fillcolor=black]
 N[label="Le bonheur
@@ -42,7 +44,8 @@ d'exister suffit-il
 pour être heureux ?"]
 
 
-node[color=red4, fillcolor=white, fontcolor=black, penwidth=0]
+node [shape=box,style="filled,rounded",fillcolor=white,fontcolor=black,color=grey50, margin=0.2]
+
 {rank=same;a1->a[dir=back]}
 a2->a[dir=back]
 c1->c[dir=back]
