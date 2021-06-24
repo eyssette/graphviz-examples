@@ -58,9 +58,7 @@ b1[label="Pascal"]
 b2[label="Épictète"]
 c1[label="Schopenhauer"]
 c2[label="Épicure"]
-d1[label="Épicure"]
-d2[label="J.S. Mill"]
-
-
+d2[label="Épicure"]
+d1[label="J.S. Mill"]
 
 }
