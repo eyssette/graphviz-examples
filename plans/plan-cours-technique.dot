@@ -10,7 +10,7 @@ style=filled
 edge[minlen=3]
 node[style=filled, fontcolor=white]
 ranksep=0.1
-nodesep=0.2
+nodesep=0.1
 
 // NIVEAU 1
 node[fillcolor=grey2, fontsize=18]
@@ -40,7 +40,7 @@ développement technologique ?"]
 
 
 
-{rank=same;b1->b2->b3->b4->b5->b6[style=invis, minlen=2]}
+{rank=same;b1->b2->b3->b4->b5->b6[style=invis, minlen=3]}
 
 node[fontcolor=black]
 // NIVEAU 3 (sans intermédiaire)
@@ -74,11 +74,11 @@ c12[label="Feenberg"]
 
 
 
-{rank=same;c2->c3[style=invis, minlen=2]}
-{rank=same;c4->c5[style=invis, minlen=2]}
-{rank=same;c6->c7[style=invis, minlen=2]}
-{rank=same;c8->c9[style=invis, minlen=2]}
-{rank=same;c10->c11[style=invis, minlen=2]}
+{rank=same;c2->c3[style=invis, minlen=3]}
+{rank=same;c4->c5[style=invis, minlen=3]}
+{rank=same;c6->c7[style=invis, minlen=3]}
+{rank=same;c8->c9[style=invis, minlen=3]}
+{rank=same;c10->c11[style=invis, minlen=3]}
 
 
 
