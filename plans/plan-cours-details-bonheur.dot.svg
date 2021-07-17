@@ -20,14 +20,14 @@
 <!-- p1 -->
 <g id="node2" class="node">
 <title>p1</title>
-<polygon fill="#fafafa" stroke="transparent" points="292.2488,-436.2019 198.5503,-436.2019 198.5503,-394.9981 292.2488,-394.9981 292.2488,-436.2019"/>
+<polygon fill="#fafafa" stroke="transparent" points="297.8356,-436.2019 192.9634,-436.2019 192.9634,-394.9981 297.8356,-394.9981 297.8356,-436.2019"/>
 <text text-anchor="middle" x="245.3995" y="-419.8" font-family="Times,serif" font-size="14.00" fill="#006400">I – Un idéal</text>
-<text text-anchor="middle" x="245.3995" y="-403" font-family="Times,serif" font-size="14.00" fill="#006400">inaccessible ?</text>
+<text text-anchor="middle" x="245.3995" y="-403" font-family="Times,serif" font-size="14.00" fill="#006400">indéfinissable ?</text>
 </g>
 <!-- a1&#45;&gt;p1 -->
 <g id="edge1" class="edge">
 <title>a1&#45;&gt;p1:w</title>
-<path fill="none" stroke="#000000" d="M99.0605,-326.7822C117.6267,-366.5971 150.2565,-415.6 198.3995,-415.6"/>
+<path fill="none" stroke="#000000" d="M97.8454,-327.1754C115.2794,-366.9189 146.256,-415.6 193.3995,-415.6"/>
 </g>
 <!-- p2 -->
 <g id="node3" class="node">
@@ -65,8 +65,8 @@
 <!-- p1&#45;&gt;b1 -->
 <g id="edge6" class="edge">
 <title>p1&#45;&gt;b1:w</title>
-<path fill="none" stroke="#000000" d="M292.4585,-429.4082C302.7763,-431.6412 313.8705,-433.4714 324.7315,-434.2269"/>
-<polygon fill="#000000" stroke="#000000" points="324.9202,-437.7359 335.0403,-434.6 325.1734,-430.7405 324.9202,-437.7359"/>
+<path fill="none" stroke="#000000" d="M297.623,-430.4773C306.4707,-432.2238 315.7475,-433.6088 324.8575,-434.2356"/>
+<polygon fill="#000000" stroke="#000000" points="324.9215,-437.74 335.0403,-434.6 325.1719,-430.7445 324.9215,-437.74"/>
 </g>
 <!-- p2&#45;&gt;p3 -->
 <!-- b2 -->
