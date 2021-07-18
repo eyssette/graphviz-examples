@@ -1,0 +1,137 @@
+digraph G {
+// Template : diagram
+// Usage : 
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=grey2, fontsize=18]
+a1[label="Qui
+suis-je ?"]
+
+// NIVEAU 2
+node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
+a1->p1[headport=w, arrowhead=none]
+a1->p2[headport=w, arrowhead=none]
+
+p1[label="I – Le moi en
+tant que tel"]
+p2[label="II – Le moi dans
+son rapport aux
+autres et au monde"]
+
+{rank=same;p1->p2[style=invis, minlen=14]}
+
+node[fontcolor=black, fontsize=16]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
+// [arrowhead=none]
+// bc1[label=""]
+p1->b1[headport=w]
+p1->b2[headport=w]
+p2->b3[headport=w]
+p2->b4[headport=w]
+b1[label="Le corps et l'esprit
+sont-ils deux réalités
+distinctes ?"]    
+b2[label="Y a-t-il une
+unité du Moi ?"]
+b3[label="Les autres
+m'empêchent-ils
+d'être moi-même ?"]
+b4[label="Mon identité se
+trouve-t-elle
+en moi ?"]
+
+
+
+
+{rank=same;b1->b2->b3->b4[style=invis, minlen=3]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50, fontcolor=black]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="Le matérialisme"]
+c2[label="Les difficultés
+du matérialisme"]
+
+b2->{c3,c4}
+c3[label="Hume"]
+c4[label="Ricœur"]
+
+b3->{c5,c6}
+c5[label="Nietzsche"]
+c6[label="Honneth"]
+
+b4->{c7,c8}
+c7[label="Locke"]
+c8[label="Sartre"]
+
+
+{rank=same;c2->c3[style=invis, minlen=3]}
+{rank=same;c4->c5[style=invis, minlen=3]}
+{rank=same;c6->c7[style=invis, minlen=3]}
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+e1[label="Une conception
+non-mystérieuse
+de l'esprit"]
+e2[label="L'intentionnalité,
+les qualia"]
+e3[label="Un flux de
+perceptions
+multiples"]
+e4[label="L'identité
+narrative"]
+e5[label="Le dressage
+social"]
+e6[label="L'importance de
+la reconnaissance"]
+e7[label="L'identité
+mémorielle"]
+e8[label="« L'existence
+précèdel'essence »"]
+
+c1->e1[minlen=1, style=invis]
+c2->e2[minlen=1, style=invis]
+c3->e3[minlen=1, style=invis]
+c4->e4[minlen=1, style=invis]
+c5->e5[minlen=1, style=invis]
+c6->e6[minlen=1, style=invis]
+c7->e7[minlen=1, style=invis]
+c8->e8[minlen=1, style=invis]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
