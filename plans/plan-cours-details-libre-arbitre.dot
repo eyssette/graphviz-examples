@@ -30,7 +30,7 @@ p2[label="II – Les arguments
 contre le libre
 arbitre"]
 
-{rank=same;p1->p2[style=invis, minlen=15]}
+{rank=same;p1->p2[style=invis, minlen=17]}
 
 node[fontcolor=black, fontsize=16]
 // NIVEAU 3 (sans intermédiaire)
@@ -47,18 +47,22 @@ p1->b1[headport=w]
 p1->b2[headport=w]
 p1->b3[headport=w]
 p2->b4[headport=w]
-b1[label="L'expérience d'agir par
-soi-même est-elle une
-preuve de notre liberté ?"]    
-b2[label="Notre capacité d'envisager
-plusieurs possibilités est-elle
-une preuve de notre liberté ?"]
+b1[label="L'expérience
+d'agir par soi-même
+est-elle une preuve
+de notre liberté ?"]    
+b2[label="Notre capacité
+d'envisager plusieurs
+possibilités est-elle une
+preuve de notre liberté ?"]
 b3[label="Notre responsabilité
 morale est-elle une
 preuve de notre liberté ?"]
-b4[label="Sommes-nous déterminés
-par des facteurs dont nous
-n'avons pas conscience ?"]
+b4[label="Sommes-nous
+déterminés par
+des facteurs dont
+nous n'avons pas
+conscience ?"]
 
 
 
@@ -91,9 +95,9 @@ c8[label="Les limites du
 déterminisme"]
 
 
-{rank=same;c2->c3[style=invis, minlen=3]}
-{rank=same;c4->c5[style=invis, minlen=3]}
-{rank=same;c6->c7[style=invis, minlen=4]}
+{rank=same;c2->c3[style=invis, minlen=4]}
+{rank=same;c4->c5[style=invis, minlen=4]}
+{rank=same;c6->c7[style=invis, minlen=5]}
 
 // NIVEAU 4
 node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
@@ -109,11 +113,12 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
 e1[label="« Agir librement,
 c’est reprendre
 possession de soi »"]
-e2[label="Ignorance des
-causes qui nous
-déterminent"]
-e3[label="La raison
-≠ l'instinct"]
+e2[label="« Les hommes sont
+conscients de leurs
+désirs et ignorants des
+causes qui les déterminent »"]
+e3[label="La raison des êtres humains
+≠ l'instinct des animaux"]
 e4[label="La mécanique
 de la décision"]
 e5[label="La responsabilité fondée
@@ -122,13 +127,13 @@ choix d'agir autrement"]
 e6[label="La responsabilité fondée sur
 l'ancrage de l'action dans
 le caractère de l'individu"]
-e7[label="Déterminisme biologique
-(génétique, neuronal),
-déterminisme psychique
-(inconscient freudien,
-inconscient cognitif),
-déterminisme social (Marx
-sur les classes sociales)"]
+e7[label=<Déterminisme biologique<br/>
+<font point-size="10">(génétique, neuronal),</font><br/>
+Déterminisme psychique<br/>
+<font point-size="10">(inconscient freudien,<br/>
+inconscient cognitif),</font><br/>
+Déterminisme social <br/>
+<font point-size="10">(la conception marxiste<br/>des classes sociales)</font>>]
 e8[label="Déterminisme
 ≠ fatalisme"]
 
