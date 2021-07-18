@@ -19,18 +19,21 @@ n'est-il qu'un
 idéal ?"]
 
 // NIVEAU 2
-node[fontsize=14, shape=plaintext, fillcolor=grey98, fontcolor=darkgreen]
+node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
 a1->p1[headport=w, arrowhead=none]
 a1->p2[headport=w, arrowhead=none]
 a1->p3[headport=w, arrowhead=none]
 
 p1[label="I – Un idéal
 indéfinissable ?"]
-p2[label="II – Les obstacles
-au bonheur"]
-p3[label="III – Plaisir
-d'exister ou sens
-de la vie ?"]
+p2[label=<II – Un idéal<br/>
+inaccessible ?<br/>
+<font point-size="3"><br/></font>
+<font point-size="11">(= les obstacles<br/>
+au bonheur)</font>>]
+p3[label="III – Un idéal
+de satisfaction ou
+un idéal de sens ?"]
 
 {rank=same;p1->p2->p3[style=invis, minlen=7]}
 
@@ -42,7 +45,7 @@ node [shape=box, fillcolor=white, color=grey50]
 
 
 // INTERMÉDIAIRE AVANT NIVEAU 3
-node[fillcolor=red4, shape=oval, fontcolor=white, color=black]
+node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
 // [arrowhead=none]
 // bc1[label=""]
 p1->b1[headport=w]
