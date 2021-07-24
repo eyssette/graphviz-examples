@@ -26,7 +26,9 @@ a1->p2[headport=w, arrowhead=none]
 p1[label="I – Défendre
 un certain bien
 commun ?"]
-p2[label="II – La justice sociale"]
+p2[label="II – Comment
+garantir la
+justice sociale ?"]
 
 {rank=same;p1->p2[style=invis, minlen=22]}
 
@@ -123,12 +125,23 @@ l'ordre social"]
 e4[label="L'État de droit
 contre le pouvoir
 absolu et arbitraire"]
-e5[label=""]
-e6[label=""]
-e7[label=""]
-e8[label=""]
-e9[label=""]
-e10[label=""]
+e5[label="Le réalisme politique
+contre l'idéalisme
+politique"]
+e6[label="Les principes de justice
+≠ les conceptions du bien"]
+e7[label="L'argument moral
+de l'autonomie,
+l'argument économique
+de l'efficacité"]
+e8[label="Les limites du libéralisme
+économique, la défense
+de l'État-social"]
+e9[label="La conception politique
+de la nation, la figure
+du citoyen abstrait"]
+e10[label="Le féminisme,
+le multiculturalisme"]
 
 c1->e1[minlen=1, style=invis]
 c2->e2[minlen=1, style=invis]
