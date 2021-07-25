@@ -81,8 +81,8 @@ scientifique ?"]
 node[fillcolor=white, shape=box, color=grey50, fontcolor=black]
 // c1[label=""]
 b1->{c1,c2}
-c1[label="Platon"]
-c2[label="Nietzsche"]
+c1[label="Nietzsche"]
+c2[label="Platon"]
 
 b2->{c3,c4}
 c3[label="Le relativisme"]
@@ -127,11 +127,11 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
 // e1[label=""]
 // ->e1[minlen=1, style=invis]
 
-e1[label="Valeur instrumentale,
-valeur intrinsèque
-de la vérité"]
-e2[label="Le soupçon sur la
-prétention à la vérité"]
+e1[label="Les soupçons sur la
+volonté de vérité"]
+e2[label="Valeur intrinsèque
+≠ valeur instrumentale
+de la connaissance"]
 e3[label="L'argument de la tolérance,
 L'argument du cadre conceptuel"]
 e4[label="L'objection de l'autoréfutation,
