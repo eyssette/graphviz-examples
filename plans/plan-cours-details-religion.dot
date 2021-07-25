@@ -48,7 +48,6 @@ p1->b1[headport=w]
 p1->b2[headport=w]
 p2->b3[headport=w]
 p2->b4[headport=w]
-p2->b5[headport=w]
 b1[label="La foi religieuse
 est-elle une affaire
 personnelle ou un
@@ -57,12 +56,10 @@ b2[label="La foi religieuse
 est-elle un
 refuge ?"]
 b3[label="Peut-on prouver
-l'existence
-de Dieu ?"]
-b4[label="Peut-on prouver
+l'existence ou
 l'inexistence
 de Dieu ?"]
-b5[label="Y a-t-il un conflit
+b4[label="Y a-t-il un conflit
 entre la raison et la
 foi religieuse ?"]
 
@@ -86,27 +83,20 @@ b3->{c5,c6}
 c5[label="Les arguments
 pour l'existence
 de Dieu"]
-c6[label="Les limites de
-ces arguments"]
-
-b4->{c7,c8}
-c7[label="Les arguments
+c6[label="Les arguments
 contre l'existence
 de Dieu"]
-c8[label="Les limites de
-ces arguments"]
 
-b5->{c9,c10}
-c9[label="Les conceptions
+b4->{c7,c8}
+c7[label="Les conceptions
 conflictuelles"]
-c10[label="Les conceptions
+c8[label="Les conceptions
 non-conflictuelles"]
 
 
 {rank=same;c2->c3[style=invis, minlen=3]}
 {rank=same;c4->c5[style=invis, minlen=3]}
 {rank=same;c6->c7[style=invis, minlen=3]}
-{rank=same;c8->c9[style=invis, minlen=3]}
 
 // NIVEAU 4
 node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
@@ -130,13 +120,11 @@ e4[label="La foi comme
 élan intérieur"]
 e5[label="L'argument cosmologique,
 l'argument téléologique"]
-e6[label=""]
-e7[label="L'argument naturaliste,
+e6[label="L'argument naturaliste,
 l'argument du mal"]
-e8[label=""]
-e9[label="Le rationalisme athée,
+e7[label="Le rationalisme athée,
 le fidéisme"]
-e10[label="La théologie rationnelle,
+e8[label="La théologie rationnelle,
 le concordisme,
 la séparation des magistères"]
 
@@ -148,9 +136,6 @@ c5->e5[minlen=1, style=invis]
 c6->e6[minlen=1, style=invis]
 c7->e7[minlen=1, style=invis]
 c8->e8[minlen=1, style=invis]
-c9->e9[minlen=1, style=invis]
-c10->e10[minlen=1, style=invis]
-
 
 // REMARQUES EN BLEU
 node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
