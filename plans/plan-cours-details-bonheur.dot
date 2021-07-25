@@ -35,7 +35,7 @@ p3[label="III – Un idéal
 de satisfaction ou
 un idéal de sens ?"]
 
-{rank=same;p1->p2->p3[style=invis, minlen=7]}
+{rank=same;p1->p2->p3[style=invis, minlen=9]}
 
 node[fontcolor=black, fontsize=16]
 // NIVEAU 3 (sans intermédiaire)
