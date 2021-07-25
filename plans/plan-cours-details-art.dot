@@ -23,20 +23,17 @@ valeur d'une
 node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
 a1->p1[headport=w, arrowhead=none]
 a1->p2[headport=w, arrowhead=none]
-a1->p3[headport=w, arrowhead=none]
 
-p1[label="L'art du point
-de vue de
-l'œuvre et
+
+p1[label="L'art du
+point de vue
+de l'œuvre et
 de l'artiste"]
 p2[label="L'art du
 point de vue
 du public"]
-p3[label="Les
-jugements
-de goût"]
 
-{rank=same;p1->p2->p3[style=invis, minlen=6]}
+{rank=same;p1->p2[style=invis, minlen=9]}
 
 node[fontcolor=black, fontsize=16]
 // NIVEAU 3 (sans intermédiaire)
@@ -51,7 +48,7 @@ node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
 // bc1[label=""]
 p1->b1[headport=w]
 p2->b2[headport=w]
-p3->b3[headport=w]
+p2->b3[headport=w]
 b1[label="L'artiste
 n'obéit-il à
 aucune règle ?"]    
