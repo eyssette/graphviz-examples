@@ -112,10 +112,14 @@ e5[label="Le dressage
 social"]
 e6[label="L'importance de
 la reconnaissance"]
-e7[label="L'identité
-mémorielle"]
-e8[label="« L'existence
-précèdel'essence »"]
+e7[label="La conception
+mémorielle de
+l'identité"]
+e8[label="« L'homme n'est rien
+d'autre que l'ensemble
+de ses actes »,
+« L'existence précède
+l'essence »"]
 
 c1->e1[minlen=1, style=invis]
 c2->e2[minlen=1, style=invis]
