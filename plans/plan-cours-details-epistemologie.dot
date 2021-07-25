@@ -161,8 +161,8 @@ la critique de l'induction"]
 e11[label="La distinction
 sciences / pseudo-sciences,
 le critère de la réfutabilité"]
-e12[label="Les limites du 
-critère de la réfutabilité"]
+e12[label="La notion de
+paradigme"]
 
 c1->e1[minlen=1, style=invis]
 c2->e2[minlen=1, style=invis]
