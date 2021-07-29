@@ -1,0 +1,128 @@
+digraph G {
+// Template : diagram
+// Usage : 
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=grey2, fontsize=18]
+a1[label="Quelle est la
+finalité de la
+politique ?"]
+
+// NIVEAU 2
+node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
+a1->p1[headport=w, arrowhead=none]
+a1->p2[headport=w, arrowhead=none]
+a1->p3[headport=w, arrowhead=none]
+
+p1[label="I – Le pouvoir
+ou l'intérêt
+général ?"]
+p2[label="II – La sécurité
+ou la liberté ?"]
+p3[label="III – Politique
+et morale"]
+
+{rank=same;p1->p2->p3[style=invis, minlen=6]}
+
+node[fontcolor=black, fontsize=16]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
+// [arrowhead=none]
+// bc1[label=""]
+p1->b1[headport=w]
+p2->b2[headport=w]
+p3->b3[headport=w]
+b1[label="L'État est-il au service
+de l'intérêt général ?", margin=0.1]    
+b2[label="La raison d'être
+de l'État est-elle de
+garantir la sécurité ?", margin=0.09]
+b3[label="La politique doit-elle
+être guidée par
+un idéal moral ?", margin=0.1]
+
+
+
+
+{rank=same;b1->b2->b3[style=invis, minlen=3]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50, fontcolor=black]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="Marx"]
+c2[label="Rousseau"]
+
+b2->{c3,c4}
+c3[label="Hobbes"]
+c4[label="Locke"]
+
+b3->{c5,c6}
+c5[label="Machiavel"]
+c6[label="John Rawls"]
+
+
+{rank=same;c2->c3[style=invis, minlen=3]}
+{rank=same;c4->c5[style=invis, minlen=3]}
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+e1[label="L'idéologie de l'intérêt général,
+l'État comme moyen de
+domination au service d'une
+classe sociale particulière"]
+e2[label="La volonté
+générale"]
+e3[label="L'État-Léviathan
+comme condition de
+l'ordre social"]
+e4[label="L'État de droit
+contre le pouvoir
+absolu et arbitraire"]
+e5[label="Le réalisme politique
+contre l'idéalisme
+politique"]
+e6[label="Les principes de justice
+≠ les conceptions du bien"]
+
+c1->e1[minlen=1, style=invis]
+c2->e2[minlen=1, style=invis]
+c3->e3[minlen=1, style=invis]
+c4->e4[minlen=1, style=invis]
+c5->e5[minlen=1, style=invis]
+c6->e6[minlen=1, style=invis]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
