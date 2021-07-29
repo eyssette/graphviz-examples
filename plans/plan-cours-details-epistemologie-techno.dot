@@ -1,0 +1,173 @@
+digraph G {
+// Template : diagram
+// Usage : 
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=grey2, fontsize=18]
+a1[label="Comment
+peut-on parvenir
+à la vérité ?"]
+
+// NIVEAU 2
+node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
+a1->p1[headport=w, arrowhead=none,minlen=4]
+a1->p2[headport=w, arrowhead=none]
+a1->p3[headport=w, arrowhead=none]
+
+p1[label="I – La valeur
+de la vérité"]
+p2[label="II – La vérité :
+impossible à
+atteindre ?"]
+p3[label="III – La source de
+nos connaissances"]
+
+{rank=same;p1->p2[style=invis, minlen=12]}
+{rank=same;p1->p2[style=invis, minlen=12]}
+{rank=same;p2->p3[style=invis, minlen=10]}
+
+
+
+node[fontcolor=black, fontsize=16]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
+// [arrowhead=none]
+// bc1[label=""]
+p1->b1[headport=w]
+p2->b2[headport=w]
+p2->b3[headport=w]
+p3->b5[headport=w]
+p3->b6[headport=w]
+b1[label="À quoi bon
+chercher la vérité ?"]    
+b2[label="Peut-on dire « à
+chacun sa vérité ! » ?"]
+b3[label="Faut-il douter
+de tout ?"]
+b5[label="L'expérience est-elle
+le fondement de
+la science ?"]
+b6[label="Y a-t-il
+une méthode
+scientifique ?"]
+
+
+{rank=same;b1->b2[style=invis, minlen=6]}
+{rank=same;b2->b3[style=invis, minlen=2]}
+{rank=same;b3->b5[style=invis, minlen=2]}
+{rank=same;b5->b6[style=invis, minlen=2]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50, fontcolor=black]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="Nietzsche"]
+c2[label="Platon"]
+
+b2->{c3,c4}
+c3[label="Le relativisme"]
+c4[label="Les limites
+du relativisme"]
+
+b3->{c5,c6}
+c5[label="Le scepticisme"]
+c6[label="Les limites
+du scepticisme"]
+
+
+b5->{c9,c10}
+c9[label="L'empirisme"]
+c10[label="Les limites
+de l'empirisme"]
+
+b6->{c11,c12}
+c11[label="Le falsificationnisme
+de Popper"]
+c12[label="Les limites du
+falsificationnisme"]
+
+
+{rank=same;c2->c3[style=invis, minlen=3]}
+{rank=same;c4->c5[style=invis, minlen=3]}
+{rank=same;c6->c9[style=invis, minlen=3]}
+{rank=same;c10->c11[style=invis, minlen=3]}
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+e1[label="Les soupçons sur la
+volonté de vérité"]
+e2[label="Valeur intrinsèque
+≠ valeur instrumentale
+de la connaissance"]
+e3[label="L'argument de la tolérance,
+L'argument du cadre conceptuel"]
+e4[label="L'objection de l'autoréfutation,
+La distinction vérité-opinion,
+La compatibilité entre vérité
+et tolérance"]
+e5[label="L'argument du doute radical,
+le trilemme d'Agrippa"]
+e6[label="Doute philosophique
+≠ doute ordinaire,
+ doute raisonnable
+≠ doute déraisonnable"]
+e9[label="Empirisme de
+la découverte,
+empirisme de
+la justification"]
+e10[label="La théorie vient souvent
+avant l'observation,
+l'observation est
+chargée de théorie,
+la critique de l'induction"]
+e11[label="La distinction
+sciences / pseudo-sciences,
+le critère de la réfutabilité"]
+e12[label="La notion de
+paradigme"]
+
+c1->e1[minlen=1, style=invis]
+c2->e2[minlen=1, style=invis]
+c3->e3[minlen=1, style=invis]
+c4->e4[minlen=1, style=invis]
+c5->e5[minlen=1, style=invis]
+c6->e6[minlen=1, style=invis]
+c9->e9[minlen=1, style=invis]
+c10->e10[minlen=1, style=invis]
+c11->e11[minlen=1, style=invis]
+c12->e12[minlen=1, style=invis]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
