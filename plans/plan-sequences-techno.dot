@@ -1,0 +1,121 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.1
+
+// NIVEAU 1
+node[fillcolor=grey2, fontsize=18]
+a1[label="Trois séquences", margin=0.15]
+
+// NIVEAU 2
+node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
+
+
+node[fontcolor=black, fontsize=16]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
+// [arrowhead=none]
+// bc1[label=""]
+a1->{b1,b2,b3}[headport=n]
+b1[label="Philosophie
+morale et
+politique",xlabel=<<font color="darkgreen">S1</font>>]    
+b2[label="Philosophie
+de la culture",xlabel=<<font color="darkgreen">S2</font>>]
+b3[label="Épistémologie
+et métaphysique",xlabel=<<font color="darkgreen">S3</font>>]
+
+
+
+{rank=same;b1->b2[style=invis, minlen=16]}
+{rank=same;b2->b3[style=invis, minlen=12]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50, fontcolor=black]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="Chapitre 1 :
+Être libre, est-ce
+faire tout ce
+qui nous plaît ?"]
+c2[label="Chapitre 2 :
+Quelle est la
+finalité de
+la politique ?"]
+
+b2->{c3,c4}
+c3[label="Chapitre 3 :
+Faut-il avoir
+peur de la
+technique ?"]
+c4[label="Chapitre 4 :
+Peut-on définir ce
+qui fait la valeur
+d'une œuvre d'art ?"]
+
+b3->{c5,c6}
+c5[label="Chapitre 5 :
+Comment peut-on
+parvenir à
+la vérité ?"]
+c6[label="Chapitre 6 :
+Comment peut-on
+comprendre la
+foi religieuse ?"]
+
+{rank=same;c2->c3[style=invis, minlen=3]}
+{rank=same;c4->c5[style=invis, minlen=3]}
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+e1[label="La liberté,
+la nature"]
+e2[label="La justice,
+la liberté"]
+e3[label="La technique,
+la nature,
+la liberté"]
+e4[label="L'art"]
+e5[label="La vérité"]
+e6[label="La religion"]
+
+c1->e1[minlen=1, style=invis]
+c2->e2[minlen=1, style=invis]
+c3->e3[minlen=1, style=invis]
+c4->e4[minlen=1, style=invis]
+c5->e5[minlen=1, style=invis]
+c6->e6[minlen=1, style=invis]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
