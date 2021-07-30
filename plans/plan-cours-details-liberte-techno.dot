@@ -1,0 +1,164 @@
+digraph G {
+// Template : diagram
+// Usage : 
+rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=3]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.2
+
+// NIVEAU 1
+node[fillcolor=grey2, fontsize=18]
+a1[label="Être libre, est-ce
+faire tout ce qui
+nous plaît ?"]
+
+// NIVEAU 2
+node[fontsize=14, shape=rect, fillcolor=grey98, fontcolor=darkgreen, color=darkgreen, style="filled, rounded"]
+a1->p1[headport=w, arrowhead=none]
+a1->p2[headport=w, arrowhead=none]
+a1->p3[headport=w, arrowhead=none]
+
+p1[label="I – Liberté
+et désirs"]
+p2[label="II – La liberté
+et les autres"]
+p3[label="III – Liberté et
+devoir moral"]
+
+{rank=same;p1->p2->p3[style=invis, minlen=12]}
+
+node[fontcolor=black, fontsize=16]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=red4, shape=oval, fontcolor=white, color=black, style="filled"]
+// [arrowhead=none]
+// bc1[label=""]
+p1->b1[headport=w]
+p2->b2[headport=w]
+p2->b3[headport=w]
+p3->b4[headport=w]
+p3->b5[headport=w]
+b1[label="Faire tout ce qui
+nous plaît, est-ce être
+esclave de ses désirs ?"]    
+b2[label="La liberté des autres
+est-elle un obstacle
+à ma liberté ?"]
+b3[label="Quelles sont
+les règles sociales qui
+ne portent pas atteinte
+à ma liberté ?"]
+b4[label="Quel est notre
+devoir moral ?"]
+b5[label="Quels devoirs
+avons-nous envers
+la nature ?"]
+
+
+
+
+{rank=same;b1->b2->b3->b4->b5[style=invis, minlen=3]}
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50, fontcolor=black]
+// c1[label=""]
+b1->{c1,c2}
+c1[label="Calliclès"]
+c2[label="Platon"]
+
+b2->{c3,c4}
+c3[label="Hobbes"]
+c4[label="Honneth"]
+
+b3->{c5,c6}
+c5[label="Spinoza"]
+c6[label="Mill"]
+
+b4->{c7,c8}
+c7[label="Bentham"]
+c8[label="Kant"]
+
+b5->{c9,c10}
+c9[label="L'éthique
+animale"]
+c10[label="L'éthique
+environnementale"]
+
+
+{rank=same;c2->c3[style=invis, minlen=3]}
+{rank=same;c4->c5[style=invis, minlen=3]}
+{rank=same;c6->c7[style=invis, minlen=4]}
+{rank=same;c8->c9[style=invis, minlen=3]}
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98, fontsize=12]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+e1[label="Réprimer ses désirs, c'est
+être faible et soumis aux
+conventions sociales"]
+e2[label="L'image du cocher
+et des deux chevaux,
+l'image du tonneau percé"]
+e3[label="La nécessité
+d'un dépassement
+de l'état de nature"]
+e4[label="Il y a une condition
+sociale de la liberté : la
+reconnaissance des autres"]
+e5[label="Une règle qui est dans
+mon intérêt n'est pas
+contraire à ma liberté"]
+e6[label="La contrainte n'est
+légitime que dans le cas
+où nous nuisons à autrui"]
+e7[label="Le calcul objectif
+et global de l'utilité
+des conséquences"]
+e8[label="Le respect
+de la dignité"]
+e9[label="L'antispécisme,
+le welfarisme,
+l'abolitionnisme"]
+e10[label="Valeur instrumentale
+et valeur intrinsèque
+de la nature"]
+
+c1->e1[minlen=1, style=invis]
+c2->e2[minlen=1, style=invis]
+c3->e3[minlen=1, style=invis]
+c4->e4[minlen=1, style=invis]
+c5->e5[minlen=1, style=invis]
+c6->e6[minlen=1, style=invis]
+c7->e7[minlen=1, style=invis]
+c8->e8[minlen=1, style=invis]
+c9->e9[minlen=1, style=invis]
+c10->e10[minlen=1, style=invis]
+
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
