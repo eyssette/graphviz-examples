@@ -47,8 +47,8 @@ c3[label="Problématiser"]
 c4[label="Argumenter"]
 
 b3->c5
-c5[label="Mobiliser
-sa culture"]
+c5[label="Mobiliser ses
+connaissances"]
 
 {rank=same;c1->c2[style=invis]}
 {rank=same;c4->c5[style=invis]}
