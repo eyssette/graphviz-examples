@@ -56,8 +56,8 @@
 <!-- c2 -->
 <g id="node5" class="node">
 <title>c2</title>
-<polygon fill="#ffffff" stroke="#7f7f7f" points="256.3183,-80 174.7156,-80 174.7156,-44 256.3183,-44 256.3183,-80"/>
-<text text-anchor="middle" x="215.517" y="-57.2" font-family="Times,serif" font-size="16.00" fill="#000000">La morale</text>
+<polygon fill="#ffffff" stroke="#7f7f7f" points="254.2694,-80 176.7646,-80 176.7646,-44 254.2694,-44 254.2694,-80"/>
+<text text-anchor="middle" x="215.517" y="-57.2" font-family="Times,serif" font-size="16.00" fill="#000000">Le devoir</text>
 </g>
 <!-- b2&#45;&gt;c2 -->
 <g id="edge4" class="edge">

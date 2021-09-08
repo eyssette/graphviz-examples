@@ -32,7 +32,7 @@ node [shape=box, fillcolor=white, color=grey50]
 b1->c1
 c1[label="Le bonheur"]
 b2->c2
-c2[label="La morale"]
+c2[label="Le devoir"]
 
 // INTERMÉDIAIRE AVANT NIVEAU 3
 node[fillcolor=grey78, shape=oval]
