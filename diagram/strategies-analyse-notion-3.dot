@@ -71,8 +71,8 @@ c1->d1[arrowhead=none;minlen=1]
 d1[label=<À quoi ça me<br/>
 fait penser ?<br/>
 <font point-size="5"><br/></font>
-<font point-size="10">(synonymes, termes proches,<br/>
-implications logiques)</font>>]
+<font point-size="10">(synonymes, expressions,<br/>
+situations et idées associées)</font>>]
 
 c2->d2[arrowhead=none;minlen=1]
 d2[label="Ça s'oppose à quoi ?

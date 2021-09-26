@@ -135,16 +135,16 @@
 <!-- d1 -->
 <g id="node11" class="node">
 <title>d1</title>
-<path fill="#ffffff" stroke="#7f7f7f" d="M603.0839,-459.3C603.0839,-459.3 494.9339,-459.3 494.9339,-459.3 488.9339,-459.3 482.9339,-453.3 482.9339,-447.3 482.9339,-447.3 482.9339,-406.3 482.9339,-406.3 482.9339,-400.3 488.9339,-394.3 494.9339,-394.3 494.9339,-394.3 603.0839,-394.3 603.0839,-394.3 609.0839,-394.3 615.0839,-400.3 615.0839,-406.3 615.0839,-406.3 615.0839,-447.3 615.0839,-447.3 615.0839,-453.3 609.0839,-459.3 603.0839,-459.3"/>
+<path fill="#ffffff" stroke="#7f7f7f" d="M602.5158,-459.3C602.5158,-459.3 495.502,-459.3 495.502,-459.3 489.502,-459.3 483.502,-453.3 483.502,-447.3 483.502,-447.3 483.502,-406.3 483.502,-406.3 483.502,-400.3 489.502,-394.3 495.502,-394.3 495.502,-394.3 602.5158,-394.3 602.5158,-394.3 608.5158,-394.3 614.5158,-400.3 614.5158,-406.3 614.5158,-406.3 614.5158,-447.3 614.5158,-447.3 614.5158,-453.3 608.5158,-459.3 602.5158,-459.3"/>
 <text text-anchor="start" x="504.1337" y="-441.9" font-family="Times,serif" font-size="16.00" fill="#000000">À quoi ça me</text>
 <text text-anchor="start" x="509.9201" y="-425.9" font-family="Times,serif" font-size="16.00" fill="#000000">fait penser ?</text>
-<text text-anchor="start" x="490.9714" y="-410.3" font-family="Times,serif" font-size="10.00" fill="#000000">(synonymes, termes proches,</text>
-<text text-anchor="start" x="504.4309" y="-400.3" font-family="Times,serif" font-size="10.00" fill="#000000">implications logiques)</text>
+<text text-anchor="start" x="497.7699" y="-410.3" font-family="Times,serif" font-size="10.00" fill="#000000">(synonymes, expressions,</text>
+<text text-anchor="start" x="491.2559" y="-400.3" font-family="Times,serif" font-size="10.00" fill="#000000">situations et idées associées)</text>
 </g>
 <!-- c1&#45;&gt;d1 -->
 <g id="edge11" class="edge">
 <title>c1&#45;&gt;d1</title>
-<path fill="none" stroke="#000000" d="M411.1111,-423.4605C430.6279,-423.9332 457.772,-424.5905 482.8194,-425.1971"/>
+<path fill="none" stroke="#000000" d="M411.1111,-423.4605C430.7195,-423.9354 458.027,-424.5967 483.172,-425.2056"/>
 </g>
 <!-- d2 -->
 <g id="node12" class="node">
