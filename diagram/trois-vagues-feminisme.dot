@@ -10,7 +10,7 @@ style=filled
 edge[minlen=4]
 node[style=filled, fontcolor=white]
 ranksep=0.1
-nodesep=0.5
+nodesep=0.4
 
 // NIVEAU 1
 node[fillcolor=grey2, fontsize=18]
@@ -28,6 +28,9 @@ b3[label="Troisième
 vague"]
 }[headport=n]
 
+{rank=same;b1->b2[style=invis]}
+{rank=same;b2->b3[style=invis, minlen=5]}
+
 node[fontcolor=black]
 // NIVEAU 3 (sans intermédiaire)
 node [shape=box, fillcolor=white, color=grey50]
@@ -38,20 +41,16 @@ de statut et pour
 les droits civils
 et politiques"]
 b2->c2
-c2[label="Défense de la liberté
-individuelle et critique
-de l'oppression et de la
-domination subies dans la
-vie privée et la sphère
-économique et sociale"]
+c2[label="Défense de la liberté individuelle
+et critique des oppressions et de la
+domination subies dans la vie privée
+et la sphère économique et sociale"]
 b3->c3
-c3[label="Croisement avec d'autres
-luttes : contre le racisme,
-contre l'homophobie, contre
-la transphobie …, et extension
-de la critique du sexisme,
-des normes de genre, de
-l'hétéronormativité …"]
+c3[label="Croisement avec d'autres luttes :
+contre le racisme, contre l'homophobie,
+contre la transphobie …, et extension
+de la critique du sexisme, des normes
+de genre, de l'hétéronormativité …"]
 
 
 // INTERMÉDIAIRE AVANT NIVEAU 3
@@ -74,24 +73,20 @@ droit de vote, liberté
 d'expression …"]
 
 c2->d2
-d2[label="Exemples :
-droit à l'avortement, accès à
-la contraception, accès à
-l'emploi, égalité salariale,
-dénonciation des inégalités
-dans le travail domestique,
-dénonciation des violences
-conjugales, du harcèlement,
-des violences sexuelles …"]
+d2[label="Exemples : droit à l'avortement, accès
+à la contraception, accès à l'emploi,
+égalité salariale, dénonciation des
+inégalités dans le travail domestique,
+dénonciation des violences conjugales,
+du harcèlement, des violences sexuelles …"]
 
 c3->d3
-d3[label="Exemples : 
-Reprise des luttes précédentes
-avec une attention plus particulière
-aux voix marginalisées, luttes
+d3[label="Exemples : extension des luttes
+précédentes par l'inclusion des
+voix marginalisées, luttes
 linguistiques (écriture inclusive),
 dénonciation plus large des
-agressions sexuelles (#MeToo …)"]
+agressions sexuelles (#MeToo) …"]
 
 // ÉTIQUETTES EN ROUGE
 node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
