@@ -1,0 +1,108 @@
+digraph G {
+// Template : diagram
+// Usage : 
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+node[style=filled, fontcolor=white]
+ranksep=0.1
+nodesep=0.4
+
+// NIVEAU 1
+node[fillcolor=grey2, fontsize=18]
+a1[label="Trois vagues
+du féminisme"]
+
+// NIVEAU 2
+node[fillcolor=red4, fontsize=16]
+a1->{
+b1[label="Première
+vague"]    
+b2[label="Deuxième
+vague"]
+b3[label="Troisième vague
+et féminismes
+contemporains"]
+}[headport=n]
+
+{rank=same;b1->b2[style=invis]}
+{rank=same;b2->b3[style=invis, minlen=5]}
+
+node[fontcolor=black]
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box, fillcolor=white, color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="– Lutte pour l'égalité de statut
+– Luttes pour les droits
+civils et politiques"]
+b2->c2
+c2[label="– Défense de la liberté individuelle
+et critique des oppressions et de la
+domination subies dans la vie privée
+et la sphère économique et sociale"]
+b3->c3
+c3[label="– Critique des mouvements féministes qui
+ne prennent pas en compte les femmes
+non-blanches et non-bourgoises
+– Croisement avec d'autres luttes : contre
+le racisme, la marginalisation des minorités,
+contre l'homophobie, la transphobie,
+contre le validisme, pour l'écologie …
+– Extension de la critique du sexisme, des
+normes de genre, de l'hétéronormativité …"]
+
+
+// INTERMÉDIAIRE AVANT NIVEAU 3
+node[fillcolor=grey78, shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[fillcolor=white, shape=box, color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
+// d1[label=""]
+
+c1->d1
+d1[label="Exemples :
+accès à l'éducation,
+droit de vote, liberté
+d'expression …"]
+
+c2->d2
+d2[label="Exemples : droit à l'avortement, accès
+à la contraception, accès à l'emploi,
+égalité salariale, dénonciation des
+inégalités dans le travail domestique,
+dénonciation des violences conjugales,
+du harcèlement, des violences sexuelles …"]
+
+c3->d3
+d3[label="Exemples : extension des luttes précédentes
+par l'inclusion des voix marginalisées, luttes
+linguistiques (écriture inclusive), dénonciation
+plus large des violences contre les femmes
+(#MeToo, féminicides), extension des luttes pour 
+la réappropriation par les femmes de leur corps …"]
+
+// ÉTIQUETTES EN ROUGE
+node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1, style=invis]
+
+// REMARQUES EN BLEU
+node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
+edge[color=blue, arrowhead="none", xlabel="", style="dashed", penwidth=0.6]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+}
