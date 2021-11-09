@@ -46,14 +46,18 @@ node[style="filled";fillcolor=white;shape=box;color=grey50]
 b1->{
 c1[label="1/ Organiser
 son travail"]
-c2[label="2/ Faire
-des recherches"]
+c2[label="2/ Faire des
+recherches"]
+c3[label="3/ Questionner
+la pertinence
+pédagogique
+de ses cours"]
 }
 b2->{
-c3[label="1/ Utiliser
+c4[label="1/ Utiliser
 des supports
 de cours"]
-c4[label="2/ Faire
+c5[label="2/ Faire
 travailler
 les élèves"]
 }
