@@ -72,9 +72,9 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
 // e1[label=""]
 // ->e1[minlen=1, style=invis]
 
-e1[label="Agir moralement
-= agir par devoir
-≠ conformément au devoir"]
+e1[label="Agir moralement = agir par devoir
+≠ simplement agir
+conformément au devoir"]
 c1->e1[minlen=1, style=invis]
 
 e2[label="Agir moralement
