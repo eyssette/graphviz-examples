@@ -31,8 +31,8 @@ node[fontcolor=black]
 node [shape=box, fillcolor=white, color=grey50]
 // c1[label=""]
 b1->c1
-c1[label="L'action morale ne vise pas
-la satisfaction personnelle"]
+c1[label="Agir moralement, ce
+n'est pas agir par intérêt"]
 b2->c2
 c2[label="Il faut réfléchir à ce
 qui guide mon action"]
@@ -73,8 +73,8 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
 // ->e1[minlen=1, style=invis]
 
 e1[label="Agir moralement
-≠ agir par intérêt
-= agir par devoir"]
+= agir par devoir
+≠ conformément au devoir"]
 c1->e1[minlen=1, style=invis]
 
 e2[label="Agir moralement
