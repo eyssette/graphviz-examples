@@ -1,0 +1,110 @@
+digraph G {
+// Template : conjectures and refutations
+// Usage : 
+splines=polyline
+ranksep=0.5
+compound=true
+
+
+
+URL="https://theconversation.com/differencier-science-et-pseudoscience-pas-si-simple-142736"
+
+
+
+node[shape=box,style="filled,rounded",fillcolor=white,penwidth=1.1,fontsize=18,margin=0.2]
+
+titre[label="Comment peut-on différencier
+science et non-science ?"]
+
+node[color=green4,xlabel=<<font point-size="15">💬</font>>]
+
+titre->h1[minlen=2; lhead=cluster_0]
+
+subgraph cluster_0 {
+label="
+D'après un article d'Olivier Sartenaer :
+« Différencier science et pseudoscience : pas si simple »"
+style=filled
+color=grey40
+penwidth=0.5
+fillcolor=grey96
+margin=30
+
+
+h1[label="Hypothèse 1 : La science est définie par la
+certitude de ses énoncés ; les affirmations
+incertaines ne sont que de simples opinions"]
+h2[label="Hypothèse 2 : Ce qui caractérise la
+science, c'est la méthode scientifique
+"]
+h3[label="Hypothèse 3 : Le fondement de la
+scientificité, c'est la testabilité
+empirique des hypothèses"]
+h4[label="Hypothèse 4 : On ne peut pas
+différencier science et non-science"]
+h5[label="Hypothèse 5 : On peut proposer une liste de critères,
+qui ne seraient pas absolus et décontextualisés, qui
+fonctionneraient plutôt comme des marqueurs de
+scientificité, permettant de calculer un degré
+de scientificité ou de situer des énoncés dans
+un certain espace épistémologique"]
+
+
+node[color=red3,xlabel="⚡"]
+o1[label="Objection : La science ne peut pas
+prétendre à la certitude ; aucun énoncé
+scientifique n'est à l'abri d'une révision ; il
+faut adopter une épistémologie faillibiliste
+qui admet la possibilité d'une remises en cause"]
+o2[label="Objection : Il n'existe pas de
+méthode unique partagée par toutes
+les disciplines scientifiques, et les
+méthodes évoluent au cours de l'histoire"]
+o3[label="Objection : Ce critère est à la fois trop large, car il
+conduirait à inclure des énoncés pseudo-scientifiques
+mais testables, et trop étroit, car il conduirait à
+rejeter des théories communément considérées
+comme scientifiques (comme la théorie des cordes),
+alors qu'elles ne sont pas testables empiriquement.
+De plus, ce critère ne prend pas en compte le fait
+que les énoncés scientifiques doivent nous
+permettre de mieux comprendre le réel"]
+o4[label="Objection : Il y a tout de même des cas clairs
+d'énoncés pseudoscientifiques et il est
+moralement important de faire cette différence
+quand la croyance en ces énoncés peut avoir
+des conséquences négatives importantes"]
+
+vide1[style=invis]
+{rank=same;vide1->o1[style=invis]}
+
+
+edge[penwidth=0.8,arrowsize=0.6]
+
+edge[color=red3,headport=w,style=invis]
+h1->o1
+h2->o2
+h3->o3
+h4->o4
+
+edge[color=green4,headport=e]
+o1->h2[minlen=2]
+o2->h3[minlen=2]
+o3->h3[minlen=2]
+o4->h4[minlen=2]
+
+edge[color=red3,constraint=false,style=vis,headport=n,xlabel=<<font point-size="10" color="red3">objection !</font>>]
+h1->o1
+h2->o2
+h3->o3
+h4->o4
+
+edge[color=green4,constraint=false,style=vis,headport=n,xlabel=<<font point-size="11" color="green4">réponse</font>>]
+
+edge[constraint=true,style=invis]
+o3->{h4;vide2}[minlen=2]
+vide2[style=invis]
+o4->{h5;vide3}[minlen=2]
+vide3[style=invis]
+}
+}
