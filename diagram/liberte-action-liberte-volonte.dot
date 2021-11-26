@@ -27,6 +27,8 @@ de la volonté<br/>
 <font point-size="12">(le libre arbitre)</font>>]
 }[headport=n]
 
+{rank=same; b1->b2[style=invis]}
+
 node[fontcolor=black]
 // NIVEAU 3 (sans intermédiaire)
 node [shape=box, fillcolor=white, color=grey50]
@@ -39,6 +41,8 @@ b2->c2
 c2[label=<<font point-size="12">« … ce que je veux »</font><br/>
 <font point-size="8"><br/></font>
 Un pouvoir de choisir<br/>>]
+
+{rank=same; c1->c2[style=invis]}
 
 // INTERMÉDIAIRE AVANT NIVEAU 3
 node[fillcolor=grey78, shape=oval]
@@ -70,7 +74,7 @@ qui dépend de la capacité<br/>
 de contrôler ses choix par<br/>
 sa propre volonté intérieure</font>>]
 
-
+{rank=same; d1->d2[style=invis]}
 
 // ÉTIQUETTES EN ROUGE
 node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
