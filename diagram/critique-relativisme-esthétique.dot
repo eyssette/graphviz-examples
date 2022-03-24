@@ -1,0 +1,99 @@
+digraph G {
+//rankdir=LR
+splines=true
+//splines=curved
+bgcolor=grey98
+pad=0.3
+style=filled
+edge[minlen=4]
+ranksep=0.1
+nodesep=0.2 // valeur à changer ?
+
+// NIVEAU 1
+node[style=filled; fillcolor=12 ; fontcolor=white ; fontsize=18]
+// a1[label=""]
+a1[label="Les jugements
+esthétiques"]
+
+
+
+
+// NIVEAU 2
+node[style=filled;fillcolor=red4;fontcolor=white; fontsize=16]
+// b1[label=""]
+a1->{
+b1[label="À première vue :
+ils sont relatifs"]    
+b2[label="Mais : on peut les
+discuter, les critiquer et
+chercher à s'améliorer"]
+}[headport=n]
+
+{rank=same; b1->b2[style=invis, minlen=6]}
+
+// NIVEAU 3 (sans intermédiaire)
+node [shape=box; style=filled;fillcolor=white;fontcolor=black;color=grey50]
+// c1[label=""]
+b1->c1
+c1[label="L'expérience d'une
+œuvre est subjective
+et particulière"]
+b2->{c2,c3}
+c2[label="Les jugements qui
+ne reposent que
+sur des préjugés
+sont critiquables"]
+c3[label="L'expérience répétée du
+contact avec des œuvres,
+la pratique artistique et
+certaines connaissances
+artistiques, permettent
+d'améliorer son jugement"]
+
+{rank=same; c1->c2[style=invis, minlen=6]}
+{rank=same; c2->c3[style=invis, minlen=2]}
+
+// INTERMEDIAIRE AVANT NIVEAU 3
+node[style=filled;fillcolor=grey78;shape=oval]
+// [arrowhead=none]
+// bc1[label=""]
+
+// NIVEAU 3 (avec intermédiaire)
+node[style="filled";fillcolor=white;shape=box;color=grey50]
+// c1[label=""]
+
+// NIVEAU 4
+node[style="filled, rounded";fillcolor=white;shape=box;color=grey50]
+// d1[label=""]
+
+
+// ETIQUETTES EN ROUGE
+node[shape=plaintext;fontcolor=firebrick3;fillcolor=grey98]
+// e1[label=< <B>= Titre</B><BR /><BR />Contenu<BR /> >]
+// e1[label=""]
+// ->e1[minlen=1;style=invis]
+
+e1[label="= les jugements
+sur la valeur des
+œuvres d'art"]
+{rank=same;a1->e1[minlen=1;style=invis]}
+
+e2[label="« des goûts et des
+couleurs, on ne
+discute pas »"]
+c1->e2[minlen=1;style=invis]
+
+e3[label="Le goût peut s'éduquer : nous pouvons
+apprendre à apprécier une œuvre d'art"]
+{c2,c3}->e3[minlen=1;style=invis]
+
+// Remarques
+node[color=blue;shape=box;style=filled;margin=0.07;fontcolor=black;fontsize=13]
+edge[color=blue;arrowhead="none";xlabel="";style=dashed]
+// r1[label=""]
+// {rank=same;->r1}
+// {rank=same;r1->[dir=back]}
+
+
+}
+
