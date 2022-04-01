@@ -24,12 +24,14 @@ b1[label="La tyrannie,
 l'inégalité
 des droits"]    
 b2[label="Les inégalités
-sociales dans les
-conditions d'existence"]
+sociales
+de départ"]
 b3[label="Les inégalités
-injustifiéesd'existence
-dans les "]
+injustifiées
+à l'arrivée"]
 }[headport=n]
+
+{rank=same;b1->b2->b3[style=invis]}
 
 node[fontcolor=black]
 // NIVEAU 3 (sans intermédiaire)
@@ -46,6 +48,8 @@ c3[label="La justice implique :
 l'égalisation au
 maximum des places"]
 
+{rank=same;c1->c2->c3[style=invis]}
+
 // INTERMÉDIAIRE AVANT NIVEAU 3
 node[fillcolor=grey78, shape=oval]
 // [arrowhead=none]
@@ -59,11 +63,13 @@ node[fillcolor=white, shape=box, color=grey50]
 node[style="filled,rounded", fillcolor=white, shape=box, color=grey50]
 // d1[label=""]
 c2->d1
-d1[label="L'égalité formelle
-des chances"]
+d1[label="L'égalité
+formelle des
+chances"]
 c2->d2
-d2[label="L'égalité réelle
-des chances"]
+d2[label="L'égalité
+réelle des
+chances"]
 
 // ÉTIQUETTES EN ROUGE
 node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
@@ -84,6 +90,8 @@ c3->e4[minlen=1, style=invis]
 e4[label="Le progrès social au 
 service de tous et surtout
 des plus défavorisés"]
+
+{rank=same;e1->d1->d2->e4[style=invis]}
 
 // REMARQUES EN BLEU
 node[color=blue, shape=box, margin=0.07, fontcolor=black, fontsize=12, style="dashed", penwidth=0.6]
