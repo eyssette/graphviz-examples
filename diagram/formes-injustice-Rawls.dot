@@ -77,7 +77,8 @@ node[shape=plaintext, fontcolor=firebrick3, fillcolor=grey98]
 // e1[label=""]
 // ->e1[minlen=1, style=invis]
 c1->e1[minlen=1, style=invis]
-e1[label="L'Etat de droit"]
+e1[label="L'Etat
+de droit"]
 
 d1->e2[minlen=1, style=invis]
 e2[label="La méritocratie"]
