@@ -12,6 +12,10 @@ node[style=filled, fontcolor=white]
 ranksep=0.1
 nodesep=0.2
 
+label=<<FONT point-size="24">Formes d'injustice et principes de justice d'après Rawls<br/><br/></FONT>>
+labelloc=t
+labelfontsize=24
+
 // NIVEAU 1
 node[fillcolor=grey2, fontsize=18]
 a1[label="Formes
@@ -31,20 +35,20 @@ injustifiées
 à l'arrivée"]
 }[headport=n]
 
-{rank=same;b1->b2->b3[style=invis]}
+{rank=same;b1->b2->b3[style=invis, minlen=6]}
 
 node[fontcolor=black]
 // NIVEAU 3 (sans intermédiaire)
 node [shape=box, fillcolor=white, color=grey50]
 // c1[label=""]
 b1->c1
-c1[label="La justice implique :
+c1[label="Principe de justice :
 l'égalité des droits"]
 b2->c2
-c2[label="La justice implique :
+c2[label="Principe de justice :
 l'égalité des chances"]
 b3->c3
-c3[label="La justice implique :
+c3[label="Principe de justice :
 l'égalisation au
 maximum des places"]
 
