@@ -1,0 +1,49 @@
+digraph G {
+pad=0.3
+nodesep=0.5
+ranksep=0.1
+edge[minlen=3]
+
+// NIVEAU 1
+node[shape=box, style="rounded, filled", fillcolor=black, fontcolor=white, fontsize=14]
+a1[label="carte conceptuelle"]
+
+
+// NIVEAU 2
+node[fillcolor=grey90, fontcolor=black, penwidth=1.5, fontsize=12]
+b1[label="concepts"]
+b2[label="liens"]
+b3[label="ressources"]
+
+
+// NIVEAU 3
+node[penwidth=1, fillcolor=grey92, color=grey20]
+c1[label="objets graphiques"]
+
+// NIVEAU 4
+node[fontsize=10, style="dashed, rounded, filled", color=grey30]
+d1[label="Liens internet"]
+d2[label="Documents
+électroniques"]
+
+
+// LABELS
+node[shape=plain, fillcolor=none, margin=0, fontcolor=grey30, fontsize=10]
+l1[label="est composée de"]
+l2[label="s'illustrent avec"]
+l3[label="exemples"]
+
+edge[color=grey20, penwidth=0.9, arrowsize=0.7]
+
+// LIENS CLASSIQUES
+l1->{b1,b2,b3}
+l2->c1    
+l3->{d1,d2}    
+
+// LIENS AVEC LABELS
+edge[arrowhead=none, minlen=2]
+a1->l1
+{b1,b2}->l2
+b3->l3
+
+}
